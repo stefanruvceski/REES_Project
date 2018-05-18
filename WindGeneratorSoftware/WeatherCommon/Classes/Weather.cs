@@ -16,7 +16,6 @@ namespace WeatherCommon.Classes
         private double maxTemp;
         private double minTemp;
         private double pressure;
-        private int windAngle;
         private double windSpeed;
 
         public Weather()
@@ -24,14 +23,13 @@ namespace WeatherCommon.Classes
 
         }
 
-        public Weather(string city, string description, double maxTemp, double minTemp, double pressure, int windAngle, double windSpeed)
+        public Weather(string city, string description, double maxTemp, double minTemp, double pressure, double windSpeed)
         {
             this.City = city;
             this.Description = description;
             this.MaxTemp = maxTemp;
             this.MinTemp = minTemp;
             this.Pressure = pressure;
-            this.WindAngle = windAngle;
             this.WindSpeed = windSpeed;
             this.AirDensity = 1.29;
         }
@@ -49,13 +47,11 @@ namespace WeatherCommon.Classes
         [DataMember]
         public double Pressure { get => pressure; set => pressure = value; }
         [DataMember]
-        public int WindAngle { get => windAngle; set => windAngle = value; }
-        [DataMember]
         public double WindSpeed { get => windSpeed; set => windSpeed = value; }
 
         public override string ToString()
         {
-            string retVal = String.Format($"City: {City}\nair density: {AirDensity}\nmax temperature: {MaxTemp}\nmin temperature: {MinTemp}\npressure: {Pressure}\nwind speed: {WindSpeed}\nwind angle: {WindAngle}\n");
+            string retVal = String.Format($"City: {City}\nair density: {AirDensity}\nmax temperature: {MaxTemp}\nmin temperature: {MinTemp}\npressure: {Pressure}\nwind speed: {WindSpeed}\n");
             retVal += "---------------------------------";
 
             return retVal;

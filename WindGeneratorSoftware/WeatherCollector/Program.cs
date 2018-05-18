@@ -15,7 +15,14 @@ namespace WeatherCollector
 
             while (true)
             {
-                collector.GetStatesFromWeb();
+                try {
+                    collector.GetStatesFromWeb();
+                    Console.WriteLine("Weather data is collected");
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("There is no servicehost yet.");
+                }
                 Thread.Sleep(5000);
             }
         }

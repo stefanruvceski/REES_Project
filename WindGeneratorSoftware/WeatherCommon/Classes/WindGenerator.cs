@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using WeatherWorkerRoleData.Classes;
+using System.Diagnostics;
 
 namespace WeatherCommon.Classes
 {
@@ -18,36 +19,35 @@ namespace WeatherCommon.Classes
     {
 
         private double coefficient;
-        private double power;               // min snaga, kad padne ispod pali se agregat
-        private double turbineDiameter;
+        private double minPower;               // min snaga, kad padne ispod pali se agregat
+        private double turbineDiameter; 
         private Weather weather;
         private double maxSpeed;
         private int maxSpeedTime;
-        private int workingTime;
+        private static int workingTime=0; // ne treba static
 
         public WindGenerator()
         {
 
         }
 
-        public WindGenerator(double coefficient, double power, double turbineDiameter, Weather weather, double maxSpeed, int maxSpeedTime, int workingTime)
+        public WindGenerator(double coefficient, double minpower, double turbineDiameter, Weather weather, double maxSpeed, int maxSpeedTime)
         {
             this.Coefficient = coefficient;
-            this.Power = power;
+            this.MinPower = minpower;
             this.TurbineDiameter = turbineDiameter;
             this.Weather = weather;
             this.MaxSpeed = maxSpeed;
             this.MaxSpeedTime = maxSpeedTime;
-            this.WorkingTime = workingTime;
         }
 
         public double Coefficient { get => coefficient; set => coefficient = value; }
-        public double Power { get => power; set => power = value; }
+        public double MinPower { get => minPower; set => minPower = value; }
         public double TurbineDiameter { get => turbineDiameter; set => turbineDiameter = value; }
         public Weather Weather { get => weather; set => weather = value; }
         public double MaxSpeed { get => maxSpeed; set => maxSpeed = value; }
         public int MaxSpeedTime { get => maxSpeedTime; set => maxSpeedTime = value; }
-        public int WorkingTime { get => workingTime; set => workingTime = value; }
+        public static  int WorkingTime { get => workingTime; set => workingTime = value; }
 
         public double CalculateSurfaceArea()
         {
@@ -65,17 +65,23 @@ namespace WeatherCommon.Classes
             if (Weather.WindSpeed >= MaxSpeed && WorkingTime >= MaxSpeedTime)
             {
                 power = 0;
-                WorkingTime = 0;
+                
             }
             else if (Weather.WindSpeed >= MaxSpeed && WorkingTime < MaxSpeedTime)
             {
                 power = 0.5 * Coefficient * Weather.AirDensity * CalculateSurfaceArea() * Math.Pow(Weather.WindSpeed, 3);
                 WorkingTime++;
+                Trace.WriteLine(workingTime);
             }
             else
             {
                 power = 0.5 * Coefficient * Weather.AirDensity * CalculateSurfaceArea() * Math.Pow(Weather.WindSpeed, 3);
                 WorkingTime = 0;
+            }
+
+            if(workingTime == maxSpeedTime+(maxSpeedTime/2)) // cooling period
+            {
+                workingTime = 0;
             }
 
             return power;
