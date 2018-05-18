@@ -20,27 +20,37 @@ namespace WeatherCommon.Classes
 		private double power;
 		private double turbineDiameter;
 		private Weather weather;
+        private double maxSpeed;
 
 		public WindGenerator(){
 
 		}
 
-        public WindGenerator(double coefficient, double power, double turbineDiameter, Weather weather)
+        public WindGenerator(double coefficient, double power, double turbineDiameter, Weather weather, double maxSpeed)
         {
             this.Coefficient = coefficient;
             this.Power = power;
             this.TurbineDiameter = turbineDiameter;
             this.Weather = weather;
+            this.MaxSpeed = maxSpeed;
         }
 
         public double Coefficient { get => coefficient; set => coefficient = value; }
         public double Power { get => power; set => power = value; }
         public double TurbineDiameter { get => turbineDiameter; set => turbineDiameter = value; }
         public Weather Weather { get => weather; set => weather = value; }
+        public double MaxSpeed { get => maxSpeed; set => maxSpeed = value; }
 
-        public double CalculatePower(){
+        public double CalculateSurfaceArea()
+        {
+            return Math.Pow((TurbineDiameter / 2), 2) * Math.PI;
+        }
 
-			return 0;
+        public double CalculatePower()
+        {
+            double power = 0.5 * Weather.AirDensity * CalculateSurfaceArea() * Math.Pow(Weather.WindSpeed, 3);
+
+			return power * Coefficient;
 		}
 
 	}//end WindGenerator
