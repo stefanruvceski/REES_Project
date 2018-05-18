@@ -12,6 +12,8 @@ using System.Text;
 using System.IO;
 using System.ServiceModel;
 using Microsoft.WindowsAzure.ServiceRuntime;
+using WeatherCommon.Classes;
+using System.Diagnostics;
 
 namespace WeatherWorkerRole.Classes
 {
@@ -27,12 +29,34 @@ namespace WeatherWorkerRole.Classes
             string endpoint = String.Format($"net.tcp://{instanceEndpoint.IPEndpoint}/{externalEndpointName}");
 
             serviceHost = new ServiceHost(typeof(WeatherJobServerProvider));
-            //serviceHost.AddServiceEndpoint(typeof(IWeather), );
+            serviceHost.AddServiceEndpoint(typeof(IWeather), binding, endpoint);
 		}
 
-		~WeatherJobServer(){
+        public void Open()
+        {
+            try
+            {
+                serviceHost.Open();
+                Trace.WriteLine($"Service host for {externalEndpointName} endpoint type opened successfully at {DateTime.Now}");
+            }
+            catch(Exception e)
+            {
+                Trace.WriteLine($"Service host open error for {externalEndpointName} endpoint type. Error message is: {e.Message}");
+            }
+        }
 
-		}
+        public void Close()
+        {
+            try
+            {
+                serviceHost.Close();
+                Trace.WriteLine($"Service host for {externalEndpointName} endpoint type closed successfully at {DateTime.Now}");
+            }
+            catch (Exception e)
+            {
+                Trace.WriteLine($"Service host close error for {externalEndpointName} endpoint type. Error message is: {e.Message}");
+            }
+        }
 
 	}//end WeatherJobServer
 

@@ -52,5 +52,13 @@ namespace WeatherCommon.Classes
         public int WindAngle { get => windAngle; set => windAngle = value; }
         [DataMember]
         public double WindSpeed { get => windSpeed; set => windSpeed = value; }
+
+        public override string ToString()
+        {
+            string retVal = String.Format($"City: {City}\nair density: {AirDensity}\nmax temperature: {MaxTemp}\nmin temperature: {MinTemp}\npressure: {Pressure}\nwind speed: {WindSpeed}\nwind angle: {WindAngle}\n");
+            retVal += "---------------------------------";
+
+            return retVal;
+        }
     }
 }

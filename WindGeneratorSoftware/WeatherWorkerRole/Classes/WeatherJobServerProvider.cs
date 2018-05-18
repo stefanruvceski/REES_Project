@@ -10,12 +10,14 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-
-
+using WeatherCommon.Classes;
+using System.Diagnostics;
 
 namespace WeatherWorkerRole.Classes
 {
-	public class WeatherJobServerProvider {
+	public class WeatherJobServerProvider : IWeather
+    {
+        private Dictionary<string, Weather> dictionary = new Dictionary<string, Weather>();
 
 		public WeatherJobServerProvider(){
 
@@ -25,6 +27,15 @@ namespace WeatherWorkerRole.Classes
 
 		}
 
-	}//end WeatherJobServerProvider
+        public void SendWeatherState(Weather weather)
+        {
+            if(!dictionary.ContainsKey(weather.City))
+            {
+                dictionary.Add(weather.City, weather);
+                Trace.WriteLine(weather);
+            }
+        }
+
+    }//end WeatherJobServerProvider
 
 }//end namespace WeatherWorkerRole
