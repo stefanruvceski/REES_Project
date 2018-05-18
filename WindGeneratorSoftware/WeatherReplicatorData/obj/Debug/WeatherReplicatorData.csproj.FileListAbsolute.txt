@@ -1,1 +1,0 @@
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.csproj.CoreCompileInputs.cache

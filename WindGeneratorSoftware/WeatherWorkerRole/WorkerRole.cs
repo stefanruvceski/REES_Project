@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.Diagnostics;
 using Microsoft.WindowsAzure.ServiceRuntime;
+using WeatherWorkerRole.Classes;
 
 namespace WeatherWorkerRole
 {
@@ -15,6 +16,8 @@ namespace WeatherWorkerRole
     {
         private readonly CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
         private readonly ManualResetEvent runCompleteEvent = new ManualResetEvent(false);
+
+        private WeatherJobServer weatherServer = new WeatherJobServer();
 
         public override void Run()
         {
@@ -40,6 +43,8 @@ namespace WeatherWorkerRole
 
             bool result = base.OnStart();
 
+            weatherServer.Open();
+
             Trace.TraceInformation("WeatherWorkerRole has been started");
 
             return result;
@@ -53,6 +58,8 @@ namespace WeatherWorkerRole
             this.runCompleteEvent.WaitOne();
 
             base.OnStop();
+
+            weatherServer.Close();
 
             Trace.TraceInformation("WeatherWorkerRole has stopped");
         }
