@@ -1,8 +1,0 @@
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherCommon\bin\Debug\WeatherCommon.dll
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherCommon\bin\Debug\WeatherCommon.pdb
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherCommon\bin\Debug\WeatherWorkerRoleData.dll
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherCommon\bin\Debug\WeatherWorkerRoleData.pdb
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.csprojResolveAssemblyReference.cache
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.csproj.CoreCompileInputs.cache
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.dll
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.pdb
