@@ -20,7 +20,7 @@ namespace WeatherCollector.Classes {
 		private Dictionary<string,Weather> weatherStates;
 
 		public WeatherStateCollector(){ 
-            weatherStates = new Dictionary<string, Weather>();
+            
 		}
 
 		public void ConnectToServicehost(){
