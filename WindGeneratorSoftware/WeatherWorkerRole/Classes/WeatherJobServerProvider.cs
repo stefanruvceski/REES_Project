@@ -18,6 +18,7 @@ namespace WeatherWorkerRole.Classes
 	public class WeatherJobServerProvider : IWeather
     {
         private Dictionary<string, Weather> weathers = new Dictionary<string, Weather>();
+
 		public WeatherJobServerProvider(){
 
 		}
@@ -40,6 +41,19 @@ namespace WeatherWorkerRole.Classes
             }
 
             Trace.WriteLine(new WindGenerator(0.35, 10000000, 50, weather, 18, 10).CalculatePower());
+        }
+
+        public Weather GetWeather()
+        {
+            Weather retVal = null;
+
+            foreach(Weather weather in weathers.Values)
+            {
+                retVal = weather;
+                break;
+            }
+
+            return retVal;
         }
 
     }//end WeatherJobServerProvider

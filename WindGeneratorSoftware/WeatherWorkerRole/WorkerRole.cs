@@ -18,6 +18,7 @@ namespace WeatherWorkerRole
         private readonly ManualResetEvent runCompleteEvent = new ManualResetEvent(false);
 
         private WeatherJobServer weatherServer = new WeatherJobServer();
+        private InternalWeatherJobServer internalWeatherServer = new InternalWeatherJobServer();
 
         public override void Run()
         {
@@ -44,6 +45,7 @@ namespace WeatherWorkerRole
             bool result = base.OnStart();
 
             weatherServer.Open();
+            internalWeatherServer.Open();
 
             Trace.TraceInformation("WeatherWorkerRole has been started");
 
@@ -60,6 +62,7 @@ namespace WeatherWorkerRole
             base.OnStop();
 
             weatherServer.Close();
+            internalWeatherServer.Close();
 
             Trace.TraceInformation("WeatherWorkerRole has stopped");
         }

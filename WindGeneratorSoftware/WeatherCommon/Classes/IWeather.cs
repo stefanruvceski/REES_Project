@@ -27,6 +27,9 @@ namespace WeatherCommon.Classes
 		/// <param name="weather"></param>
         [OperationContract]
 		void SendWeatherState(Weather weather);
+
+        [OperationContract]
+        Weather GetWeather();
 	}//end IWeather
 
 }//end namespace WeatherCommon
