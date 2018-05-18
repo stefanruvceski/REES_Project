@@ -11,9 +11,11 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using WeatherWorkerRoleData.Classes;
+using System.ServiceModel;
 
 namespace WeatherCommon.Classes
 {
+    [ServiceContract]
 	public interface IWeather  {
 
         // KAKO SLATI WEATHER KAD TABLEENTITY NIJE SERIALIZABLE
@@ -23,6 +25,7 @@ namespace WeatherCommon.Classes
 		/// parametar mozda da bude cela lista
 		/// </summary>
 		/// <param name="weather"></param>
+        [OperationContract]
 		void SendWeatherState(Weather weather);
 	}//end IWeather
 

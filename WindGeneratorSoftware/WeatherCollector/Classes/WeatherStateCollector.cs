@@ -12,27 +12,74 @@ using System.Text;
 using System.IO;
 using WeatherCommon.Classes;
 using WeatherWorkerRoleData.Classes;
+using System.Net;
+using System.ServiceModel;
 
 namespace WeatherCollector.Classes {
 	public class WeatherStateCollector {
 
 		private IWeather proxy;
 		private Dictionary<string,Weather> weatherStates;
-
-		public WeatherStateCollector(){
+        private static List<string> URLs = new List<string>() { "http://api.openweathermap.org/data/2.5/weather?q=Novi%20Sad&appid=fdcdcf4845c441392a458b8dce7007c2" };
+        
+        public WeatherStateCollector(){
             weatherStates = new Dictionary<string, Weather>();
 		}
 
 		public void ConnectToServicehost(){
-
+            ChannelFactory<IWeather> factory = new ChannelFactory<IWeather>(new NetTcpBinding(),new EndpointAddress("net.tcp://localhost:11000/InputRequest"));
+            proxy = factory.CreateChannel();
 		}
 
 		public void GetStatesFromWeb(){
+            ConnectToServicehost();
+            foreach (string s in URLs)
+                GetState(s);
 
-		}
+            SendStatesToWorkerRole();
+            proxy = null;
+        }
+
+        public void GetState(string city)
+        {
+            string json;
+            using (WebClient client = new WebClient())
+            {
+                json = client.DownloadString(city);
+            }
+
+            string[] parts = json.Split(',');
+            Weather w = new Weather();
+
+            foreach (string item in parts)
+            {
+                Console.WriteLine(item);
+                string[] p = item.Split(':');
+
+                switch (p[0])
+                {
+                    case @"""name""": w.City = p[1].Replace('"', ' ').Trim(); break;
+                    case @"""description""": w.Description = p[1].Replace('"', ' ').Trim(); break;
+                    case @"""pressure""": w.Pressure = int.Parse(p[1].Replace('"', ' ').Trim()); break;
+                    case @"""wind""": w.WindSpeed = Math.Round(double.Parse(p[2].Replace('"', ' ').Trim()) * 0.001 / 0.0002777778, 2); break;
+                    case @"""deg""": w.WindAngle = int.Parse(p[1].Replace('}', ' ').Trim()); break;
+                    case @"""temp_min""": w.MinTemp = double.Parse(p[1].Replace('}', ' ').Trim())-273.15; break;
+                    case @"""temp_max""": w.MaxTemp = double.Parse(p[1].Replace('}', ' ').Trim()) - 273.15; break;
+                    default:
+                        break;
+                }
+            }
+            if (!weatherStates.ContainsKey(w.City))
+                weatherStates.Add(w.City, w);
+            else
+                weatherStates[w.City] = w;
+        }
 
 		public void SendStatesToWorkerRole(){
-
+            foreach (Weather item in weatherStates.Values)
+            {
+                proxy.SendWeatherState(item);
+            }
 		}
 
 	}//end WeatherStateCollector
