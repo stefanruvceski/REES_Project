@@ -17,6 +17,11 @@ namespace WeatherWebRole.Controllers
         {
 
 
+            return View();
+        }
+
+        public ActionResult Update1()
+        {
             return View(Update());
         }
 
