@@ -17,8 +17,7 @@ namespace WeatherWorkerRole.Classes
 {
 	public class WeatherJobServerProvider : IWeather
     {
-        private Dictionary<string, Weather> dictionary = new Dictionary<string, Weather>();
-
+        private Dictionary<string, Weather> weathers = new Dictionary<string, Weather>();
 		public WeatherJobServerProvider(){
 
 		}
@@ -29,11 +28,18 @@ namespace WeatherWorkerRole.Classes
 
         public void SendWeatherState(Weather weather)
         {
-            if(!dictionary.ContainsKey(weather.City))
+            if(!weathers.ContainsKey(weather.City))
             {
-                dictionary.Add(weather.City, weather);
+                weathers.Add(weather.City, weather);
                 Trace.WriteLine(weather);
             }
+            else
+            {
+                weathers[weather.City] = weather;
+                Trace.WriteLine(weather);
+            }
+
+            Trace.WriteLine(new WindGenerator(0.35, 10000000, 50, weather, 18, 10).CalculatePower());
         }
 
     }//end WeatherJobServerProvider

@@ -53,7 +53,6 @@ namespace WeatherCollector.Classes {
 
             foreach (string item in parts)
             {
-                Console.WriteLine(item);
                 string[] p = item.Split(':');
 
                 switch (p[0])
@@ -61,8 +60,7 @@ namespace WeatherCollector.Classes {
                     case @"""name""": w.City = p[1].Replace('"', ' ').Trim(); break;
                     case @"""description""": w.Description = p[1].Replace('"', ' ').Trim(); break;
                     case @"""pressure""": w.Pressure = int.Parse(p[1].Replace('"', ' ').Trim()); break;
-                    case @"""wind""": w.WindSpeed = Math.Round(double.Parse(p[2].Replace('"', ' ').Trim()) * 0.001 / 0.0002777778, 2); break;
-                    case @"""deg""": w.WindAngle = int.Parse(p[1].Replace('}', ' ').Trim()); break;
+                    case @"""wind""": w.WindSpeed = double.Parse(p[2].Replace('"', ' ').Replace('}',' ').Trim()) + 18; break;
                     case @"""temp_min""": w.MinTemp = double.Parse(p[1].Replace('}', ' ').Trim())-273.15; break;
                     case @"""temp_max""": w.MaxTemp = double.Parse(p[1].Replace('}', ' ').Trim()) - 273.15; break;
                     default:
