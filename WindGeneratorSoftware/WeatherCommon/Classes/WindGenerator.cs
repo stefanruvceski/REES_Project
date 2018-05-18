@@ -14,45 +14,73 @@ using WeatherWorkerRoleData.Classes;
 
 namespace WeatherCommon.Classes
 {
-	public class WindGenerator {
+    public class WindGenerator
+    {
 
-		private double coefficient;
-		private double power;
-		private double turbineDiameter;
-		private WeatherBase weather;
+        private double coefficient;
+        private double power;               // min snaga, kad padne ispod pali se agregat
+        private double turbineDiameter;
+        private Weather weather;
         private double maxSpeed;
+        private int maxSpeedTime;
+        private int workingTime;
 
-		public WindGenerator(){
+        public WindGenerator()
+        {
 
-		}
+        }
 
-        public WindGenerator(double coefficient, double power, double turbineDiameter, WeatherBase weather, double maxSpeed)
+        public WindGenerator(double coefficient, double power, double turbineDiameter, Weather weather, double maxSpeed, int maxSpeedTime, int workingTime)
         {
             this.Coefficient = coefficient;
             this.Power = power;
             this.TurbineDiameter = turbineDiameter;
             this.Weather = weather;
             this.MaxSpeed = maxSpeed;
+            this.MaxSpeedTime = maxSpeedTime;
+            this.WorkingTime = workingTime;
         }
 
         public double Coefficient { get => coefficient; set => coefficient = value; }
         public double Power { get => power; set => power = value; }
         public double TurbineDiameter { get => turbineDiameter; set => turbineDiameter = value; }
-        public WeatherBase Weather { get => weather; set => weather = value; }
+        public Weather Weather { get => weather; set => weather = value; }
         public double MaxSpeed { get => maxSpeed; set => maxSpeed = value; }
+        public int MaxSpeedTime { get => maxSpeedTime; set => maxSpeedTime = value; }
+        public int WorkingTime { get => workingTime; set => workingTime = value; }
 
         public double CalculateSurfaceArea()
         {
             return Math.Pow((TurbineDiameter / 2), 2) * Math.PI;
         }
 
+        /// <summary>
+        /// Metoda se poziva u okviru nekog while-a, pa ce ovo WorkingTime++ imati nekog smisla
+        /// </summary>
+        /// <returns></returns>
         public double CalculatePower()
         {
-            double power = 0.5 * Weather.AirDensity * CalculateSurfaceArea() * Math.Pow(Weather.WindSpeed, 3);
+            double power = 0;
 
-			return power * Coefficient;
-		}
+            if (Weather.WindSpeed >= MaxSpeed && WorkingTime >= MaxSpeedTime)
+            {
+                power = 0;
+                WorkingTime = 0;
+            }
+            else if (Weather.WindSpeed >= MaxSpeed && WorkingTime < MaxSpeedTime)
+            {
+                power = 0.5 * Coefficient * Weather.AirDensity * CalculateSurfaceArea() * Math.Pow(Weather.WindSpeed, 3);
+                WorkingTime++;
+            }
+            else
+            {
+                power = 0.5 * Coefficient * Weather.AirDensity * CalculateSurfaceArea() * Math.Pow(Weather.WindSpeed, 3);
+                WorkingTime = 0;
+            }
 
-	}//end WindGenerator
+            return power;
+        }
+
+    }//end WindGenerator
 
 }//end namespace WeatherCommon
