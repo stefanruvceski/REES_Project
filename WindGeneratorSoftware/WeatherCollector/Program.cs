@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace WeatherCollector
@@ -10,7 +11,13 @@ namespace WeatherCollector
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world!");
+            WeatherCollector.Classes.WeatherStateCollector collector = new Classes.WeatherStateCollector();
+
+            while (true)
+            {
+                collector.GetStatesFromWeb();
+                Thread.Sleep(5000);
+            }
         }
     }
 }
