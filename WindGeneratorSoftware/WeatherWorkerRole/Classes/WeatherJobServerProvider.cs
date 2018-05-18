@@ -17,7 +17,7 @@ namespace WeatherWorkerRole.Classes
 {
 	public class WeatherJobServerProvider : IWeather
     {
-        private Dictionary<string, Weather> weathers = new Dictionary<string, Weather>();
+        private static Dictionary<string, Weather> weathers = new Dictionary<string, Weather>(); // ne weather nego weather nego windgenerator
 
 		public WeatherJobServerProvider(){
 
@@ -43,7 +43,7 @@ namespace WeatherWorkerRole.Classes
             Trace.WriteLine(new WindGenerator(0.35, 10000000, 50, weather, 18, 10).CalculatePower());
         }
 
-        public Weather GetWeather()
+        public Weather GetWeather() // ne treba da vraca weather nego windgenerator
         {
             Weather retVal = null;
 

@@ -25,6 +25,7 @@ namespace WeatherCommon.Classes
         private double maxSpeed;
         private int maxSpeedTime;
         private static int workingTime=0; // ne treba static
+        //dodati instancu agregata
 
         public WindGenerator()
         {
