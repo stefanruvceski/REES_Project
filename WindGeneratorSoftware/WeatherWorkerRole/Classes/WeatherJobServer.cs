@@ -10,13 +10,24 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.ServiceModel;
+using Microsoft.WindowsAzure.ServiceRuntime;
 
 namespace WeatherWorkerRole.Classes
 {
-	public class WeatherJobServer {
+	public class WeatherJobServer
+    {
+        private ServiceHost serviceHost;
+        private string externalEndpointName = "InputRequest";
 
-		public WeatherJobServer(){
+		public WeatherJobServer()
+        {
+            NetTcpBinding binding = new NetTcpBinding();
+            RoleInstanceEndpoint instanceEndpoint = RoleEnvironment.CurrentRoleInstance.InstanceEndpoints[externalEndpointName];
+            string endpoint = String.Format($"net.tcp://{instanceEndpoint.IPEndpoint}/{externalEndpointName}");
 
+            serviceHost = new ServiceHost(typeof(WeatherJobServerProvider));
+            //serviceHost.AddServiceEndpoint(typeof(IWeather), );
 		}
 
 		~WeatherJobServer(){

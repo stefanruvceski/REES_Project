@@ -1,1 +1,0 @@
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.WindowsAzure.Storage.xml
