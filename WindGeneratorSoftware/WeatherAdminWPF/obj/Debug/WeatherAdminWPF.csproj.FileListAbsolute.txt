@@ -1,0 +1,15 @@
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\WeatherAdminWPF.exe.config
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\WeatherAdminWPF.exe
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\WeatherAdminWPF.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.csprojResolveAssemblyReference.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\MainWindow.g.cs
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\App.g.cs
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF_MarkupCompile.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF_MarkupCompile.lref
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\MainWindow.baml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.g.resources
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.Properties.Resources.resources
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.csproj.GenerateResource.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.csproj.CoreCompileInputs.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.exe
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.pdb

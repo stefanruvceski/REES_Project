@@ -50,11 +50,5 @@
     <Compile Include="Classes\WindGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WeatherWorkerRoleData\WeatherWorkerRoleData.csproj">
-      <Project>{C578EC12-F342-4BFC-92F4-10ACD76B5D06}</Project>
-      <Name>WeatherWorkerRoleData</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

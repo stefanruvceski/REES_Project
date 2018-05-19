@@ -40,10 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\WeatherBase.cs" />
+    <Compile Include="Classes\WindGeneratorBase.cs" />
     <Compile Include="Classes\WeatherRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherCommon\WeatherCommon.csproj">
+      <Project>{05b8209c-e3af-4e65-8a78-7eeb832f2ce9}</Project>
+      <Name>WeatherCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

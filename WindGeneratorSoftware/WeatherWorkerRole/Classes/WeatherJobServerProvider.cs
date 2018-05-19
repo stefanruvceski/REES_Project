@@ -17,9 +17,12 @@ namespace WeatherWorkerRole.Classes
 {
 	public class WeatherJobServerProvider : IWeather
     {
-        private static Dictionary<string, Weather> weathers = new Dictionary<string, Weather>(); // ne weather nego weather nego windgenerator
+        private static Dictionary<string, WindGenerator> WindGenerators = new Dictionary<string, WindGenerator>()
+        {
+            {"Novi Sad", new WindGenerator(0.35, 10000000, 50, new Weather(), 18, 10,10, new Aggregate()) }
+        };
 
-		public WeatherJobServerProvider(){
+    public WeatherJobServerProvider(){
 
 		}
 
@@ -29,27 +32,21 @@ namespace WeatherWorkerRole.Classes
 
         public void SendWeatherState(Weather weather)
         {
-            if(!weathers.ContainsKey(weather.City))
+            if(WindGenerators.ContainsKey(weather.City))
             {
-                weathers.Add(weather.City, weather);
+                WindGenerators[weather.City].Weather = weather;
                 Trace.WriteLine(weather);
             }
-            else
-            {
-                weathers[weather.City] = weather;
-                Trace.WriteLine(weather);
-            }
-
-            Trace.WriteLine(new WindGenerator(0.35, 10000000, 50, weather, 18, 10).CalculatePower());
+            
         }
 
-        public Weather GetWeather() // ne treba da vraca weather nego windgenerator
+        public WindGenerator GetWeather() // ne treba da vraca weather nego windgenerator
         {
-            Weather retVal = null;
+            WindGenerator retVal = null;
 
-            foreach(Weather weather in weathers.Values)
+            foreach(WindGenerator item in WindGenerators.Values)
             {
-                retVal = weather;
+                retVal = item;
                 break;
             }
 

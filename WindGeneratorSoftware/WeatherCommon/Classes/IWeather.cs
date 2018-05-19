@@ -10,7 +10,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-using WeatherWorkerRoleData.Classes;
 using System.ServiceModel;
 
 namespace WeatherCommon.Classes
@@ -18,7 +17,7 @@ namespace WeatherCommon.Classes
     [ServiceContract]
 	public interface IWeather  {
 
-        // KAKO SLATI WEATHER KAD TABLEENTITY NIJE SERIALIZABLE
+      
 
 
 		/// <summary>
@@ -29,7 +28,7 @@ namespace WeatherCommon.Classes
 		void SendWeatherState(Weather weather);
 
         [OperationContract]
-        Weather GetWeather();
+        WindGenerator GetWeather();
 	}//end IWeather
 
 }//end namespace WeatherCommon
