@@ -1,0 +1,5 @@
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorData\bin\Debug\WeatherReplicatorData.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorData\bin\Debug\WeatherReplicatorData.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.csproj.CoreCompileInputs.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.pdb

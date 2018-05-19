@@ -1,8 +1,8 @@
-﻿@model WeatherCommon.Classes.Weather
+﻿@model WeatherCommon.Classes.WindGenerator
 
 <h1>Weather</h1>
 
-<h2>@Model.City</h2>
-<h2>@Model.MinTemp</h2>
-<h2>@Model.WindSpeed</h2>
+<h2>@Model.Weather.City</h2>
+<h2>@Model.Weather.MinTemp</h2>
+<h2>@Model.Weather.WindSpeed</h2>
 @Html.ActionLink("Update1", "Update1");

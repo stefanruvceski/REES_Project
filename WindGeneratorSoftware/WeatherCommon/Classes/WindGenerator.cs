@@ -10,45 +10,66 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-using WeatherWorkerRoleData.Classes;
 using System.Diagnostics;
+using System.Runtime.Serialization;
 
 namespace WeatherCommon.Classes
 {
+    [DataContract]
     public class WindGenerator
     {
-
         private double coefficient;
-        private double minPower;               // min snaga, kad padne ispod pali se agregat
-        private double turbineDiameter; 
+        private double minPower;
+        private double turbineDiameter;
         private Weather weather;
         private double maxSpeed;
         private int maxSpeedTime;
-        private static int workingTime=0; // ne treba static
-        //dodati instancu agregata
+        private Aggregate aggregate;
+        private double power;
+        private int windMillCnt;
+        private int workingTime = 0;
+
+        [DataMember]
+        public double Coefficient { get => coefficient; set => coefficient = value; }
+        [DataMember]
+        public double MinPower { get => minPower; set => minPower = value; }
+        [DataMember]
+        public double TurbineDiameter { get => turbineDiameter; set => turbineDiameter = value; }
+        [DataMember]
+        public Weather Weather { get => weather; set => weather = value; }
+        [DataMember]
+        public double MaxSpeed { get => maxSpeed; set => maxSpeed = value; }
+        [DataMember]
+        public int MaxSpeedTime { get => maxSpeedTime; set => maxSpeedTime = value; }
+        [DataMember]
+        public Aggregate Aggregate { get => aggregate; set => aggregate = value; }
+        [DataMember]
+        public double Power { get => CalculatePower(); set => power = value; }
+        [DataMember]
+        public int WorkingTime { get => workingTime; set => workingTime = value; }
+        [DataMember]
+        public int WindMillCnt { get => windMillCnt; set => windMillCnt = value; }
 
         public WindGenerator()
         {
 
         }
 
-        public WindGenerator(double coefficient, double minpower, double turbineDiameter, Weather weather, double maxSpeed, int maxSpeedTime)
-        {
-            this.Coefficient = coefficient;
-            this.MinPower = minpower;
-            this.TurbineDiameter = turbineDiameter;
-            this.Weather = weather;
-            this.MaxSpeed = maxSpeed;
-            this.MaxSpeedTime = maxSpeedTime;
-        }
 
-        public double Coefficient { get => coefficient; set => coefficient = value; }
-        public double MinPower { get => minPower; set => minPower = value; }
-        public double TurbineDiameter { get => turbineDiameter; set => turbineDiameter = value; }
-        public Weather Weather { get => weather; set => weather = value; }
-        public double MaxSpeed { get => maxSpeed; set => maxSpeed = value; }
-        public int MaxSpeedTime { get => maxSpeedTime; set => maxSpeedTime = value; }
-        public static  int WorkingTime { get => workingTime; set => workingTime = value; }
+
+        public WindGenerator(double coefficient, double minPower, double turbineDiameter, Weather weather, double maxSpeed, int maxSpeedTime, int windmillcnt, Aggregate aggregate)
+        {
+
+            this.coefficient = coefficient;
+            this.minPower = minPower;
+            this.turbineDiameter = turbineDiameter;
+            this.weather = weather;
+            this.maxSpeed = maxSpeed;
+            this.maxSpeedTime = maxSpeedTime;
+            this.WindMillCnt = windmillcnt;
+            this.aggregate = aggregate;
+            this.power = CalculatePower();
+        }
 
         public double CalculateSurfaceArea()
         {
@@ -59,20 +80,19 @@ namespace WeatherCommon.Classes
         /// Metoda se poziva u okviru nekog while-a, pa ce ovo WorkingTime++ imati nekog smisla
         /// </summary>
         /// <returns></returns>
-        public double CalculatePower()
+        private double CalculatePower()
         {
             double power = 0;
 
             if (Weather.WindSpeed >= MaxSpeed && WorkingTime >= MaxSpeedTime)
             {
                 power = 0;
-                
+
             }
             else if (Weather.WindSpeed >= MaxSpeed && WorkingTime < MaxSpeedTime)
             {
                 power = 0.5 * Coefficient * Weather.AirDensity * CalculateSurfaceArea() * Math.Pow(Weather.WindSpeed, 3);
                 WorkingTime++;
-                Trace.WriteLine(workingTime);
             }
             else
             {
@@ -80,14 +100,12 @@ namespace WeatherCommon.Classes
                 WorkingTime = 0;
             }
 
-            if(workingTime == maxSpeedTime+(maxSpeedTime/2)) // cooling period
+            if (WorkingTime == MaxSpeedTime + (MaxSpeedTime / 2)) // cooling period
             {
-                workingTime = 0;
+                WorkingTime = 0;
             }
-
             return power;
         }
-
     }//end WindGenerator
 
 }//end namespace WeatherCommon

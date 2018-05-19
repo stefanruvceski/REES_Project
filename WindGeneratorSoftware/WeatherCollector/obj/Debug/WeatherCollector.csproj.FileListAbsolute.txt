@@ -1,0 +1,12 @@
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCollector\bin\Debug\WeatherCollector.exe.config
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCollector\bin\Debug\WeatherCollector.exe
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCollector\bin\Debug\WeatherCollector.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCollector\bin\Debug\WeatherCommon.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCollector\bin\Debug\WeatherWorkerRoleData.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCollector\bin\Debug\WeatherCommon.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCollector\bin\Debug\WeatherWorkerRoleData.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCollector\obj\Debug\WeatherCollector.csprojResolveAssemblyReference.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCollector\obj\Debug\WeatherCollector.csproj.CoreCompileInputs.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCollector\obj\Debug\WeatherCollector.csproj.CopyComplete
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCollector\obj\Debug\WeatherCollector.exe
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCollector\obj\Debug\WeatherCollector.pdb

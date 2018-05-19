@@ -1,0 +1,9 @@
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRoleData\bin\Debug\WeatherWorkerRoleData.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRoleData\bin\Debug\WeatherWorkerRoleData.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRoleData\bin\Debug\WeatherCommon.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRoleData\bin\Debug\WeatherCommon.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRoleData\obj\Debug\WeatherWorkerRoleData.csprojResolveAssemblyReference.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRoleData\obj\Debug\WeatherWorkerRoleData.csproj.CoreCompileInputs.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRoleData\obj\Debug\WeatherWorkerRoleData.csproj.CopyComplete
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRoleData\obj\Debug\WeatherWorkerRoleData.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRoleData\obj\Debug\WeatherWorkerRoleData.pdb

@@ -27,7 +27,7 @@ namespace WeatherWebRole.Controllers
 
         
 
-        public Weather Update()
+        public WindGenerator Update()
         {
             var binding = new NetTcpBinding();
             IPEndPoint ipAddress = RoleEnvironment.Roles["WeatherWorkerRole"].Instances[0].InstanceEndpoints["InternalRequest"].IPEndpoint;
