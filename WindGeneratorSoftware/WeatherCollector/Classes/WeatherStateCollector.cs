@@ -19,7 +19,7 @@ namespace WeatherCollector.Classes {
 	public class WeatherStateCollector {
 
 		private IWeather proxy;
-		private Dictionary<string,Weather> weatherStates;
+		private Dictionary<string, Weather> weatherStates;
         private static List<string> URLs = new List<string>() { "http://api.openweathermap.org/data/2.5/weather?q=Novi%20Sad&appid=fdcdcf4845c441392a458b8dce7007c2" };
         
         public WeatherStateCollector(){

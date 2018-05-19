@@ -71,7 +71,7 @@ namespace WeatherCommon.Classes
             this.power = CalculatePower();
         }
 
-        public double CalculateSurfaceArea()
+        private double CalculateSurfaceArea()
         {
             return Math.Pow((TurbineDiameter / 2), 2) * Math.PI;
         }

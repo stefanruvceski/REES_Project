@@ -61,3 +61,4 @@ D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorke
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\obj\Debug\WeatherWorkerRole.csproj.CopyComplete
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\obj\Debug\WeatherWorkerRole.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\obj\Debug\WeatherWorkerRole.pdb
+E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\Microsoft.WindowsAzure.Storage.dll
