@@ -1,4 +1,3 @@
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\Microsoft.WindowsAzure.Storage.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\WeatherWorkerRole.dll.config
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\WeatherWorkerRole.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\WeatherWorkerRole.pdb

@@ -24,7 +24,7 @@ namespace WeatherWorkerRoleData.Classes
         public WindMillBase(double coefficient, double minPower, double turbineDiameter, double maxSpeed, int maxSpeedTime)
         {
             PartitionKey = "WindMill";
-            RowKey =( ++Id).ToString();
+            RowKey = (++Id).ToString();
             this.coefficient = coefficient;
             this.minPower = minPower;
             this.turbineDiameter = turbineDiameter;

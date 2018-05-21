@@ -1,8 +1,3 @@
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ru\System.Spatial.resources.dll
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hans\System.Spatial.resources.dll
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hant\System.Spatial.resources.dll
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.csproj.CoreCompileInputs.cache
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ApplicationInsights.config
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\WeatherWebRole.dll.config
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\WeatherWebRole.dll
