@@ -14,6 +14,7 @@ using System.ServiceModel;
 using Microsoft.WindowsAzure.ServiceRuntime;
 using WeatherCommon.Classes;
 using System.Diagnostics;
+using WeatherWorkerRoleData.Classes;
 
 namespace WeatherWorkerRole.Classes
 {
@@ -30,6 +31,8 @@ namespace WeatherWorkerRole.Classes
 
             serviceHost = new ServiceHost(typeof(WeatherJobServerProvider));
             serviceHost.AddServiceEndpoint(typeof(IWeather), binding, endpoint);
+
+            WindMillRepository windMillRepository = new WindMillRepository();
 		}
 
         public void Open()

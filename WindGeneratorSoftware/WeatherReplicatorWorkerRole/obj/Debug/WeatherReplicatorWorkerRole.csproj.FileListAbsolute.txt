@@ -54,7 +54,6 @@ D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherRepli
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorWorkerRole\bin\Debug\ru\System.Spatial.resources.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorWorkerRole\bin\Debug\zh-Hans\System.Spatial.resources.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorWorkerRole\bin\Debug\zh-Hant\System.Spatial.resources.dll
-D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorWorkerRole\obj\Debug\WeatherReplicatorWorkerRole.csprojResolveAssemblyReference.cache
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorWorkerRole\obj\Debug\WeatherReplicatorWorkerRole.csproj.CoreCompileInputs.cache
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorWorkerRole\obj\Debug\WeatherReplicatorWorkerRole.csproj.CopyComplete
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorWorkerRole\obj\Debug\WeatherReplicatorWorkerRole.dll

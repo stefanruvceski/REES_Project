@@ -18,35 +18,21 @@ namespace WeatherCommon.Classes
     [DataContract]
     public class WindGenerator
     {
-        private double coefficient;
-        private double minPower;
-        private double turbineDiameter;
+        
         private Weather weather;
-        private double maxSpeed;
-        private int maxSpeedTime;
+        private WindMill windMill;
+        private int windMillCnt;
         private Aggregate aggregate;
         private double power;
-        private int windMillCnt;
-        private int workingTime = 0;
 
-        [DataMember]
-        public double Coefficient { get => coefficient; set => coefficient = value; }
-        [DataMember]
-        public double MinPower { get => minPower; set => minPower = value; }
-        [DataMember]
-        public double TurbineDiameter { get => turbineDiameter; set => turbineDiameter = value; }
         [DataMember]
         public Weather Weather { get => weather; set => weather = value; }
         [DataMember]
-        public double MaxSpeed { get => maxSpeed; set => maxSpeed = value; }
-        [DataMember]
-        public int MaxSpeedTime { get => maxSpeedTime; set => maxSpeedTime = value; }
+        public WindMill WindMill { get => windMill; set => windMill = value; }
         [DataMember]
         public Aggregate Aggregate { get => aggregate; set => aggregate = value; }
         [DataMember]
         public double Power { get => CalculatePower(); set => power = value; }
-        [DataMember]
-        public int WorkingTime { get => workingTime; set => workingTime = value; }
         [DataMember]
         public int WindMillCnt { get => windMillCnt; set => windMillCnt = value; }
 
@@ -55,56 +41,45 @@ namespace WeatherCommon.Classes
 
         }
 
-
-
-        public WindGenerator(double coefficient, double minPower, double turbineDiameter, Weather weather, double maxSpeed, int maxSpeedTime, int windmillcnt, Aggregate aggregate)
+        public WindGenerator(Weather weather, WindMill windMill, int windMillCnt, Aggregate aggregate)
         {
-
-            this.coefficient = coefficient;
-            this.minPower = minPower;
-            this.turbineDiameter = turbineDiameter;
             this.weather = weather;
-            this.maxSpeed = maxSpeed;
-            this.maxSpeedTime = maxSpeedTime;
-            this.WindMillCnt = windmillcnt;
+            this.windMill = windMill;
+            this.windMillCnt = windMillCnt;
             this.aggregate = aggregate;
             this.power = CalculatePower();
         }
 
-        private double CalculateSurfaceArea()
-        {
-            return Math.Pow((TurbineDiameter / 2), 2) * Math.PI;
-        }
-
-        /// <summary>
-        /// Metoda se poziva u okviru nekog while-a, pa ce ovo WorkingTime++ imati nekog smisla
-        /// </summary>
-        /// <returns></returns>
         private double CalculatePower()
         {
             double power = 0;
 
-            if (Weather.WindSpeed >= MaxSpeed && WorkingTime >= MaxSpeedTime)
+            if (Weather.WindSpeed >= WindMill.MaxSpeed && WindMill.WorkingTime >= WindMill.MaxSpeedTime)
             {
                 power = 0;
 
             }
-            else if (Weather.WindSpeed >= MaxSpeed && WorkingTime < MaxSpeedTime)
+            else if (Weather.WindSpeed >= WindMill.MaxSpeed && WindMill.WorkingTime < WindMill.MaxSpeedTime)
             {
-                power = 0.5 * Coefficient * Weather.AirDensity * CalculateSurfaceArea() * Math.Pow(Weather.WindSpeed, 3);
-                WorkingTime++;
+                power = 0.5 * WindMill.Coefficient * Weather.AirDensity * CalculateSurfaceArea() * Math.Pow(Weather.WindSpeed, 3);
+                WindMill.WorkingTime++;
             }
             else
             {
-                power = 0.5 * Coefficient * Weather.AirDensity * CalculateSurfaceArea() * Math.Pow(Weather.WindSpeed, 3);
-                WorkingTime = 0;
+                power = 0.5 * WindMill.Coefficient * Weather.AirDensity * CalculateSurfaceArea() * Math.Pow(Weather.WindSpeed, 3);
+                WindMill.WorkingTime = 0;
             }
 
-            if (WorkingTime == MaxSpeedTime + (MaxSpeedTime / 2)) // cooling period
+            if (WindMill.WorkingTime == WindMill.MaxSpeedTime + (WindMill.MaxSpeedTime / 2)) // cooling period
             {
-                WorkingTime = 0;
+                WindMill.WorkingTime = 0;
             }
             return power;
+        }
+
+        private double CalculateSurfaceArea()
+        {
+            return Math.Pow((WindMill.TurbineDiameter / 2), 2) * Math.PI;
         }
     }//end WindGenerator
 

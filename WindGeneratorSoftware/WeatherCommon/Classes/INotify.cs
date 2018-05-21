@@ -10,15 +10,16 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-
-
+using System.ServiceModel;
 
 namespace WeatherCommon.Classes
 {
+    [ServiceContract]
 	public interface INotify  {
 
 		/// 
 		/// <param name="weatherName"></param>
+        [OperationContract]
 		bool NotifyWeatherStateChanged(string weatherName);
 	}//end INotify
 
