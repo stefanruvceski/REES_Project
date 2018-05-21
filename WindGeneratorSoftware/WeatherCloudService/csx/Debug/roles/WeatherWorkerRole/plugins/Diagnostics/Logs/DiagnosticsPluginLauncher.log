@@ -1,0 +1,27 @@
+<<<<<<< HEAD
+DiagnosticsPluginLauncher.exe Information: 0 : [5/20/2018 12:33:01 PM] At least one other instance of the launcher is running. Will wait until they all finish
+DiagnosticsPluginLauncher.exe Information: 0 : [5/20/2018 12:33:01 PM] Service running in Emulator Mode, will not wait/kill other instances of the launcher
+DiagnosticsPluginLauncher.exe Information: 0 : [5/20/2018 12:33:01 PM] Emulator config file set to D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/20/2018 12:33:01 PM] DiagnosticsStoreRootPath set to: C:\Users\Stefan\AppData\Local\dftmp\Resources\d415c5cb-b897-4624-8cf3-15f70ece47a1
+DiagnosticsPluginLauncher.exe Information: 0 : [5/20/2018 12:33:01 PM] Loading config file: D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/20/2018 12:33:01 PM] Config file to read: D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/20/2018 12:33:01 PM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [5/20/2018 12:33:01 PM] Emulator config file set to D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/20/2018 12:33:01 PM] Extension set to Emulator Mode
+=======
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] At least one other instance of the launcher is running. Will wait until they all finish
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Service running in Emulator Mode, will not wait/kill other instances of the launcher
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Emulator config file set to D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] DiagnosticsStoreRootPath set to: D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Loading config file: D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Config file to read: D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Emulator config file set to D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Found a DiagnosticsPlugin.exe. WadArguments: "D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWebRole\plugins\Diagnostics\DiagnosticsPlugin.exe" DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5.
+>>>>>>> d5106c710d0f5424423a812fd87e94f0ff0769c2

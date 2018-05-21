@@ -1,0 +1,19 @@
+<<<<<<< HEAD
+DiagnosticsPluginLauncher.exe Information: 0 : [5/20/2018 12:33:01 PM] At least one other instance of the launcher is running. Will wait until they all finish
+=======
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:49 AM] Emulator config file set to D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherReplicatorWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:49 AM] DiagnosticsStoreRootPath set to: D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherReplicatorWorkerRole\approot
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:49 AM] Loading config file: D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherReplicatorWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:49 AM] Config file to read: D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherReplicatorWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:49 AM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:49 AM] Emulator config file set to D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherReplicatorWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:49 AM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:49 AM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:49 AM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:49 AM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2018 10:51:50 AM] Resetting DiagnosticPlugin
+>>>>>>> d5106c710d0f5424423a812fd87e94f0ff0769c2
