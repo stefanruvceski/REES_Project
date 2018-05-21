@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
@@ -14,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WeatherCommon.Classes;
+using WeatherWorkerRoleData.Classes;
 
 namespace WeatherAdminWPF
 {
@@ -23,8 +25,17 @@ namespace WeatherAdminWPF
     public partial class MainWindow : Window
     {
         ServiceHost sh;
+        WindGeneratorRepository repository = new WindGeneratorRepository();
+
+        // nazvao sam sa _ jer ima vec u kodu WindGenerators, da ne rizikujem da se Binding pogubi
+        // ako stavim WindGenerator, a ne WindGeneratorBase, nece moci da se lista progura kroz konstruktor binding liste
+        public static BindingList<WindGeneratorBase> Wind_Generators { get; set; }      
+
         public MainWindow()
         {
+            Wind_Generators = new BindingList<WindGeneratorBase>(repository.GetAllRequest());
+            DataContext = this;
+
             InitializeComponent();
             CreateServiceHost();
         }
@@ -34,8 +45,6 @@ namespace WeatherAdminWPF
             sh = new ServiceHost(typeof(WeatherAdminWPF.Classes.Admin));
             sh.AddServiceEndpoint(typeof(INotify), new NetTcpBinding(), "net.tcp://localhost:11001/Inotify");
             sh.Open();
-            
-
         }
     }
 }

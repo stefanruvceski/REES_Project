@@ -18,9 +18,10 @@ namespace WeatherWorkerRoleData.Classes
         public WindMillRepository()
         {
             _storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("WindMillDataConnectionString"));
-            CloudTableClient tableClient = new CloudTableClient(new
-           Uri(_storageAccount.TableEndpoint.AbsoluteUri), _storageAccount.Credentials);
+            CloudTableClient tableClient = new CloudTableClient(new Uri(_storageAccount.TableEndpoint.AbsoluteUri),
+                                                                _storageAccount.Credentials);
             _table = tableClient.GetTableReference("WindMillTable");
+
             if (!created)
             {
                 _table.CreateIfNotExists();
