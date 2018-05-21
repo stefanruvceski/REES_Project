@@ -10,20 +10,27 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-
-
+using WeatherCommon.Classes;
+using System.ServiceModel;
 
 namespace WeatherAdminWPF.Classes {
-	public class Admin {
+	public class Admin : INotify {
 
 		public Admin(){
-
+            
 		}
 
 		~Admin(){
 
 		}
 
-	}//end Admin
+        public bool NotifyWeatherStateChanged(string weatherName)
+        {
+            if (weatherName.Equals("Novi Sad"))
+                return true;
+            else
+                return false;   
+        }
+    }//end Admin
 
 }//end namespace WeatherAdminWPF

@@ -72,8 +72,17 @@ namespace WeatherWorkerRole
             // TODO: Replace the following with your own logic.
             while (!cancellationToken.IsCancellationRequested)
             {
-                Trace.TraceInformation("Working");
-                await Task.Delay(1000);
+                try
+                {
+                    if (INotifyProxy.Proxy.NotifyWeatherStateChanged("Novi Sad"))
+                        Trace.WriteLine("Aggregate ON");
+                    else
+                        Trace.WriteLine("Aggregate OFF");
+
+                    Trace.TraceInformation("Working");
+                }
+                catch (Exception) { }
+                await Task.Delay(5000);
             }
         }
     }

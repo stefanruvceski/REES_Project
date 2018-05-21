@@ -3,6 +3,8 @@
   <WorkerRole name="WeatherWorkerRole" vmsize="Small">
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+      <Setting name="WindMillDataConnectionString" />
+      <Setting name="WindGeneratorDataConnectionString" />
     </ConfigurationSettings>
     <Endpoints>
       <InputEndpoint name="InputRequest" protocol="tcp" port="11000" />

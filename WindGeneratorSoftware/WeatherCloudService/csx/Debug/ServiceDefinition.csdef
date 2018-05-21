@@ -28,6 +28,11 @@
     </LocalResources>
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+<<<<<<< HEAD
+=======
+      <Setting name="WindGeneratorDataConnectionString" />
+      <Setting name="WindMillDataConnectionString" />
+>>>>>>> d5106c710d0f5424423a812fd87e94f0ff0769c2
     </ConfigurationSettings>
     <Endpoints>
       <InputEndpoint name="InputRequest" protocol="tcp" port="11000" localPort="11000" />

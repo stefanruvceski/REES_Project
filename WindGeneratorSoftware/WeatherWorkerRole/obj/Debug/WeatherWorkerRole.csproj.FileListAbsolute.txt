@@ -1,3 +1,4 @@
+E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\Microsoft.WindowsAzure.Storage.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\WeatherWorkerRole.dll.config
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\WeatherWorkerRole.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\WeatherWorkerRole.pdb
@@ -10,8 +11,12 @@ D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorke
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\Newtonsoft.Json.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\System.Spatial.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\WeatherCommon.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\WeatherWorkerRoleData.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\MonAgentListener.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\WeatherCommon.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\WeatherWorkerRoleData.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\WeatherWorkerRoleData.dll.config
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\Microsoft.Data.Edm.xml
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\Microsoft.Data.OData.xml
@@ -20,6 +25,7 @@ D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorke
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\Microsoft.WindowsAzure.Storage.xml
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\Newtonsoft.Json.xml
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\System.Spatial.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\de\Microsoft.Data.Edm.resources.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\es\Microsoft.Data.Edm.resources.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
@@ -61,4 +67,3 @@ D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorke
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\obj\Debug\WeatherWorkerRole.csproj.CopyComplete
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\obj\Debug\WeatherWorkerRole.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\obj\Debug\WeatherWorkerRole.pdb
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWorkerRole\bin\Debug\Microsoft.WindowsAzure.Storage.dll
