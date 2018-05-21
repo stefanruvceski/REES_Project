@@ -1,0 +1,15 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.56] Emulator config file set to E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.56] DiagnosticsStoreRootPath set to: E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.56] Loading config file: E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.56] Config file to read: E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.56] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.56] Emulator config file set to E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherCloudService\csx\Debug\roles\WeatherWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.56] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.56] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.56] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.56] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.57] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.57] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.57] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.57] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [21.5.2018. 23.54.57] Resetting DiagnosticPlugin
