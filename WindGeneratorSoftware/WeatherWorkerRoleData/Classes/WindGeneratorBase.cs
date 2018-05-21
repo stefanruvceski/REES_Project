@@ -16,86 +16,73 @@ using Microsoft.WindowsAzure.Storage.Table;
 namespace WeatherWorkerRoleData.Classes
 {
 	public class WindGeneratorBase : TableEntity
-    { 
+    {
 
-        private double coefficient;
-        private double minPower;
-        private double turbineDiameter;
-        private Weather weather;
-        private double maxSpeed;
-        private int maxSpeedTime;
-        private Aggregate aggregate;
-        private double power;
+        private string weather;
+        private string windMill;
         private int windMillCnt;
-        private int workingTime = 0;
+        private string aggregate;
+        private double power;
 
-        public double Coefficient { get => coefficient; set => coefficient = value; }
-        public double MinPower { get => minPower; set => minPower = value; }
-        public double TurbineDiameter { get => turbineDiameter; set => turbineDiameter = value; }
-        public Weather Weather { get => weather; set => weather = value; }
-        public double MaxSpeed { get => maxSpeed; set => maxSpeed = value; }
-        public int MaxSpeedTime { get => maxSpeedTime; set => maxSpeedTime = value; }
-        public Aggregate Aggregate { get => aggregate; set => aggregate = value; }
-        public double Power { get => CalculatePower(); set => power = value; }
-        public int WorkingTime { get => workingTime; set => workingTime = value; }
-        public int WindMillCnt { get => windMillCnt; set => windMillCnt = value; }
+        
 
         public WindGeneratorBase()
         {
 
         }
 
+       
 
-
-        public WindGeneratorBase(double coefficient, double minPower, double turbineDiameter, Weather weather, double maxSpeed, int maxSpeedTime,int windmillcnt, Aggregate aggregate)
+        public WindGeneratorBase(string weather, string windMill, int windMillCnt, string aggregate)
         {
             PartitionKey = "WindGenerator";
-            RowKey =  weather.City;
-            this.coefficient = coefficient;
-            this.minPower = minPower;
-            this.turbineDiameter = turbineDiameter;
+            RowKey = weather;
             this.weather = weather;
-            this.maxSpeed = maxSpeed;
-            this.maxSpeedTime = maxSpeedTime;
-            this.WindMillCnt = windmillcnt;
+            this.windMill = windMill;
+            this.windMillCnt = windMillCnt;
             this.aggregate = aggregate;
-            this.power = CalculatePower();
+            
         }
 
-        public double CalculateSurfaceArea()
-        {
-            return Math.Pow((TurbineDiameter / 2), 2) * Math.PI;
-        }
+        public string Weather { get => weather; set => weather = value; }
+        public string WindMill { get => windMill; set => windMill = value; }
+        public int WindMillCnt { get => windMillCnt; set => windMillCnt = value; }
+        public string Aggregate { get => aggregate; set => aggregate = value; }
+        public double Power { get => power; set => power = value; }
 
-        /// <summary>
-        /// Metoda se poziva u okviru nekog while-a, pa ce ovo WorkingTime++ imati nekog smisla
-        /// </summary>
-        /// <returns></returns>
         private double CalculatePower()
         {
+
+            WeatherBase weatherBase = new WeatherRepository().GetOneWeather(Weather);
+            WindMillBase windMillBase = new WindMillRepository().GetOneWindMill(WindMill);
+            WeatherRepository weatherRepository = new WeatherRepository();
             double power = 0;
 
-            if (Weather.WindSpeed >= MaxSpeed && WorkingTime >= MaxSpeedTime)
+            if(weatherBase.WindSpeed >= windMillBase.MaxSpeed && windMillBase.WorkingTime >= windMillBase.MaxSpeedTime)
             {
                 power = 0;
 
             }
-            else if (Weather.WindSpeed >= MaxSpeed && WorkingTime < MaxSpeedTime)
+            else if (weatherBase.WindSpeed >= windMillBase.MaxSpeed && windMillBase.WorkingTime < windMillBase.MaxSpeedTime)
             {
-                power = 0.5 * Coefficient * Weather.AirDensity * CalculateSurfaceArea() * Math.Pow(Weather.WindSpeed, 3);
-                WorkingTime++;
+                power = 0.5 * windMillBase.Coefficient * weatherBase.AirDensity * CalculateSurfaceArea(windMillBase) * Math.Pow(weatherBase.WindSpeed, 3);
+                windMillBase.WorkingTime++;
             }
             else
             {
-                power = 0.5 * Coefficient * Weather.AirDensity * CalculateSurfaceArea() * Math.Pow(Weather.WindSpeed, 3);
-                WorkingTime = 0;
+                power = 0.5 * windMillBase.Coefficient * weatherBase.AirDensity * CalculateSurfaceArea(windMillBase) * Math.Pow(weatherBase.WindSpeed, 3);
+                windMillBase.WorkingTime = 0;
             }
 
-            if (WorkingTime == MaxSpeedTime + (MaxSpeedTime / 2)) // cooling period
+            if (windMillBase.WorkingTime == windMillBase.MaxSpeedTime + (windMillBase.MaxSpeedTime / 2)) // cooling period
             {
-                WorkingTime = 0;
+                windMillBase.WorkingTime = 0;
             }
             return power;
+        }
+        private double CalculateSurfaceArea(WindMillBase windMillBase)
+        {
+            return Math.Pow((windMillBase.TurbineDiameter / 2), 2) * Math.PI;
         }
     }//end Weather
 

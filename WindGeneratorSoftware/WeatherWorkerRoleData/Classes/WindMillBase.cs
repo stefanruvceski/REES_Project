@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WeatherWorkerRoleData.Classes
 {
-    class WindMillBase : TableEntity
+    public class WindMillBase : TableEntity
     {
         private static int id = 0;
         private double coefficient;

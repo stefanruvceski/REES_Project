@@ -25,7 +25,7 @@ namespace WeatherAdminWPF
     public partial class MainWindow : Window
     {
         ServiceHost sh;
-        WindGeneratorRepository repository = new WindGeneratorRepository();
+        
 
         // nazvao sam sa _ jer ima vec u kodu WindGenerators, da ne rizikujem da se Binding pogubi
         // ako stavim WindGenerator, a ne WindGeneratorBase, nece moci da se lista progura kroz konstruktor binding liste
@@ -33,11 +33,14 @@ namespace WeatherAdminWPF
 
         public MainWindow()
         {
-            Wind_Generators = new BindingList<WindGeneratorBase>(repository.GetAllRequest());
+            
             DataContext = this;
 
             InitializeComponent();
             CreateServiceHost();
+
+            WindGeneratorRepository repository = new WindGeneratorRepository();
+            Wind_Generators = new BindingList<WindGeneratorBase>(repository.GetAllWindGenerators());
         }
 
         private void CreateServiceHost()

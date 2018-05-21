@@ -23,6 +23,11 @@ namespace WeatherCommon.Classes
 
         }
 
+        public Weather(string city)
+        {
+            this.city = city;
+        }
+
         public Weather(string city, string description, double maxTemp, double minTemp, double pressure, double windSpeed)
         {
             this.City = city;

@@ -12,11 +12,15 @@ using System.Text;
 using System.IO;
 using WeatherCommon.Classes;
 using System.Diagnostics;
+using WeatherWorkerRoleData.Classes;
 
 namespace WeatherWorkerRole.Classes
 {
 	public class WeatherJobServerProvider : IWeather
     {
+        WindGeneratorRepository windGeneratorRepository = new WindGeneratorRepository();
+        WeatherRepository weatherRepository = new WeatherRepository();
+
         private static Dictionary<string, WindGenerator> WindGenerators = new Dictionary<string, WindGenerator>()
         {
             {"Novi Sad", new WindGenerator(new Weather(),new WindMill(),10,new Aggregate()) }
@@ -32,12 +36,15 @@ namespace WeatherWorkerRole.Classes
 
         public void SendWeatherState(Weather weather)
         {
-            if(WindGenerators.ContainsKey(weather.City))
+            if (weatherRepository.GetAllWeathers().Count != 0)
             {
-                WindGenerators[weather.City].Weather = weather;
-                Trace.WriteLine(weather);
+                if (!weatherRepository.GetOneWeather(weather.City).WindSpeed.Equals(weather.WindSpeed))
+                    weatherRepository.AddWeather(new WeatherBase(weather));
             }
-            
+            else
+            {
+                weatherRepository.AddWeather(new WeatherBase(weather));
+            }
         }
 
         public WindGenerator GetWeather() // ne treba da vraca weather nego windgenerator
