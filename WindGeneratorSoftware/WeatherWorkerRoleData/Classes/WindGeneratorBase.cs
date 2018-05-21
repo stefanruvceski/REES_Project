@@ -11,10 +11,12 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using WeatherCommon.Classes;
+using Microsoft.WindowsAzure.Storage.Table;
 
 namespace WeatherWorkerRoleData.Classes
 {
-	public class WindGeneratorBase  { // :TableEntity
+	public class WindGeneratorBase : TableEntity
+    { 
 
         private double coefficient;
         private double minPower;
@@ -47,8 +49,8 @@ namespace WeatherWorkerRoleData.Classes
 
         public WindGeneratorBase(double coefficient, double minPower, double turbineDiameter, Weather weather, double maxSpeed, int maxSpeedTime,int windmillcnt, Aggregate aggregate)
         {
-            //PartitionKey = "WindGenerator";
-            //RowKey =  weather.City;
+            PartitionKey = "WindGenerator";
+            RowKey =  weather.City;
             this.coefficient = coefficient;
             this.minPower = minPower;
             this.turbineDiameter = turbineDiameter;

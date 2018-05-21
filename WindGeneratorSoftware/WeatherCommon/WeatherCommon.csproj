@@ -48,6 +48,7 @@
     <Compile Include="Classes\IWeather.cs" />
     <Compile Include="Classes\Weather.cs" />
     <Compile Include="Classes\WindGenerator.cs" />
+    <Compile Include="Classes\WindMill.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

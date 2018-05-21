@@ -216,6 +216,7 @@ D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloud
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\Microsoft.Data.Edm.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\Microsoft.Data.OData.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\Microsoft.Data.Services.Client.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\Microsoft.WindowsAzure.Configuration.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\Microsoft.WindowsAzure.Diagnostics.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\Microsoft.WindowsAzure.Storage.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\Microsoft.WindowsAzure.Storage.pdb
@@ -231,6 +232,8 @@ D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloud
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\WeatherWorkerRole.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\WeatherWorkerRole.dll.config
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\WeatherWorkerRole.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\WeatherWorkerRoleData.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\WeatherWorkerRoleData.pdb
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\zh-Hans\Microsoft.Data.Edm.resources.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\zh-Hans\Microsoft.Data.OData.resources.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\obj\Debug\WeatherWorkerRole\zh-Hans\Microsoft.Data.Services.Client.resources.dll

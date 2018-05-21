@@ -19,7 +19,7 @@ namespace WeatherWorkerRole.Classes
     {
         private static Dictionary<string, WindGenerator> WindGenerators = new Dictionary<string, WindGenerator>()
         {
-            {"Novi Sad", new WindGenerator(0.35, 10000000, 50, new Weather(), 18, 10,10, new Aggregate()) }
+            {"Novi Sad", new WindGenerator(new Weather(),new WindMill(),10,new Aggregate()) }
         };
 
     public WeatherJobServerProvider(){
