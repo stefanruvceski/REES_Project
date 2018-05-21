@@ -12,11 +12,8 @@
   <WorkerRole name="WeatherWorkerRole" vmsize="Small">
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
-<<<<<<< HEAD
-=======
       <Setting name="WindMillDataConnectionString" />
       <Setting name="WindGeneratorDataConnectionString" />
->>>>>>> d5106c710d0f5424423a812fd87e94f0ff0769c2
     </ConfigurationSettings>
     <Endpoints>
       <InputEndpoint name="InputRequest" protocol="tcp" port="11000" />
@@ -26,13 +23,7 @@
       <Content destination=".\">
         <SourceDirectory path="D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\rcf\Debug\WeatherWorkerRoleContent\" />
       </Content>
-      <Content destination=".\">
-        <SourceDirectory path="D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\ecf\WeatherWorkerRoleContent\" />
-      </Content>
     </Contents>
-    <Imports>
-      <Import moduleName="Diagnostics" />
-    </Imports>
   </WorkerRole>
   <WorkerRole name="WeatherReplicatorWorkerRole" vmsize="Small">
     <ConfigurationSettings>
@@ -42,13 +33,7 @@
       <Content destination=".\">
         <SourceDirectory path="D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\rcf\Debug\WeatherReplicatorWorkerRoleContent\" />
       </Content>
-      <Content destination=".\">
-        <SourceDirectory path="D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\ecf\WeatherReplicatorWorkerRoleContent\" />
-      </Content>
     </Contents>
-    <Imports>
-      <Import moduleName="Diagnostics" />
-    </Imports>
   </WorkerRole>
   <WebRole name="WeatherWebRole" vmsize="Small">
     <Sites>
@@ -68,12 +53,6 @@
       <Content destination=".\">
         <SourceDirectory path="D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\rcf\Debug\WeatherWebRoleContent\" />
       </Content>
-      <Content destination=".\">
-        <SourceDirectory path="D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCloudService\ecf\WeatherWebRoleContent\" />
-      </Content>
     </Contents>
-    <Imports>
-      <Import moduleName="Diagnostics" />
-    </Imports>
   </WebRole>
 </ServiceDefinition>

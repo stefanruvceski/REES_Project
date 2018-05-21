@@ -13,11 +13,8 @@
     <Instances count="1" />
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
-<<<<<<< HEAD
-=======
       <Setting name="WindMillDataConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="WindGeneratorDataConnectionString" value="UseDevelopmentStorage=true" />
->>>>>>> d5106c710d0f5424423a812fd87e94f0ff0769c2
     </ConfigurationSettings>
   </Role>
   <Role name="WeatherReplicatorWorkerRole">

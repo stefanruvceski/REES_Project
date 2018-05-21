@@ -71,6 +71,8 @@ namespace WeatherCollector.Classes {
                 weatherStates.Add(w.City, w);
             else
                 weatherStates[w.City] = w;
+
+            Console.WriteLine(w);
         }
 
 		public void SendStatesToWorkerRole(){
