@@ -52,6 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\AggregateBase.cs" />
+    <Compile Include="Classes\AggregateRepository.cs" />
+    <Compile Include="Classes\WeatherBase.cs" />
+    <Compile Include="Classes\WeatherRepository.cs" />
     <Compile Include="Classes\WindGeneratorBase.cs" />
     <Compile Include="Classes\WindGeneratorRepository.cs" />
     <Compile Include="Classes\WindMillBase.cs" />

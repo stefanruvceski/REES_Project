@@ -60,7 +60,7 @@ namespace WeatherCollector.Classes {
                     case @"""name""": w.City = p[1].Replace('"', ' ').Trim(); break;
                     case @"""description""": w.Description = p[1].Replace('"', ' ').Trim(); break;
                     case @"""pressure""": w.Pressure = int.Parse(p[1].Replace('"', ' ').Trim()); break;
-                    case @"""wind""": w.WindSpeed = double.Parse(p[2].Replace('"', ' ').Replace('}',' ').Trim()) + 18; break;
+                    case @"""wind""": w.WindSpeed = double.Parse(p[2].Replace('"', ' ').Replace('}',' ').Trim()) + new Random().NextDouble(); break;
                     case @"""temp_min""": w.MinTemp = double.Parse(p[1].Replace('}', ' ').Trim())-273.15; break;
                     case @"""temp_max""": w.MaxTemp = double.Parse(p[1].Replace('}', ' ').Trim()) - 273.15; break;
                     default:
@@ -71,6 +71,8 @@ namespace WeatherCollector.Classes {
                 weatherStates.Add(w.City, w);
             else
                 weatherStates[w.City] = w;
+
+            Console.WriteLine(w);
         }
 
 		public void SendStatesToWorkerRole(){

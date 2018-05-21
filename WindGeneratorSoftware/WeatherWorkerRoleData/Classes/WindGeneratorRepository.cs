@@ -14,6 +14,7 @@ using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
 using Microsoft.Azure;
 using System.Linq;
+using WeatherCommon.Classes;
 
 namespace WeatherWorkerRoleData.Classes
 {
@@ -21,14 +22,32 @@ namespace WeatherWorkerRoleData.Classes
 
         private CloudStorageAccount _storageAccount;
         private CloudTable _table;
+        private static bool isCreated = false;
 
         public WindGeneratorRepository(){
             _storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("WindGeneratorDataConnectionString"));
             CloudTableClient tableClient = new CloudTableClient(new
            Uri(_storageAccount.TableEndpoint.AbsoluteUri), _storageAccount.Credentials);
             _table = tableClient.GetTableReference("WindGeneratorTable");
-            _table.CreateIfNotExists();
+            if (!isCreated)
+            {
+                _table.CreateIfNotExists();
+                InitWindGenerators();
+            }
         }
+
+        private void InitWindGenerators()
+        {
+            TableBatchOperation batchOperation = new TableBatchOperation();
+
+            WindGeneratorBase w1 = new WindGeneratorBase("Novi Sad","1",10,"1");
+
+            batchOperation.InsertOrReplace(w1);
+
+            _table.ExecuteBatch(batchOperation);
+        }
+
+        
         public void AddOrReplaceWindGenerator(WindGeneratorBase windGenerator)
         {
             TableOperation add = TableOperation.InsertOrReplace(windGenerator);
@@ -36,7 +55,7 @@ namespace WeatherWorkerRoleData.Classes
 
         }
 
-        public List<WindGeneratorBase> GetAllRequest()
+        public List<WindGeneratorBase> GetAllWindGenerators()
         {
             IQueryable<WindGeneratorBase> requests = from g in _table.CreateQuery<WindGeneratorBase>()
                                                     where g.PartitionKey == "WindGenerator"
@@ -44,7 +63,7 @@ namespace WeatherWorkerRoleData.Classes
             return requests.ToList();
         }
 
-        public WindGeneratorBase GetOneRequest(string city)
+        public WindGeneratorBase GetOneWindGenerator(string city)
         {
             IQueryable<WindGeneratorBase> requests = from g in _table.CreateQuery<WindGeneratorBase>()
                                                     where g.PartitionKey == "WindGenerator" && g.RowKey == city

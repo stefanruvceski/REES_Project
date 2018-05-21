@@ -46,24 +46,24 @@ namespace WeatherWorkerRoleData.Classes
 
             _table.ExecuteBatch(batchOperation);
         }
-        public void AddOrReplaceWindGenerator(WindGeneratorBase windGenerator)
+        public void AddOrReplaceWindGenerator(WindMillBase windGenerator)
         {
             TableOperation add = TableOperation.InsertOrReplace(windGenerator);
             _table.Execute(add);
 
         }
 
-        public List<WindGeneratorBase> GetAllRequest()
+        public List<WindMillBase> GetAllWindMills()
         {
-            IQueryable<WindGeneratorBase> requests = from g in _table.CreateQuery<WindGeneratorBase>()
+            IQueryable<WindMillBase> requests = from g in _table.CreateQuery<WindMillBase>()
                                                      where g.PartitionKey == "WindMill"
                                                      select g;
             return requests.ToList();
         }
 
-        public WindGeneratorBase GetOneRequest(string id)
+        public WindMillBase GetOneWindMill(string id)
         {
-            IQueryable<WindGeneratorBase> requests = from g in _table.CreateQuery<WindGeneratorBase>()
+            IQueryable<WindMillBase> requests = from g in _table.CreateQuery<WindMillBase>()
                                                      where g.PartitionKey == "WindMill" && g.RowKey == id
                                                      select g;
 

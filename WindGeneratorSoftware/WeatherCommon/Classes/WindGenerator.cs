@@ -40,6 +40,7 @@ namespace WeatherCommon.Classes
         {
 
         }
+        
 
         public WindGenerator(Weather weather, WindMill windMill, int windMillCnt, Aggregate aggregate)
         {
