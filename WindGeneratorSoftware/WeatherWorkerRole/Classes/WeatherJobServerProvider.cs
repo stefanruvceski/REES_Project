@@ -39,7 +39,7 @@ namespace WeatherWorkerRole.Classes
             if (weatherRepository.GetAllWeathers().Count != 0)
             {
                 if (!weatherRepository.GetOneWeather(weather.City).WindSpeed.Equals(weather.WindSpeed))
-                    weatherRepository.AddWeather(new WeatherBase(weather));
+                    weatherRepository.AddOrReplaceWeather(new WeatherBase(weather));
             }
             else
             {
