@@ -9,7 +9,7 @@
       <Setting name="WeatherDataConnectionString" />
     </ConfigurationSettings>
     <Endpoints>
-      <InputEndpoint name="InputRequest" protocol="tcp" port="11000" />
+      <InputEndpoint name="InputRequest" protocol="tcp" port="502" />
       <InternalEndpoint name="InternalRequest" protocol="tcp" />
     </Endpoints>
   </WorkerRole>

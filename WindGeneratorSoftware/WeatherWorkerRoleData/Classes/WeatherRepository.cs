@@ -3,6 +3,7 @@ using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,6 +52,16 @@ namespace WeatherWorkerRoleData.Classes
                                                select g;
 
             return requests.ToList()[0];
+        }
+
+        public WeatherBase GetLastWeather(string city)
+        {
+            IQueryable<WeatherBase> requests = from g in _table.CreateQuery<WeatherBase>()
+                                               where g.PartitionKey == "Weather" && g.City == city
+                                               select g;
+          
+            return requests.ToList().Find(x=> x.Timestamp == requests.ToList().Max(y => y.Timestamp));
+            
         }
     }
 }

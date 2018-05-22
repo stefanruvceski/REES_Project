@@ -22,11 +22,13 @@ namespace WeatherWorkerRole.Classes
     {
         private ServiceHost serviceHost;
         private string externalEndpointName = "InputRequest";
+        RoleInstanceEndpoint instanceEndpoint;
 
-		public WeatherJobServer()
+        public WeatherJobServer()
         {
             NetTcpBinding binding = new NetTcpBinding();
-            RoleInstanceEndpoint instanceEndpoint = RoleEnvironment.CurrentRoleInstance.InstanceEndpoints[externalEndpointName];
+
+            instanceEndpoint = RoleEnvironment.CurrentRoleInstance.InstanceEndpoints[externalEndpointName];
             string endpoint = String.Format($"net.tcp://{instanceEndpoint.IPEndpoint}/{externalEndpointName}");
 
             serviceHost = new ServiceHost(typeof(WeatherJobServerProvider));
@@ -45,7 +47,7 @@ namespace WeatherWorkerRole.Classes
             try
             {
                 serviceHost.Open();
-                Trace.WriteLine($"Service host for {externalEndpointName} endpoint type opened successfully at {DateTime.Now}");
+                Trace.WriteLine($"Service host for {externalEndpointName} endpoint type opened successfully at {DateTime.Now} {instanceEndpoint.IPEndpoint}");
             }
             catch(Exception e)
             {

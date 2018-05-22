@@ -34,7 +34,7 @@ namespace WeatherWebRole.Controllers
             ChannelFactory<IWeather> factory = new ChannelFactory<IWeather>(binding, new EndpointAddress($"net.tcp://{ipAddress}/InternalRequest"));
             proxy = factory.CreateChannel();
 
-            return proxy.GetWeather();
+            return proxy.GetWindGenerator();
         }
 
         public ActionResult About()

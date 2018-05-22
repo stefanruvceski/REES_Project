@@ -28,7 +28,7 @@ namespace WeatherCommon.Classes
 		void SendWeatherState(Weather weather);
 
         [OperationContract]
-        WindGenerator GetWeather();
+        WindGenerator GetWindGenerator();
 	}//end IWeather
 
 }//end namespace WeatherCommon

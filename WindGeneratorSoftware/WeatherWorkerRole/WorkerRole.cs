@@ -82,6 +82,7 @@ namespace WeatherWorkerRole
                     Trace.TraceInformation("Working");
                 }
                 catch (Exception) { }
+                Trace.WriteLine("working");
                 await Task.Delay(5000);
             }
         }

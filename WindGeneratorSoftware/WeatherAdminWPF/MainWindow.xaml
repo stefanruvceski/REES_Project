@@ -9,18 +9,19 @@
     <Grid>
         <TextBlock Name="text" HorizontalAlignment="Left" Margin="344,148,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772"
-                  ItemsSource="{Binding Wind_Generators}" IsReadOnly="true" AutoGenerateColumns="False">
+                  ItemsSource="{Binding windGenerators}" IsReadOnly="true" AutoGenerateColumns="False">
 
             <DataGrid.Columns>
                 <DataGridTextColumn Header="City" Binding="{Binding Weather.City}" Width="100"/>
-                <DataGridTextColumn Header="Windmill Count" Binding="{Binding WindMill.WindMillCnt}" Width="100"/>
-                <DataGridTextColumn Header="Power" Binding="{Binding WindMill.Power}" Width="100"/>
+                <DataGridTextColumn Header="Windmill Count" Binding="{Binding WindMillCnt}" Width="100"/>
+                <DataGridTextColumn Header="Power" Binding="{Binding Power}" Width="100"/>
                 <DataGridTextColumn Header="Min Power" Binding="{Binding WindMill.MinPower}" Width="100"/>
                 <DataGridTextColumn Header="Turbine Diameter" Binding="{Binding WindMill.TurbineDiameter}" Width="110"/>
                 <DataGridTextColumn Header="Max Speed" Binding="{Binding WindMill.MaxSpeed}" Width="100"/>
                 <DataGridTextColumn Header="Max Speed Time" Binding="{Binding WindMill.MaxSpeedTime}" Width="120"/>
             </DataGrid.Columns>
         </DataGrid>
-        
+        <Button Content="Button" HorizontalAlignment="Left" Margin="692,385,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
     </Grid>
 </Window>
