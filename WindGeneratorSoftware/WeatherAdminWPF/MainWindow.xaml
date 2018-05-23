@@ -1,0 +1,26 @@
+﻿<Window x:Class="WeatherAdminWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherAdminWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock Name="text" HorizontalAlignment="Left" Margin="344,148,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772"
+                  ItemsSource="{Binding windGenerators}" IsReadOnly="true" AutoGenerateColumns="False">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="City" Binding="{Binding Weather.City}" Width="100"/>
+                <DataGridTextColumn Header="Windmill Count" Binding="{Binding WindMillCnt}" Width="100"/>
+                <DataGridTextColumn Header="Power" Binding="{Binding Power}" Width="100"/>
+                <DataGridTextColumn Header="Min Power" Binding="{Binding WindMill.MinPower}" Width="100"/>
+                <DataGridTextColumn Header="Turbine Diameter" Binding="{Binding WindMill.TurbineDiameter}" Width="110"/>
+                <DataGridTextColumn Header="Max Speed" Binding="{Binding WindMill.MaxSpeed}" Width="100"/>
+                <DataGridTextColumn Header="Max Speed Time" Binding="{Binding WindMill.MaxSpeedTime}" Width="120"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
