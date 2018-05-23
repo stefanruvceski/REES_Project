@@ -1,0 +1,11 @@
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCommon\bin\Debug\WeatherCommon.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCommon\bin\Debug\WeatherCommon.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.csproj.CoreCompileInputs.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.pdb
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherCommon\bin\Debug\WeatherCommon.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherCommon\bin\Debug\WeatherCommon.pdb
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.csprojResolveAssemblyReference.cache
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.csproj.CoreCompileInputs.cache
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.pdb

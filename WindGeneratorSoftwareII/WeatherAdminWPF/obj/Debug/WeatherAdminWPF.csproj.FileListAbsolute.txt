@@ -1,0 +1,42 @@
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\WeatherAdminWPF.exe.config
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\WeatherAdminWPF.exe
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\WeatherAdminWPF.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.csprojResolveAssemblyReference.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\MainWindow.g.cs
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\App.g.cs
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF_MarkupCompile.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF_MarkupCompile.lref
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\MainWindow.baml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.g.resources
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.Properties.Resources.resources
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.csproj.GenerateResource.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.csproj.CoreCompileInputs.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.exe
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.pdb
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\WeatherAdminWPF.exe.config
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\WeatherAdminWPF.exe
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\WeatherAdminWPF.pdb
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\WeatherCommon.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\WeatherWorkerRoleData.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\Newtonsoft.Json.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\WeatherCommon.pdb
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\WeatherWorkerRoleData.pdb
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.csprojResolveAssemblyReference.cache
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\MainWindow.g.cs
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\App.g.cs
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF_MarkupCompile.cache
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF_MarkupCompile.lref
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\MainWindow.baml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.g.resources
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.Properties.Resources.resources
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.csproj.GenerateResource.Cache
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.csproj.CoreCompileInputs.cache
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.exe
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherAdminWPF\obj\Debug\WeatherAdminWPF.pdb

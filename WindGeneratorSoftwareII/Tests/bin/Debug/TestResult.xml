@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\WIN10\Downloads\REES_Project-Pejonisimo\WindGeneratorSoftware\Tests\bin\Debug\Tests.dll" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-05-23" time="23:02:40">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8830" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="E:\Fakultet\TrecaGodina\Razvoj softvera\Vezbe\NUnit-2.6.4\bin" machine-name="PEJICM" user="WIN10" user-domain="PEJICM" />
+  <culture-info current-culture="sr-Latn-RS" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\WIN10\Downloads\REES_Project-Pejonisimo\WindGeneratorSoftware\Tests\bin\Debug\Tests.dll" executed="True" result="Failure" success="False" time="0.890" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Tests" executed="True" result="Failure" success="False" time="0.870" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="TestClasses" executed="True" result="Failure" success="False" time="0.868" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="WindGeneratorTest" executed="True" result="Failure" success="False" time="0.866" asserts="0">
+                <results>
+                  <test-suite type="ParameterizedTest" name="CalculateSurfaceArea_GoodTest" executed="True" result="Failure" success="False" time="0.852" asserts="0">
+                    <results>
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculateSurfaceArea_GoodTest(10)" executed="True" result="Error" success="False" time="0.841" asserts="0">
+                        <failure>
+                          <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                          <stack-trace><![CDATA[at WeatherCommon.Classes.WindGenerator.CalculateSurfaceArea() in C:\Users\WIN10\Downloads\REES_Project-Pejonisimo\WindGeneratorSoftware\WeatherCommon\Classes\WindGenerator.cs:line 92
+at Tests.TestClasses.WindGeneratorTest.CalculateSurfaceArea_GoodTest(Double diameter) in C:\Users\WIN10\Downloads\REES_Project-Pejonisimo\WindGeneratorSoftware\Tests\TestClasses\WindGeneratorTest.cs:line 77
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

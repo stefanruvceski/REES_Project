@@ -1,0 +1,292 @@
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ApplicationInsights.config
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\WeatherWebRole.dll.config
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\WeatherWebRole.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\WeatherWebRole.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\csc.exe
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\csc.exe.config
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\csc.rsp
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\csi.exe
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\csi.exe.config
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\csi.rsp
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.AppContext.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Collections.Immutable.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Console.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Diagnostics.Process.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.IO.Compression.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.IO.FileSystem.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.IO.Pipes.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Reflection.Metadata.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.AccessControl.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.Claims.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.Principal.Windows.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Threading.Thread.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.ValueTuple.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Xml.XmlDocument.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Xml.XPath.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\vbc.exe
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\vbc.exe.config
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\vbc.rsp
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\VBCSCompiler.exe
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\VBCSCompiler.exe.config
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Antlr3.Runtime.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.Agent.Intercept.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.DependencyCollector.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.Web.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.WindowsServer.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.ApplicationInsights.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Azure.KeyVault.Core.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Data.Edm.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Data.OData.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Data.Services.Client.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Web.Infrastructure.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.WindowsAzure.Storage.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Newtonsoft.Json.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Spatial.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Helpers.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Mvc.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Optimization.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Razor.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.WebPages.Deployment.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.WebPages.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.WebPages.Razor.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\WeatherCommon.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\WebGrease.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\MonAgentListener.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\WeatherCommon.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Azure.KeyVault.Core.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Data.Edm.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Data.OData.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Data.Services.Client.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.WindowsAzure.Storage.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Newtonsoft.Json.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Spatial.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Helpers.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Mvc.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Optimization.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Razor.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.WebPages.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.WebPages.Deployment.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.WebPages.Razor.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Antlr3.Runtime.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.ApplicationInsights.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.DependencyCollector.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.WindowsServer.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.Web.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\de\Microsoft.Data.Edm.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\es\Microsoft.Data.Edm.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\it\Microsoft.Data.Edm.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\de\Microsoft.Data.OData.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\es\Microsoft.Data.OData.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\fr\Microsoft.Data.OData.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\it\Microsoft.Data.OData.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ja\Microsoft.Data.OData.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ko\Microsoft.Data.OData.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ru\Microsoft.Data.OData.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\de\System.Spatial.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\es\System.Spatial.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\fr\System.Spatial.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\it\System.Spatial.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ja\System.Spatial.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ko\System.Spatial.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ru\System.Spatial.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hans\System.Spatial.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hant\System.Spatial.resources.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.csprojResolveAssemblyReference.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.csproj.CoreCompileInputs.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.csproj.CopyComplete
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.pdb
+E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\ru\System.Spatial.resources.dll
+E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hans\System.Spatial.resources.dll
+E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hant\System.Spatial.resources.dll
+E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.csproj.CoreCompileInputs.cache
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\ApplicationInsights.config
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\WeatherWebRole.dll.config
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\WeatherWebRole.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\WeatherWebRole.pdb
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\csc.exe
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\csc.exe.config
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\csc.rsp
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\csi.exe
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\csi.exe.config
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\csi.rsp
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.AppContext.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Console.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.IO.Compression.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.IO.Pipes.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.Claims.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Threading.Thread.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.ValueTuple.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Xml.XPath.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\vbc.exe
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\vbc.exe.config
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\vbc.rsp
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\VBCSCompiler.exe
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Antlr3.Runtime.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.Web.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.ApplicationInsights.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Data.Edm.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Data.OData.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Data.Services.Client.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Newtonsoft.Json.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Spatial.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Helpers.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Mvc.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Optimization.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Razor.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.WebPages.Deployment.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.WebPages.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.WebPages.Razor.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\WeatherCommon.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\WebGrease.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\MonAgentListener.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\WeatherCommon.pdb
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Data.Edm.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Data.OData.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.Data.Services.Client.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Newtonsoft.Json.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Spatial.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Helpers.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Mvc.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Optimization.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.Razor.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.WebPages.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.WebPages.Deployment.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\System.Web.WebPages.Razor.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Antlr3.Runtime.pdb
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.ApplicationInsights.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\Microsoft.AI.Web.xml
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\de\System.Spatial.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\es\System.Spatial.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\fr\System.Spatial.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\it\System.Spatial.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\ja\System.Spatial.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\ko\System.Spatial.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\ru\System.Spatial.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.csprojResolveAssemblyReference.cache
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.csproj.CoreCompileInputs.cache
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.pdb

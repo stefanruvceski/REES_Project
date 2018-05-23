@@ -1,0 +1,11 @@
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorData\bin\Debug\WeatherReplicatorData.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorData\bin\Debug\WeatherReplicatorData.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.csproj.CoreCompileInputs.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.pdb
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplicatorData\bin\Debug\WeatherReplicatorData.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplicatorData\bin\Debug\WeatherReplicatorData.pdb
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.csprojResolveAssemblyReference.cache
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.csproj.CoreCompileInputs.cache
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.dll
+C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.pdb
