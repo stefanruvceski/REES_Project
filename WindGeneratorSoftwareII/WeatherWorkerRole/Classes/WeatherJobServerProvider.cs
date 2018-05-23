@@ -53,8 +53,7 @@ namespace WeatherWorkerRole.Classes
             WindMillBase windMillBase = windMillRepository.GetOneWindMill(windGeneratorBase.WindMill);
             AggregateBase aggregateBase = aggregateRepository.GetOneAggregate(windGeneratorBase.Aggregate);
             weatherBase = weatherRepository.GetLastWeather(windGeneratorBase.Weather);
-
-           // windGeneratorBase.Power = windGeneratorBase.CalculatePower();
+            
 
             if (windGeneratorBase.Power < windMillBase.MinPower)
             {

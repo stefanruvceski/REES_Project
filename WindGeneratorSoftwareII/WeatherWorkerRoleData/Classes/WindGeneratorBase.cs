@@ -66,6 +66,9 @@ namespace WeatherWorkerRoleData.Classes
         {
 
             WeatherBase weatherBase = new WeatherRepository().GetLastWeather(Weather);
+
+            if (weatherBase == null)
+                weatherBase = new WeatherRepository().GetOneWeather(weather);
             WindMillBase windMillBase = new WindMillRepository().GetOneWindMill(WindMill);
             WeatherRepository weatherRepository = new WeatherRepository();
             double power = 0;

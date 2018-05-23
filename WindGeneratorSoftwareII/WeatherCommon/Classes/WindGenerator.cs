@@ -64,7 +64,7 @@ namespace WeatherCommon.Classes
             this.windMill = windMill;
             this.windMillCnt = windMillCnt;
             this.aggregate = aggregate;
-            this.power = CalculatePower();
+            this.power = CalculatePower()*windMillCnt;
             this.aggregateONCnt = aggregateONCnt;
         }
 

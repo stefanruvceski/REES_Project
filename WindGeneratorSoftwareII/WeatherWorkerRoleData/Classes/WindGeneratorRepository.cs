@@ -43,7 +43,7 @@ namespace WeatherWorkerRoleData.Classes
         {
             TableBatchOperation batchOperation = new TableBatchOperation();
 
-            WindGeneratorBase w1 = new WindGeneratorBase("Novi Sad", "2", 20, "5");
+            WindGeneratorBase w1 = new WindGeneratorBase("Novi Sad", "1", 20, "5");
 
             batchOperation.InsertOrReplace(w1);
 
