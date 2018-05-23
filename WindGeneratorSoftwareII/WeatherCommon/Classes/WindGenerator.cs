@@ -62,6 +62,33 @@ namespace WeatherCommon.Classes
 
         public double CalculatePower()
         {
+            // validacija vrednosti polja koja ucestvuju u proracunu snage
+            if(Weather.WindSpeed < 0 || Weather.WindSpeed > 80 || WindMill.MaxSpeed < 0 || WindMill.MaxSpeed > 80)
+            {
+                throw new ArgumentOutOfRangeException("Wind speed must be in range [0, 80] m/s.");
+            }
+
+            if(WindMill.WorkingTime < 0 || WindMill.MaxSpeedTime < 0)
+            {
+                throw new ArgumentOutOfRangeException("Woking time of turbine must be non-negative number.");
+            }
+
+            if(WindMill.Coefficient < 0.25 || WindMill.Coefficient > 0.45)
+            {
+                throw new ArgumentOutOfRangeException("Coefficient must be in range [0.25, 0.45].");
+            }
+
+            if(Weather.AirDensity != 1.29)
+            {
+                throw new ArgumentException("Air density must be 1.29.");
+            }
+
+            if(WindMill.TurbineDiameter <= 0)
+            {
+                throw new ArgumentException("Turbine diameter must be greater than 0.");
+            }
+
+            // proracun snage
             double power = 0;
 
             if (Weather.WindSpeed >= WindMill.MaxSpeed && WindMill.WorkingTime >= WindMill.MaxSpeedTime)
@@ -89,6 +116,11 @@ namespace WeatherCommon.Classes
 
         public double CalculateSurfaceArea()
         {
+            if(WindMill.TurbineDiameter <= 0)
+            {
+                throw new ArgumentOutOfRangeException("Turbine diameter must be greater than 0.");
+            }
+
             return Math.Pow((WindMill.TurbineDiameter / 2), 2) * Math.PI;
         }
     }//end WindGenerator
