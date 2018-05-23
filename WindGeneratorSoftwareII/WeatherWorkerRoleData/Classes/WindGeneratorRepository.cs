@@ -35,6 +35,7 @@ namespace WeatherWorkerRoleData.Classes
             {
                 _table.CreateIfNotExists();
                 InitWindGenerators();
+                isCreated = true;
             }
         }
 
@@ -42,7 +43,7 @@ namespace WeatherWorkerRoleData.Classes
         {
             TableBatchOperation batchOperation = new TableBatchOperation();
 
-            WindGeneratorBase w1 = new WindGeneratorBase("Novi Sad", "1", 10, "1");
+            WindGeneratorBase w1 = new WindGeneratorBase("Novi Sad", "2", 20, "5");
 
             batchOperation.InsertOrReplace(w1);
 

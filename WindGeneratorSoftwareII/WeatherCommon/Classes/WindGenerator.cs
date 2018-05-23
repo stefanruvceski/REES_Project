@@ -23,7 +23,9 @@ namespace WeatherCommon.Classes
         private WindMill windMill;
         private int windMillCnt;
         private Aggregate aggregate;
+        private double aggregatePower;
         private double power;
+        private int aggregateONCnt = 0;
 
         [DataMember]
         public Weather Weather { get => weather; set => weather = value; }
@@ -35,13 +37,17 @@ namespace WeatherCommon.Classes
         public double Power { get => CalculatePower(); set => power = value; }
         [DataMember]
         public int WindMillCnt { get => windMillCnt; set => windMillCnt = value; }
+        [DataMember]
+        public double AggregatePower { get => aggregatePower; set => aggregatePower = value; }
+        [DataMember]
+        public int AggregateONCnt { get => aggregateONCnt; set => aggregateONCnt = value; }
 
         public WindGenerator()
         {
 
         }
 
-        public WindGenerator(Weather weather, WindMill windMill, int windMillCnt, Aggregate aggregate)
+        public WindGenerator(Weather weather, WindMill windMill, int windMillCnt, Aggregate aggregate,int aggregateONCnt)
         {
             if(weather == null || windMill == null || aggregate == null)
             {
@@ -54,10 +60,12 @@ namespace WeatherCommon.Classes
             }
 
             this.weather = weather;
+            this.aggregatePower = aggregate.Power * windMillCnt;
             this.windMill = windMill;
             this.windMillCnt = windMillCnt;
             this.aggregate = aggregate;
             this.power = CalculatePower();
+            this.aggregateONCnt = aggregateONCnt;
         }
 
         public double CalculatePower()
@@ -84,7 +92,7 @@ namespace WeatherCommon.Classes
             {
                 WindMill.WorkingTime = 0;
             }
-            return power;
+            return power*windMillCnt;
         }
 
         public double CalculateSurfaceArea()

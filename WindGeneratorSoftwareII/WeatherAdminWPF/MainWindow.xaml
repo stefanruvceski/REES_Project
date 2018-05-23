@@ -19,6 +19,7 @@
                 <DataGridTextColumn Header="Turbine Diameter" Binding="{Binding WindMill.TurbineDiameter}" Width="110"/>
                 <DataGridTextColumn Header="Max Speed" Binding="{Binding WindMill.MaxSpeed}" Width="100"/>
                 <DataGridTextColumn Header="Max Speed Time" Binding="{Binding WindMill.MaxSpeedTime}" Width="120"/>
+                <DataGridTextColumn Header="Aggregate working time" Binding="{Binding AggregateONCnt}" Width="120"/>
             </DataGrid.Columns>
         </DataGrid>
 

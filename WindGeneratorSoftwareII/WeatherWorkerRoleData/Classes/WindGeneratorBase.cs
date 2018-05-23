@@ -17,12 +17,16 @@ namespace WeatherWorkerRoleData.Classes
 {
     public class WindGeneratorBase : TableEntity
     {
+        static AggregateRepository aggregateRepository = new AggregateRepository();
+        static WindMillRepository windMillRepository = new WindMillRepository();
 
         private string weather;
         private string windMill;
         private int windMillCnt;
         private string aggregate;
+        private double aggregatePower;
         private double power;
+        private int aggregateONCnt;
 
 
 
@@ -40,7 +44,13 @@ namespace WeatherWorkerRoleData.Classes
             this.weather = weather;
             this.windMill = windMill;
             this.windMillCnt = windMillCnt;
+            this.aggregatePower = aggregateRepository.GetOneAggregate(aggregate).Power * windMillCnt;
             this.aggregate = aggregate;
+            
+            WindMillBase w = windMillRepository.GetOneWindMill(windMill);
+            if(w.MinPower < 12000)
+                w.MinPower *= windMillCnt;
+            windMillRepository.AddOrReplaceWindMill(w);
 
         }
 
@@ -48,12 +58,14 @@ namespace WeatherWorkerRoleData.Classes
         public string WindMill { get => windMill; set => windMill = value; }
         public int WindMillCnt { get => windMillCnt; set => windMillCnt = value; }
         public string Aggregate { get => aggregate; set => aggregate = value; }
-        public double Power { get => power; set => power = value; }
+        public double Power { get => CalculatePower(); set => power = value; }
+        public double AggregatePower { get => aggregatePower; set => aggregatePower = value; }
+        public int AggregateONCnt { get => aggregateONCnt; set => aggregateONCnt = value; }
 
-        private double CalculatePower()
+        public double CalculatePower()
         {
 
-            WeatherBase weatherBase = new WeatherRepository().GetOneWeather(Weather);
+            WeatherBase weatherBase = new WeatherRepository().GetLastWeather(Weather);
             WindMillBase windMillBase = new WindMillRepository().GetOneWindMill(WindMill);
             WeatherRepository weatherRepository = new WeatherRepository();
             double power = 0;
@@ -78,9 +90,9 @@ namespace WeatherWorkerRoleData.Classes
             {
                 windMillBase.WorkingTime = 0;
             }
-            return power;
+            return power*windMillCnt;
         }
-        private double CalculateSurfaceArea(WindMillBase windMillBase)
+        public double CalculateSurfaceArea(WindMillBase windMillBase)
         {
             return Math.Pow((windMillBase.TurbineDiameter / 2), 2) * Math.PI;
         }

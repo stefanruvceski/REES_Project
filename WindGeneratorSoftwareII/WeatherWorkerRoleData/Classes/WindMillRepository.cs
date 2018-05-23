@@ -26,17 +26,18 @@ namespace WeatherWorkerRoleData.Classes
             {
                 _table.CreateIfNotExists();
                 InitWindMills();
+                created = true;
             }
         }
         private void InitWindMills()
         {
             TableBatchOperation batchOperation = new TableBatchOperation();
 
-            WindMillBase w1 = new WindMillBase(0.35, 10000000, 45, 18, 10);
-            WindMillBase w2 = new WindMillBase(0.25, 10005000, 55, 17, 11);
-            WindMillBase w3 = new WindMillBase(0.20, 10000500, 40, 16, 12);
-            WindMillBase w4 = new WindMillBase(0.15, 10500000, 60, 15, 13);
-            WindMillBase w5 = new WindMillBase(0.4, 10000400, 50, 14, 9);
+            WindMillBase w1 = new WindMillBase(0.30, 1000, 20, 4, 10);
+            WindMillBase w2 = new WindMillBase(0.35, 1500, 30, 5, 10);
+            WindMillBase w3 = new WindMillBase(0.35, 4000, 35, 8, 10);
+            WindMillBase w4 = new WindMillBase(0.35, 12000, 40, 10, 10);
+            WindMillBase w5 = new WindMillBase(0.40, 20000, 45, 18, 10);
 
             batchOperation.InsertOrReplace(w1);
             batchOperation.InsertOrReplace(w2);
@@ -46,9 +47,9 @@ namespace WeatherWorkerRoleData.Classes
 
             _table.ExecuteBatch(batchOperation);
         }
-        public void AddOrReplaceWindGenerator(WindMillBase windGenerator)
+        public void AddOrReplaceWindMill(WindMillBase windMill)
         {
-            TableOperation add = TableOperation.InsertOrReplace(windGenerator);
+            TableOperation add = TableOperation.InsertOrReplace(windMill);
             _table.Execute(add);
 
         }

@@ -54,6 +54,20 @@ namespace WeatherWorkerRole.Classes
             AggregateBase aggregateBase = aggregateRepository.GetOneAggregate(windGeneratorBase.Aggregate);
             weatherBase = weatherRepository.GetLastWeather(windGeneratorBase.Weather);
 
+           // windGeneratorBase.Power = windGeneratorBase.CalculatePower();
+
+            if (windGeneratorBase.Power < windMillBase.MinPower)
+            {
+                windGeneratorBase.AggregateONCnt++;
+                aggregateBase.State = true;
+                windGeneratorRepository.AddOrReplaceWindGenerator(windGeneratorBase);
+                aggregateRepository.AddOrReplaceAggregate(aggregateBase);
+            }
+            else
+            {
+                aggregateBase.State = false;
+            }
+            
             Aggregate aggregate = new Aggregate(int.Parse(aggregateBase.RowKey), aggregateBase.CostPerKw, aggregateBase.Power, aggregateBase.State);
             WindMill windMill = new WindMill(windMillBase.Coefficient, windMillBase.MinPower, windMillBase.TurbineDiameter, windMillBase.MaxSpeed, windMillBase.MaxSpeedTime);
 
@@ -61,7 +75,8 @@ namespace WeatherWorkerRole.Classes
                 weatherBase = weatherRepository.GetOneWeather(windGeneratorBase.Weather);
 
             Weather weather = new Weather(weatherBase.City, weatherBase.Description, weatherBase.MaxTemp, weatherBase.MinTemp, weatherBase.Pressure, weatherBase.WindSpeed);
-            return new WindGenerator(weather, windMill, windGeneratorBase.WindMillCnt, aggregate);
+            
+            return new WindGenerator(weather, windMill, windGeneratorBase.WindMillCnt, aggregate,windGeneratorBase.AggregateONCnt);
         }
 
     }//end WeatherJobServerProvider

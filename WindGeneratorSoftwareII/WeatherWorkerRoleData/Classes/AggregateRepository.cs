@@ -25,6 +25,7 @@ namespace WeatherWorkerRoleData.Classes
             {
                 _table.CreateIfNotExists();
                 InitAggregates();
+                isCreated = true;
             }
         }
 
@@ -32,11 +33,11 @@ namespace WeatherWorkerRoleData.Classes
         {
             TableBatchOperation batchOperation = new TableBatchOperation();
 
-            AggregateBase a1 = new AggregateBase(100, 300000, false);
-            AggregateBase a2 = new AggregateBase(120, 320000, false);
-            AggregateBase a3 = new AggregateBase(130, 330000, false);
-            AggregateBase a4 = new AggregateBase(80, 240000, false);
-            AggregateBase a5 = new AggregateBase(150, 370000, false);
+            AggregateBase a1 = new AggregateBase(500, 500, false);
+            AggregateBase a2 = new AggregateBase(750, 750, false);
+            AggregateBase a3 = new AggregateBase(1000, 1000, false);
+            AggregateBase a4 = new AggregateBase(6000, 6000, false);
+            AggregateBase a5 = new AggregateBase(10000, 10000, false);
 
             batchOperation.InsertOrReplace(a1);
             batchOperation.InsertOrReplace(a2);
