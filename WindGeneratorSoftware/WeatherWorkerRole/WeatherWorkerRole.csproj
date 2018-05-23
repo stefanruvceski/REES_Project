@@ -69,7 +69,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\INotifyProxy.cs" />
     <Compile Include="Classes\InternalWeatherJobServer.cs" />
     <Compile Include="Classes\WeatherJobServer.cs" />
     <Compile Include="Classes\WeatherJobServerProvider.cs" />

@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="Classes\Aggregate.cs" />
     <Compile Include="Classes\Firm.cs" />
-    <Compile Include="Classes\INotify.cs" />
     <Compile Include="Classes\IWeather.cs" />
     <Compile Include="Classes\Weather.cs" />
     <Compile Include="Classes\WindGenerator.cs" />

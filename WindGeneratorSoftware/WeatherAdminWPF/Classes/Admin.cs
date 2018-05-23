@@ -14,7 +14,7 @@ using WeatherCommon.Classes;
 using System.ServiceModel;
 
 namespace WeatherAdminWPF.Classes {
-	public class Admin : INotify {
+	public class Admin {
 
 		public Admin(){
             
@@ -24,13 +24,7 @@ namespace WeatherAdminWPF.Classes {
 
 		}
 
-        public bool NotifyWeatherStateChanged(string weatherName)
-        {
-            if (weatherName.Equals("Novi Sad"))
-                return true;
-            else
-                return false;   
-        }
+        
     }//end Admin
 
 }//end namespace WeatherAdminWPF
