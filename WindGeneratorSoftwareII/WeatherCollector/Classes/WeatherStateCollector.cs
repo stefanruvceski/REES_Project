@@ -66,9 +66,9 @@ namespace WeatherCollector.Classes
                     case @"""name""": w.City = p[1].Replace('"', ' ').Trim(); break;
                     case @"""description""": w.Description = p[1].Replace('"', ' ').Trim(); break;
                     case @"""pressure""": w.Pressure = int.Parse(p[1].Replace('"', ' ').Trim()); break;
-                    case @"""wind""": w.WindSpeed = double.Parse(p[2].Replace('"', ' ').Replace('}', ' ').Trim()) + new Random().NextDouble(); break;
-                    case @"""temp_min""": w.MinTemp = Double.Parse(p[1].Replace('}', ' ').Trim()) - 273.15; break;
-                    case @"""temp_max""": w.MaxTemp = Double.Parse(p[1].Replace('}', ' ').Trim()) - 273.15; break;
+                    case @"""wind""": w.WindSpeed = double.Parse(p[2].Replace('"', ' ').Replace('}', ' ').Replace('.', ',').Trim()) + new Random().NextDouble(); break;
+                    case @"""temp_min""": w.MinTemp = Double.Parse(p[1].Replace('}', ' ').Trim().Replace('.', ',')) - 273.15; break;
+                    case @"""temp_max""": w.MaxTemp = Double.Parse(p[1].Replace('}', ' ').Trim().Replace('.', ',')) - 273.15; break;
                     default:
                         break;
                 }

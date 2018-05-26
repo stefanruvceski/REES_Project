@@ -96,6 +96,11 @@ namespace WeatherCommon.Classes
                 throw new ArgumentException("Turbine diameter must be greater than 0.");
             }
 
+            if(aggregateONCnt < 0)
+            {
+                throw new ArgumentException("Aggregate on time must be greater than 0.");
+            }
+
             // proracun snage
             double power = 0;
 

@@ -9,8 +9,3 @@ C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherCommon\
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.csproj.CoreCompileInputs.cache
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.dll
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherCommon\obj\Debug\WeatherCommon.pdb
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\WeatherCommon\bin\Debug\WeatherCommon.dll
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\WeatherCommon\bin\Debug\WeatherCommon.pdb
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\WeatherCommon\obj\Debug\WeatherCommon.csproj.CoreCompileInputs.cache
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\WeatherCommon\obj\Debug\WeatherCommon.dll
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\WeatherCommon\obj\Debug\WeatherCommon.pdb

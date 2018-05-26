@@ -9,9 +9,3 @@ C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplica
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.csproj.CoreCompileInputs.cache
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.dll
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.pdb
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorData\bin\Debug\WeatherReplicatorData.dll
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorData\bin\Debug\WeatherReplicatorData.pdb
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.csprojResolveAssemblyReference.cache
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.csproj.CoreCompileInputs.cache
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.dll
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorData\obj\Debug\WeatherReplicatorData.pdb
