@@ -1,11 +1,22 @@
 ﻿
-@{
-    ViewBag.Title = "Home Page";
-}
 
-<h1>Weather</h1>
-<form action="/Home/Update1">
-    <label>Unos teksta</label>
-    <input type="text" name="city" />
-    <button type="submit">Send</button>
-</form>
+<body style="background-image:url(https://i.imgur.com/wUreE5Y.jpg);background-size:cover">
+
+    <div style="text-align:center">
+        <br /><br />
+        <img style="margin-left:180px" src="https://i.imgur.com/IgAuEqV.png" usemap="map" />
+    </div>
+
+
+
+    <map name="map">
+        <area target="_blank" alt="Subotica" title="Subotica" href="Home/Update1?city=Subotica" coords="296,65,43" shape="circle">
+        <area target="_blank" alt="Sombor" title="Sombor" href="Home/Update1?city=Sombor" coords="117,228,47" shape="circle">
+        <area target="_blank" alt="Kikinda" title="Kikinda" href="Home/Update1?city=Kikinda" coords="571,191,45" shape="circle">
+        <area target="_blank" alt="NoviSad" title="NoviSad" href="Home/Update1?city=Novi+Sad" coords="368,460,55" shape="circle">
+        <area target="_blank" alt="Zrenjanin" title="Zrenjanin" href="Home/Update1?city=Zrenjanin" coords="571,406,53" shape="circle">
+        <area target="_blank" alt="Vrsac" title="Vrsac" href="Home/Update1?city=Vrsac" coords="843,513,45" shape="circle">
+        <area target="_blank" alt="SremskaMitrovica" title="SremskaMitrovica" href="Home/Update1?city=Sremska+Mitrovica" coords="289,593,34" shape="circle">
+        <area target="_blank" alt="Pancevo" title="Pancevo" href="Home/Update1?city=Pancevo" coords="679,640,50" shape="circle">
+    </map>
+</body>
