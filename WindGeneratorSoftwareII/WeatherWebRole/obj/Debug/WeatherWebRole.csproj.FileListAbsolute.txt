@@ -290,9 +290,3 @@ C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.csproj.CoreCompileInputs.cache
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.dll
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWebRole\obj\Debug\WeatherWebRole.pdb
-D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWebRole\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWebRole\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWebRole\bin\roslyn\System.IO.Compression.dll
-D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWebRole\bin\roslyn\VBCSCompiler.exe
