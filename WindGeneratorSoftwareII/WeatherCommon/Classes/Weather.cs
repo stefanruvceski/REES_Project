@@ -97,7 +97,7 @@ namespace WeatherCommon.Classes
         [DataMember]
         public double Pressure { get => pressure; set => pressure = value; }
         [DataMember]
-        public double WindSpeed { get => windSpeed; set => windSpeed = value; }
+        public double WindSpeed { get => Math.Round(windSpeed, 3); set => windSpeed = value; }
 
         public override string ToString()
         {

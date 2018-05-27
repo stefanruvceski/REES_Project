@@ -5,21 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeatherAdminWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Width="1350" Height="850">
     <Grid>
-        <TextBlock Name="text" HorizontalAlignment="Left" Margin="344,148,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772"
-                  ItemsSource="{Binding windGenerators}" IsReadOnly="true" AutoGenerateColumns="False">
+        <!--TextBlock Name="text" HorizontalAlignment="Left" Margin="344,148,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/-->
+        <DataGrid x:Name="dataGrid" Margin="10,10,0,0"
+                  Height="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=ActualHeight}"
+                  Width="1320"
+                  ItemsSource="{Binding windGenerators}" IsReadOnly="true" AutoGenerateColumns="False"
+                  HorizontalAlignment="Stretch" VerticalAlignment="Top" VerticalScrollBarVisibility="Auto">
 
             <DataGrid.Columns>
-                <DataGridTextColumn Header="City" Binding="{Binding Weather.City}" Width="100"/>
-                <DataGridTextColumn Header="Windmill Count" Binding="{Binding WindMillCnt}" Width="100"/>
-                <DataGridTextColumn Header="Power" Binding="{Binding Power}" Width="100"/>
-                <DataGridTextColumn Header="Min Power" Binding="{Binding WindMill.MinPower}" Width="100"/>
-                <DataGridTextColumn Header="Turbine Diameter" Binding="{Binding WindMill.TurbineDiameter}" Width="110"/>
-                <DataGridTextColumn Header="Max Speed" Binding="{Binding WindMill.MaxSpeed}" Width="100"/>
-                <DataGridTextColumn Header="Max Speed Time" Binding="{Binding WindMill.MaxSpeedTime}" Width="120"/>
-                <DataGridTextColumn Header="Aggregate working time" Binding="{Binding AggregateONCnt}" Width="120"/>
+                <DataGridTextColumn Header="City" Binding="{Binding Weather.City}" Width="130"/>
+                <DataGridTextColumn Header="Windmill count" Binding="{Binding WindMillCnt}" Width="100"/>
+                <DataGridTextColumn Header="Power [W]" Binding="{Binding Power}" Width="100"/>
+                <DataGridTextColumn Header="Min power [W]" Binding="{Binding WindMill.MinPower}" Width="100"/>
+                <DataGridTextColumn Header="Turbine diameter [m]" Binding="{Binding WindMill.TurbineDiameter}" Width="130"/>
+                <DataGridTextColumn Header="Max speed [m/s]" Binding="{Binding WindMill.MaxSpeed}" Width="100"/>
+                <DataGridTextColumn Header="Max speed time [s]" Binding="{Binding WindMill.MaxSpeedTime}" Width="120"/>
+                <DataGridTextColumn Header="Aggregate working time [h]" Binding="{Binding AggregateONCnt}" Width="170"/>
+                <DataGridTextColumn Header="Wind speed [m/s]" Binding="{Binding Weather.WindSpeed}" Width="110"/>
+                <DataGridTextColumn Header="Pressure [mbar]" Binding="{Binding Weather.Pressure}" Width="110*"/>
             </DataGrid.Columns>
         </DataGrid>
 
