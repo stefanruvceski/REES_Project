@@ -29,7 +29,7 @@ namespace WeatherWorkerRole.Classes
         }
         public void SendWeatherState(Weather weather)
         {
-            if (weatherRepository.GetAllWeathers().Count != 0)
+            if (weatherRepository.GetAllWeathersByCity(weather.City).Count != 0)
             {
                 if (!weatherRepository.GetOneWeather(weather.City).WindSpeed.Equals(weather.WindSpeed))
                     weatherRepository.AddOrReplaceWeather(new WeatherBase(weather));
@@ -40,15 +40,15 @@ namespace WeatherWorkerRole.Classes
             }
         }
 
-        public WindGenerator GetWindGenerator()
+        public WindGenerator GetWindGenerator(string city)
         {
-            return GetWindGeneratorFromDataBase();
+            return GetWindGeneratorFromDataBase(city);
         }
 
-        private WindGenerator GetWindGeneratorFromDataBase()
+        private WindGenerator GetWindGeneratorFromDataBase(string city)
         {
             WeatherBase weatherBase = null;
-            WindGeneratorBase windGeneratorBase = windGeneratorRepository.GetOneWindGenerator("Novi Sad");
+            WindGeneratorBase windGeneratorBase = windGeneratorRepository.GetOneWindGenerator(city);
 
             WindMillBase windMillBase = windMillRepository.GetOneWindMill(windGeneratorBase.WindMill);
             AggregateBase aggregateBase = aggregateRepository.GetOneAggregate(windGeneratorBase.Aggregate);

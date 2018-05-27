@@ -43,9 +43,23 @@ namespace WeatherWorkerRoleData.Classes
         {
             TableBatchOperation batchOperation = new TableBatchOperation();
 
-            WindGeneratorBase w1 = new WindGeneratorBase("Novi Sad", "1", 20, "5");
+            WindGeneratorBase w1 = new WindGeneratorBase("Novi Sad", "5", 20, "5");
+            WindGeneratorBase w2 = new WindGeneratorBase("Subotica", "4", 17, "4");
+            WindGeneratorBase w3 = new WindGeneratorBase("Sombor", "3", 15, "3");
+            WindGeneratorBase w4 = new WindGeneratorBase("Kikinda", "3", 14, "3");
+            WindGeneratorBase w5 = new WindGeneratorBase("Zrenjanin", "2", 12, "2");
+            WindGeneratorBase w6 = new WindGeneratorBase("Vrsac", "5", 20, "5");
+            WindGeneratorBase w7 = new WindGeneratorBase("Sremska Mitrovica", "1", 8, "1");
+            WindGeneratorBase w8 = new WindGeneratorBase("Pancevo", "1", 9, "1");
 
             batchOperation.InsertOrReplace(w1);
+            batchOperation.InsertOrReplace(w2);
+            batchOperation.InsertOrReplace(w3);
+            batchOperation.InsertOrReplace(w4);
+            batchOperation.InsertOrReplace(w5);
+            batchOperation.InsertOrReplace(w6);
+            batchOperation.InsertOrReplace(w7);
+            batchOperation.InsertOrReplace(w8);
 
             _table.ExecuteBatch(batchOperation);
         }

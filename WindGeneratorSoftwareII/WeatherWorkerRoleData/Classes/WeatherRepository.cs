@@ -63,5 +63,14 @@ namespace WeatherWorkerRoleData.Classes
             return requests.ToList().Find(x => x.Timestamp == requests.ToList().Max(y => y.Timestamp));
 
         }
+
+        public List<WeatherBase> GetAllWeathersByCity(string city)
+        {
+            IQueryable<WeatherBase> requests = from g in _table.CreateQuery<WeatherBase>()
+                                               where g.PartitionKey == "Weather" && g.City == city
+                                               select g;
+
+            return requests.ToList();
+        }
     }
 }

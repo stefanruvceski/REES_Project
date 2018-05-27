@@ -53,12 +53,21 @@ namespace WeatherAdminWPF
             }).Start();
         }
 
+        List<string> cities = new List<string>()
+        {
+            "Novi Sad","Subotica","Sombor","Kikinda","Zrenjanin","Vrsac",
+            "Sremska Mitrovica","Pancevo"
+        };
+
         private void AddWeatherToList()
         {
-            this.Dispatcher.Invoke((Action)(() =>
+            foreach (string city in cities)
             {
-                windGenerators.Add(proxy.GetWindGenerator());
-            }));
+                this.Dispatcher.Invoke((Action)(() =>
+                {
+                    windGenerators.Add(proxy.GetWindGenerator(city));
+                }));
+            }
         }
 
         private void CreateChannelFactory()

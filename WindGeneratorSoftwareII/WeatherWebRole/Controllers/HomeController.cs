@@ -20,21 +20,21 @@ namespace WeatherWebRole.Controllers
             return View();
         }
 
-        public ActionResult Update1()
+        public ActionResult Update1(string city)
         {
-            return View(Update());
+            return View(Update(city));
         }
 
 
 
-        public WindGenerator Update()
+        public WindGenerator Update(string city)
         {
             var binding = new NetTcpBinding();
             IPEndPoint ipAddress = RoleEnvironment.Roles["WeatherWorkerRole"].Instances[0].InstanceEndpoints["InternalRequest"].IPEndpoint;
             ChannelFactory<IWeather> factory = new ChannelFactory<IWeather>(binding, new EndpointAddress($"net.tcp://{ipAddress}/InternalRequest"));
             proxy = factory.CreateChannel();
 
-            return proxy.GetWindGenerator();
+            return proxy.GetWindGenerator(city);
         }
 
         public ActionResult About()

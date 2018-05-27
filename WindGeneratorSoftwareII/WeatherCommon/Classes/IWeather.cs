@@ -17,10 +17,6 @@ namespace WeatherCommon.Classes
     [ServiceContract]
     public interface IWeather
     {
-
-
-
-
         /// <summary>
         /// parametar mozda da bude cela lista
         /// </summary>
@@ -29,7 +25,7 @@ namespace WeatherCommon.Classes
         void SendWeatherState(Weather weather);
 
         [OperationContract]
-        WindGenerator GetWindGenerator();
+        WindGenerator GetWindGenerator(string city);
     }//end IWeather
 
 }//end namespace WeatherCommon
