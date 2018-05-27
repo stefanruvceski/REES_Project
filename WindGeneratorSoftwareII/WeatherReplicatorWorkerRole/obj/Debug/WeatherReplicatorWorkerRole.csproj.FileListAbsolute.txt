@@ -180,3 +180,4 @@ D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherRep
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorWorkerRole\obj\Debug\WeatherReplicatorWorkerRole.csproj.CopyComplete
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorWorkerRole\obj\Debug\WeatherReplicatorWorkerRole.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorWorkerRole\obj\Debug\WeatherReplicatorWorkerRole.pdb
+E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorWorkerRole\bin\Debug\Microsoft.WindowsAzure.Storage.dll
