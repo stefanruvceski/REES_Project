@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WeatherCloudService" generation="1" functional="0" release="0" Id="8fc5245d-dc99-44fb-a9d5-e7dd2303e78c" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WeatherCloudService" generation="1" functional="0" release="0" Id="8ee68f2e-f78b-4db4-93fd-bbad3fc8feb2" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="WeatherCloudServiceGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -230,14 +230,14 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="a059b8ee-a7bb-472c-95ac-3e0de692329c" ref="Microsoft.RedDog.Contract\ServiceContract\WeatherCloudServiceContract@ServiceDefinition">
+    <implementation Id="a0ea1603-8fc0-412c-bff9-c9545eae63b0" ref="Microsoft.RedDog.Contract\ServiceContract\WeatherCloudServiceContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="e202ac03-69a8-4434-ba5e-58a9417b845c" ref="Microsoft.RedDog.Contract\Interface\WeatherWebRole:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="fab0d429-8d11-4e52-bb4c-1efce47c4d37" ref="Microsoft.RedDog.Contract\Interface\WeatherWebRole:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/WeatherCloudService/WeatherCloudServiceGroup/WeatherWebRole:Endpoint1" />
           </inPort>
         </interfaceReference>
-        <interfaceReference Id="3ef7e21a-cd74-424f-b18e-090b92d9aea9" ref="Microsoft.RedDog.Contract\Interface\WeatherWorkerRole:InputRequest@ServiceDefinition">
+        <interfaceReference Id="069ccb47-3cd5-410c-91d0-7446d5998f0c" ref="Microsoft.RedDog.Contract\Interface\WeatherWorkerRole:InputRequest@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/WeatherCloudService/WeatherCloudServiceGroup/WeatherWorkerRole:InputRequest" />
           </inPort>

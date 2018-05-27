@@ -50,6 +50,7 @@ namespace WeatherAdminWPF
                     AddWeatherToList();
                     Thread.Sleep(5000);
                 }
+
             }).Start();
         }
 
@@ -66,8 +67,11 @@ namespace WeatherAdminWPF
                 this.Dispatcher.Invoke((Action)(() =>
                 {
                     windGenerators.Add(proxy.GetWindGenerator(city));
+                    
                 }));
             }
+           
+
         }
 
         private void CreateChannelFactory()
