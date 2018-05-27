@@ -119,7 +119,6 @@ C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplica
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplicatorWorkerRole\obj\Debug\WeatherReplicatorWorkerRole.csproj.CoreCompileInputs.cache
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplicatorWorkerRole\obj\Debug\WeatherReplicatorWorkerRole.dll
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherReplicatorWorkerRole\obj\Debug\WeatherReplicatorWorkerRole.pdb
-<<<<<<< HEAD
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorWorkerRole\bin\Debug\WeatherReplicatorWorkerRole.dll.config
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorWorkerRole\bin\Debug\WeatherReplicatorWorkerRole.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorWorkerRole\bin\Debug\WeatherReplicatorWorkerRole.pdb
@@ -181,6 +180,3 @@ D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherRep
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorWorkerRole\obj\Debug\WeatherReplicatorWorkerRole.csproj.CopyComplete
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorWorkerRole\obj\Debug\WeatherReplicatorWorkerRole.dll
 D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorWorkerRole\obj\Debug\WeatherReplicatorWorkerRole.pdb
-E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\WeatherReplicatorWorkerRole\bin\Debug\Microsoft.WindowsAzure.Storage.dll
-=======
->>>>>>> 321dae67ca3d6f61c1e8279fef892db7e889098d
