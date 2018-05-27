@@ -103,10 +103,10 @@ namespace Tests.TestClasses
         }
 
         [Test]      
-        [TestCase(18, 18, 10, 10, 0.40, 1.29, 45, ExpectedResult = 0)]          // prvi if, pali se kocnica
-        [TestCase(5, 5, 10, 8, 0.40, 1.29, 45, ExpectedResult = 51291.4088)]    // drugi if, brzina vetra je kriticna, ali vreme koje radi pod tom brzinom nije
-        [TestCase(3.04276606358717, 18, 10, 5, 0.40, 1.29, 45, ExpectedResult = 11559.5335)]        // else, brzina je manja od max
-        public double CalculatePower_GoodTest(double windSpeed, double maxSpeed, int maxSpeedTime, int workingTime, double coefficient, double airDensity, double turbineDiameter)
+        [TestCase(18, 18, 10, 10, 0.40, 1.29, 45, 10, ExpectedResult = 0)]          // prvi if, pali se kocnica
+        [TestCase(5, 5, 10, 8, 0.40, 1.29, 45, 10, ExpectedResult = 512914.088)]    // drugi if, brzina vetra je kriticna, ali vreme koje radi pod tom brzinom nije
+        [TestCase(3.04276606358717, 18, 10, 5, 0.40, 1.29, 45, 10, ExpectedResult = 115595.335)]        // else, brzina je manja od max
+        public double CalculatePower_GoodTest(double windSpeed, double maxSpeed, int maxSpeedTime, int workingTime, double coefficient, double airDensity, double turbineDiameter, int windMillCnt)
         {
             // setovanje odgovarajucih polja weatherMock-a
             weatherMock.Object.AirDensity = airDensity;
@@ -120,25 +120,26 @@ namespace Tests.TestClasses
             windMillMock.Object.TurbineDiameter = turbineDiameter;
 
             // setovanje odgovarajucih polja windGeneratorMock-a
+            windGeneratorMock.Object.WindMillCnt = windMillCnt;
             windGeneratorMock.Object.Weather = weatherMock.Object;
             windGeneratorMock.Object.WindMill = windMillMock.Object;
 
             double power = windGeneratorMock.Object.CalculatePower();
 
-            return Math.Round(power, 4);
+            return Math.Round(power, 3);
         }
 
         [Test]
-        [TestCase(-1, 18, 10, 10, 0.40, 1.29, 45, ExpectedResult = 0)]          
-        [TestCase(5, -1, 10, 8, 0.40, 1.29, 45, ExpectedResult = 51291.4088)]
-        [TestCase(85, 18, 10, 10, 0.40, 1.29, 45, ExpectedResult = 0)]
-        [TestCase(5, 85, 10, 8, 0.40, 1.29, 45, ExpectedResult = 51291.4088)]
-        [TestCase(5, 18, -1, 10, 0.40, 1.29, 45, ExpectedResult = 0)]
-        [TestCase(5, 18, 10, -1, 0.40, 1.29, 45, ExpectedResult = 0)]
-        [TestCase(5, 18, 10, -1, 0.20, 1.29, 45, ExpectedResult = 0)]
-        [TestCase(5, 18, 10, -1, 0.50, 1.29, 45, ExpectedResult = 0)]
+        [TestCase(-1, 18, 10, 10, 0.40, 1.29, 45, 10, ExpectedResult = 0)]          
+        [TestCase(5, -1, 10, 8, 0.40, 1.29, 45, 10, ExpectedResult = 51291.4088)]
+        [TestCase(85, 18, 10, 10, 0.40, 1.29, 45, 10, ExpectedResult = 0)]
+        [TestCase(5, 85, 10, 8, 0.40, 1.29, 45, 10, ExpectedResult = 51291.4088)]
+        [TestCase(5, 18, -1, 10, 0.40, 1.29, 45, 10, ExpectedResult = 0)]
+        [TestCase(5, 18, 10, -1, 0.40, 1.29, 45, 10, ExpectedResult = 0)]
+        [TestCase(5, 18, 10, -1, 0.20, 1.29, 45, 10, ExpectedResult = 0)]
+        [TestCase(5, 18, 10, -1, 0.50, 1.29, 45, 10, ExpectedResult = 0)]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
-        public double CalculatePower_BadTest1(double windSpeed, double maxSpeed, int maxSpeedTime, int workingTime, double coefficient, double airDensity, double turbineDiameter)
+        public double CalculatePower_BadTest1(double windSpeed, double maxSpeed, int maxSpeedTime, int workingTime, double coefficient, double airDensity, double turbineDiameter, int windMillCnt)
         {
             // setovanje odgovarajucih polja weatherMock-a
             weatherMock.Object.AirDensity = airDensity;
@@ -152,6 +153,7 @@ namespace Tests.TestClasses
             windMillMock.Object.TurbineDiameter = turbineDiameter;
 
             // setovanje odgovarajucih polja windGeneratorMock-a
+            windGeneratorMock.Object.WindMillCnt = windMillCnt;
             windGeneratorMock.Object.Weather = weatherMock.Object;
             windGeneratorMock.Object.WindMill = windMillMock.Object;
 
@@ -161,10 +163,11 @@ namespace Tests.TestClasses
         }
 
         [Test]
-        [TestCase(5, 18, 10, 10, 0.30, 1.5, 45, ExpectedResult = 0)]
-        [TestCase(5, 18, 10, 10, 0.30, 1.29, -5, ExpectedResult = 0)]
+        [TestCase(5, 18, 10, 10, 0.30, 1.5, 45, 10, ExpectedResult = 0)]
+        [TestCase(5, 18, 10, 10, 0.30, 1.29, -5, 10, ExpectedResult = 0)]
+        [TestCase(5, 18, 10, 10, 0.30, 1.29, -5, 0, ExpectedResult = 0)]
         [ExpectedException(typeof(ArgumentException))]
-        public double CalculatePower_BadTest2(double windSpeed, double maxSpeed, int maxSpeedTime, int workingTime, double coefficient, double airDensity, double turbineDiameter)
+        public double CalculatePower_BadTest2(double windSpeed, double maxSpeed, int maxSpeedTime, int workingTime, double coefficient, double airDensity, double turbineDiameter, int windMillCnt)
         {
             // setovanje odgovarajucih polja weatherMock-a
             weatherMock.Object.AirDensity = airDensity;
@@ -178,6 +181,7 @@ namespace Tests.TestClasses
             windMillMock.Object.TurbineDiameter = turbineDiameter;
 
             // setovanje odgovarajucih polja windGeneratorMock-a
+            windGeneratorMock.Object.WindMillCnt = windMillCnt;
             windGeneratorMock.Object.Weather = weatherMock.Object;
             windGeneratorMock.Object.WindMill = windMillMock.Object;
 

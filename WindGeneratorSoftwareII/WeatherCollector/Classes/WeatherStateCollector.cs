@@ -32,9 +32,6 @@ namespace WeatherCollector.Classes
             "http://api.openweathermap.org/data/2.5/weather?q=Vrsac&appid=fdcdcf4845c441392a458b8dce7007c2", //Vrsac
             "http://api.openweathermap.org/data/2.5/weather?q=Sremska%20Mitrovica&appid=fdcdcf4845c441392a458b8dce7007c2", //Sremska Mitrovica
             "http://api.openweathermap.org/data/2.5/weather?q=Pancevo&appid=fdcdcf4845c441392a458b8dce7007c2", //Pancevo
-            
-
-
         };
 
         public WeatherStateCollector()
@@ -79,9 +76,9 @@ namespace WeatherCollector.Classes
                     case @"""name""": w.City = p[1].Replace('"', ' ').Trim(); break;
                     case @"""description""": w.Description = p[1].Replace('"', ' ').Trim(); break;
                     case @"""pressure""": w.Pressure = int.Parse(p[1].Replace('"', ' ').Trim()); break;
-                    case @"""wind""": w.WindSpeed = double.Parse(p[2].Replace('"', ' ').Replace('}', ' ').Trim()) + new Random().NextDouble(); break;
-                    case @"""temp_min""": w.MinTemp = Double.Parse(p[1].Replace('}', ' ').Trim()) - 273.15; break;
-                    case @"""temp_max""": w.MaxTemp = Double.Parse(p[1].Replace('}', ' ').Trim()) - 273.15; break;
+                    case @"""wind""": w.WindSpeed = double.Parse(p[2].Replace('"', ' ').Replace('}', ' ').Trim().Replace('.', ',')) + new Random().NextDouble(); break;
+                    case @"""temp_min""": w.MinTemp = Double.Parse(p[1].Replace('}', ' ').Trim().Replace('.', ',')) - 273.15; break;
+                    case @"""temp_max""": w.MaxTemp = Double.Parse(p[1].Replace('}', ' ').Trim().Replace('.', ',')) - 273.15; break;
                     default:
                         break;
                 }

@@ -124,7 +124,8 @@ namespace WeatherCommon.Classes
             {
                 WindMill.WorkingTime = 0;
             }
-            return power*windMillCnt;
+
+            return power * windMillCnt;
         }
 
         public double CalculateSurfaceArea()
