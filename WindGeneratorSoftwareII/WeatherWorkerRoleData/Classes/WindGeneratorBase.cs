@@ -15,10 +15,11 @@ using Microsoft.WindowsAzure.Storage.Table;
 
 namespace WeatherWorkerRoleData.Classes
 {
+
+
     public class WindGeneratorBase : TableEntity
     {
-        static AggregateRepository aggregateRepository = new AggregateRepository();
-        static WindMillRepository windMillRepository = new WindMillRepository();
+       
 
         private string weather;
         private string windMill;
@@ -44,13 +45,13 @@ namespace WeatherWorkerRoleData.Classes
             this.weather = weather;
             this.windMill = windMill;
             this.windMillCnt = windMillCnt;
-            this.aggregatePower = aggregateRepository.GetOneAggregate(aggregate).Power * windMillCnt;
+            this.aggregatePower = Repositories.aggregateRepository.GetOneAggregate(aggregate).Power * windMillCnt;
             this.aggregate = aggregate;
             
-            WindMillBase w = windMillRepository.GetOneWindMill(windMill);
+            WindMillBase w = Repositories.windMillRepository.GetOneWindMill(windMill);
             if(w.MinPower < 12000)
                 w.MinPower *= windMillCnt;
-            windMillRepository.AddOrReplaceWindMill(w);
+            Repositories.windMillRepository.AddOrReplaceWindMill(w);
 
         }
 
@@ -65,12 +66,12 @@ namespace WeatherWorkerRoleData.Classes
         public double CalculatePower()
         {
 
-            WeatherBase weatherBase = new WeatherRepository().GetLastWeather(Weather);
+            WeatherBase weatherBase = Repositories.weatherRepository.GetLastWeather(Weather);
 
             if (weatherBase == null)
-                weatherBase = new WeatherRepository().GetOneWeather(weather);
-            WindMillBase windMillBase = new WindMillRepository().GetOneWindMill(WindMill);
-            WeatherRepository weatherRepository = new WeatherRepository();
+                weatherBase = Repositories.weatherRepository.GetOneWeather(weather);
+            WindMillBase windMillBase = Repositories.windMillRepository.GetOneWindMill(WindMill);
+            
             double power = 0;
 
             if (weatherBase.WindSpeed >= windMillBase.MaxSpeed && windMillBase.WorkingTime >= windMillBase.MaxSpeedTime)

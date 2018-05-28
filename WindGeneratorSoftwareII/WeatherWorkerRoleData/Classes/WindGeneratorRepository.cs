@@ -31,11 +31,11 @@ namespace WeatherWorkerRoleData.Classes
             CloudTableClient tableClient = new CloudTableClient(new
            Uri(_storageAccount.TableEndpoint.AbsoluteUri), _storageAccount.Credentials);
             _table = tableClient.GetTableReference("WindGeneratorTable");
-            if (!isCreated)
+            if (_table.CreateIfNotExists())
             {
-                _table.CreateIfNotExists();
+
                 InitWindGenerators();
-                isCreated = true;
+
             }
         }
 

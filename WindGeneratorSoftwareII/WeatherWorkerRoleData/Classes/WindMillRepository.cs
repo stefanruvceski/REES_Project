@@ -22,11 +22,10 @@ namespace WeatherWorkerRoleData.Classes
                                                                 _storageAccount.Credentials);
             _table = tableClient.GetTableReference("WindMillTable");
 
-            if (!created)
+            if (_table.CreateIfNotExists())
             {
-                _table.CreateIfNotExists();
+
                 InitWindMills();
-                created = true;
             }
         }
         private void InitWindMills()

@@ -13,7 +13,6 @@ namespace WeatherWorkerRoleData.Classes
     {
         private CloudStorageAccount _storageAccount;
         private CloudTable _table;
-        private static bool isCreated = false;
 
         public AggregateRepository()
         {
@@ -21,11 +20,11 @@ namespace WeatherWorkerRoleData.Classes
             CloudTableClient tableClient = new CloudTableClient(new Uri(_storageAccount.TableEndpoint.AbsoluteUri),
                                                                 _storageAccount.Credentials);
             _table = tableClient.GetTableReference("AggregateTable");
-            if (!isCreated)
+            if (_table.CreateIfNotExists())
             {
-                _table.CreateIfNotExists();
+            
                 InitAggregates();
-                isCreated = true;
+          
             }
         }
 

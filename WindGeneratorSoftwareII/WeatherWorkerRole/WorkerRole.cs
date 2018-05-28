@@ -9,6 +9,7 @@ using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.Diagnostics;
 using Microsoft.WindowsAzure.ServiceRuntime;
 using WeatherWorkerRole.Classes;
+using WeatherWorkerRoleData.Classes;
 
 namespace WeatherWorkerRole
 {
@@ -19,6 +20,8 @@ namespace WeatherWorkerRole
 
         private WeatherJobServer weatherServer = new WeatherJobServer();
         private InternalWeatherJobServer internalWeatherServer = new InternalWeatherJobServer();
+
+        Repositories repositories = new Repositories();
 
         public override void Run()
         {

@@ -34,7 +34,6 @@ namespace WeatherAdminWPF
             windGenerators = new BindingList<WindGenerator>();
             CreateChannelFactory();
             AddWeather();
-            Thread.Sleep(1000);
             DataContext = this;
             InitializeComponent();
 
@@ -48,7 +47,7 @@ namespace WeatherAdminWPF
                 while (true)
                 {
                     AddWeatherToList();
-                    Thread.Sleep(5000);
+                    Thread.Sleep(1000);
                 }
 
             }).Start();
@@ -64,6 +63,7 @@ namespace WeatherAdminWPF
         {
             foreach (string city in cities)
             {
+
                 this.Dispatcher.Invoke((Action)(() =>
                 {
                     windGenerators.Add(proxy.GetWindGenerator(city));

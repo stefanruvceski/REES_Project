@@ -34,12 +34,6 @@ namespace WeatherWorkerRole.Classes
             serviceHost = new ServiceHost(typeof(WeatherJobServerProvider));
             serviceHost.AddServiceEndpoint(typeof(IWeather), binding, endpoint);
 
-            WindMillRepository windMillRepository = new WindMillRepository();
-            WindGeneratorRepository windGeneratorRepository = new WindGeneratorRepository();
-            WeatherRepository weatherRepository = new WeatherRepository();
-            AggregateRepository aggregateRepository = new AggregateRepository();
-
-            //List<WindGeneratorBase> w = windGeneratorRepository.GetAllWindGenerators();
         }
 
         public void Open()

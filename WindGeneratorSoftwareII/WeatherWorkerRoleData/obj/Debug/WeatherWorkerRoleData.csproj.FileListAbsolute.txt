@@ -24,3 +24,22 @@ C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWorkerR
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWorkerRoleData\obj\Debug\WeatherWorkerRoleData.csproj.CoreCompileInputs.cache
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWorkerRoleData\obj\Debug\WeatherWorkerRoleData.dll
 C:\Users\WIN10\Downloads\REES_Project-19-05\WindGeneratorSoftware\WeatherWorkerRoleData\obj\Debug\WeatherWorkerRoleData.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\WeatherWorkerRoleData.dll.config
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\WeatherWorkerRoleData.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\WeatherWorkerRoleData.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\Newtonsoft.Json.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\WeatherCommon.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\WeatherCommon.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\bin\Debug\Newtonsoft.Json.xml
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\obj\Debug\WeatherWorkerRoleData.csprojAssemblyReference.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\obj\Debug\WeatherWorkerRoleData.csproj.CoreCompileInputs.cache
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\obj\Debug\WeatherWorkerRoleData.csproj.CopyComplete
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\obj\Debug\WeatherWorkerRoleData.dll
+D:\GitHub\III Godina\VI Semestar\REES_Project\WindGeneratorSoftwareII\WeatherWorkerRoleData\obj\Debug\WeatherWorkerRoleData.pdb

@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Classes\AggregateBase.cs" />
     <Compile Include="Classes\AggregateRepository.cs" />
+    <Compile Include="Classes\Repositories.cs" />
     <Compile Include="Classes\WeatherBase.cs" />
     <Compile Include="Classes\WindGeneratorBase.cs" />
     <Compile Include="Classes\WeatherRepository.cs" />
