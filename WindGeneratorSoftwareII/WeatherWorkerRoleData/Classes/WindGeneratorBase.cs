@@ -19,8 +19,6 @@ namespace WeatherWorkerRoleData.Classes
 
     public class WindGeneratorBase : TableEntity
     {
-       
-
         private string weather;
         private string windMill;
         private int windMillCnt;
@@ -29,19 +27,26 @@ namespace WeatherWorkerRoleData.Classes
         private double power;
         private int aggregateONCnt;
 
-
-
         public WindGeneratorBase()
         {
 
         }
 
-
-
         public WindGeneratorBase(string weather, string windMill, int windMillCnt, string aggregate)
         {
+            if(weather == null || windMill == null || aggregate == null)
+            {
+                throw new ArgumentNullException("Arguments can't be null.");
+            }
+
+            if(windMillCnt <= 0)
+            {
+                throw new ArgumentException("Farm must have more than 0 windmills.");
+            }
+
             PartitionKey = "WindGenerator";
             RowKey = weather;
+
             this.weather = weather;
             this.windMill = windMill;
             this.windMillCnt = windMillCnt;
@@ -65,7 +70,6 @@ namespace WeatherWorkerRoleData.Classes
 
         public double CalculatePower()
         {
-
             WeatherBase weatherBase = Repositories.weatherRepository.GetLastWeather(Weather);
 
             if (weatherBase == null)
@@ -94,10 +98,22 @@ namespace WeatherWorkerRoleData.Classes
             {
                 windMillBase.WorkingTime = 0;
             }
-            return power*windMillCnt;
+
+            return power * windMillCnt;
         }
+
         public double CalculateSurfaceArea(WindMillBase windMillBase)
         {
+            if(windMillBase == null)
+            {
+                throw new ArgumentNullException("Argument can't be null.");
+            }
+
+            if(windMillBase.TurbineDiameter <= 0)
+            {
+                throw new ArgumentException("Turbine diameter must be greater than 0.");
+            }
+
             return Math.Pow((windMillBase.TurbineDiameter / 2), 2) * Math.PI;
         }
     }//end Weather

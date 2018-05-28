@@ -34,6 +34,11 @@ namespace WeatherWorkerRoleData.Classes
 
         public WeatherBase(Weather w)
         {
+            if(w == null)
+            {
+                throw new ArgumentNullException("Argument can't be null.");
+            }
+
             PartitionKey = "Weather";
             RowKey = (++id).ToString();
 
@@ -47,6 +52,41 @@ namespace WeatherWorkerRoleData.Classes
 
         public WeatherBase(string city, string description, double maxTemp, double minTemp, double pressure, double windSpeed)
         {
+            if (city == null || description == null)
+            {
+                throw new ArgumentNullException("Arguments can't be null.");
+            }
+
+            if (city.Equals(String.Empty))
+            {
+                throw new ArgumentException("Empty city name.");
+            }
+
+            if (description.Equals(String.Empty))
+            {
+                throw new ArgumentException("Empty weather description.");
+            }
+
+            if (maxTemp > 65 || maxTemp < -90 || minTemp > 65 || minTemp < -90)
+            {
+                throw new ArgumentOutOfRangeException("Temperatures must be in range [-90, +65] Celsius degrees.");
+            }
+
+            if (minTemp > maxTemp)
+            {
+                throw new ArgumentException("Minimum temperature can't be greater than maximum temperature.");
+            }
+
+            if (pressure < 800 || pressure > 1100)
+            {
+                throw new ArgumentOutOfRangeException("Air pressure must be in range [800, 1000] milibars.");
+            }
+
+            if (windSpeed < 0 || windSpeed > 80)
+            {
+                throw new ArgumentOutOfRangeException("Wind speed must be in range [0, 80] m/s.");
+            }
+
             PartitionKey = "Weather";
             RowKey = (++id).ToString();
 

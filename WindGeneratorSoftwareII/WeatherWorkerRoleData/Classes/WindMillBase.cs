@@ -21,8 +21,35 @@ namespace WeatherWorkerRoleData.Classes
         {
 
         }
+
         public WindMillBase(double coefficient, double minPower, double turbineDiameter, double maxSpeed, int maxSpeedTime)
         {
+            // validacija parametara konstruktora
+            if (coefficient < 0.25 || coefficient > 0.45)
+            {
+                throw new ArgumentException("Coefficient must be in range [0.25, 0.45].");
+            }
+
+            if (minPower <= 0)
+            {
+                throw new ArgumentException("Minimum power of windmill must be greater than 0.");
+            }
+
+            if (turbineDiameter <= 0)
+            {
+                throw new ArgumentException("Turbine diameter must be greater than 0.");
+            }
+
+            if (maxSpeed < 0 || maxSpeed > 80)
+            {
+                throw new ArgumentException("Maximum wind speed must be in range [0, 80] m/s.");
+            }
+
+            if (maxSpeedTime <= 0)
+            {
+                throw new ArgumentException("Turbine working time on maximim speed must be greater than 0.");
+            }
+
             PartitionKey = "WindMill";
             RowKey = (++Id).ToString();
             this.coefficient = coefficient;

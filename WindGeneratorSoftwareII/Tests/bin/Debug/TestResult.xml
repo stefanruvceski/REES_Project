@@ -1,65 +1,206 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\Tests\bin\Debug\Tests.dll" total="70" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-05-27" time="14:35:55">
+<test-results name="E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\Tests\bin\Debug\Tests.dll" total="127" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-05-28" time="23:19:04">
   <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8830" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="E:\Fakultet\TrecaGodina\Razvoj softvera\Vezbe\NUnit-2.6.4\bin" machine-name="PEJICM" user="WIN10" user-domain="PEJICM" />
   <culture-info current-culture="sr-Latn-RS" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\Tests\bin\Debug\Tests.dll" executed="True" result="Success" success="True" time="0.778" asserts="0">
+  <test-suite type="Assembly" name="E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\Tests\bin\Debug\Tests.dll" executed="True" result="Success" success="True" time="2.826" asserts="0">
     <results>
-      <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.776" asserts="0">
+      <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="2.802" asserts="0">
         <results>
-          <test-suite type="Namespace" name="TestClasses" executed="True" result="Success" success="True" time="0.775" asserts="0">
+          <test-suite type="Namespace" name="BaseTestClasses" executed="True" result="Success" success="True" time="2.095" asserts="0">
             <results>
-              <test-suite type="TestFixture" name="AggregateTest" executed="True" result="Success" success="True" time="0.064" asserts="0">
+              <test-suite type="TestFixture" name="AggregateBaseTest" executed="True" result="Success" success="True" time="0.480" asserts="0">
                 <results>
-                  <test-suite type="ParameterizedTest" name="AggregateConstructor_BadParameters" executed="True" result="Success" success="True" time="0.022" asserts="0">
+                  <test-suite type="ParameterizedTest" name="AggregateBaseConstructor_BadParameters" executed="True" result="Success" success="True" time="0.401" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_BadParameters(-1,10,500,True)" executed="True" result="Success" success="True" time="0.004" asserts="0" />
-                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_BadParameters(0,0,500,True)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
-                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_BadParameters(0,10,0,True)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.AggregateBaseTest.AggregateBaseConstructor_BadParameters(0,10000,True)" executed="True" result="Success" success="True" time="0.381" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.AggregateBaseTest.AggregateBaseConstructor_BadParameters(10,0,True)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="AggregateConstructor_BorderParameters" executed="True" result="Success" success="True" time="0.009" asserts="0">
+                  <test-suite type="ParameterizedTest" name="AggregateBaseConstructor_BorderParameters" executed="True" result="Success" success="True" time="0.038" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_BorderParameters(0,0.1d,0.1d,True)" executed="True" result="Success" success="True" time="0.007" asserts="4" />
+                      <test-case name="Tests.BaseTestClasses.AggregateBaseTest.AggregateBaseConstructor_BorderParameters(0.1d,0.1d,True)" executed="True" result="Success" success="True" time="0.032" asserts="3" />
+                      <test-case name="Tests.BaseTestClasses.AggregateBaseTest.AggregateBaseConstructor_BorderParameters(0.0001d,0.0001d,False)" executed="True" result="Success" success="True" time="0.000" asserts="3" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="AggregateConstructor_GoodParameters" executed="True" result="Success" success="True" time="0.016" asserts="0">
+                  <test-suite type="ParameterizedTest" name="AggregateBaseConstructor_GoodParameters" executed="True" result="Success" success="True" time="0.015" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_GoodParameters(1,10,500,True)" executed="True" result="Success" success="True" time="0.002" asserts="4" />
-                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_GoodParameters(2,12,1000,True)" executed="True" result="Success" success="True" time="0.000" asserts="4" />
-                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_GoodParameters(3,15,1500,False)" executed="True" result="Success" success="True" time="0.001" asserts="4" />
+                      <test-case name="Tests.BaseTestClasses.AggregateBaseTest.AggregateBaseConstructor_GoodParameters(10,10000,True)" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.BaseTestClasses.AggregateBaseTest.AggregateBaseConstructor_GoodParameters(20,20000,False)" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+                      <test-case name="Tests.BaseTestClasses.AggregateBaseTest.AggregateBaseConstructor_GoodParameters(30,30000,True)" executed="True" result="Success" success="True" time="0.000" asserts="3" />
                     </results>
                   </test-suite>
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="WeatherTest" executed="True" result="Success" success="True" time="0.205" asserts="0">
+              <test-suite type="TestFixture" name="WeatherBaseTest" executed="True" result="Success" success="True" time="0.970" asserts="0">
                 <results>
-                  <test-suite type="ParameterizedTest" name="WeatherConstructor_BadParameters1" executed="True" result="Success" success="True" time="0.025" asserts="0">
+                  <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters" executed="True" result="Success" success="True" time="0.229" asserts="0" />
+                  <test-suite type="ParameterizedTest" name="WeatherBaseConstructor_BadParameters1" executed="True" result="Success" success="True" time="0.028" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters1(&quot;&quot;,&quot;sunny&quot;,24,24,1012,3.4d)" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters1(&quot;&quot;,&quot;sunny&quot;,24,24,1012,3.4d)" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters1(&quot;Novi Sad&quot;,&quot;&quot;,8,-4,800,5.6d)" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters1(&quot;Novi Sad&quot;,&quot;foggy&quot;,12,24,1100,4.1d)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="WeatherBaseConstructor_BadParameters2" executed="True" result="Success" success="True" time="0.012" asserts="0">
+                    <results>
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters2(null,&quot;sunny&quot;,24,24,1012,3.4d)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters2(&quot;Novi Sad&quot;,null,8,-4,800,5.6d)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="WeatherBaseConstructor_BadParameters3" executed="True" result="Success" success="True" time="0.051" asserts="0">
+                    <results>
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;sunny&quot;,70,24,1012,3.4d)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;cloudy&quot;,8,70,800,5.6d)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;foggy&quot;,-95,24,1100,4.1d)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;foggy&quot;,30,-95,1100,4.1d)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;foggy&quot;,-95,24,799,4.1d)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;foggy&quot;,-95,24,1101,4.1d)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;foggy&quot;,-95,24,1100,-1)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;foggy&quot;,-95,24,1100,81)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="WeatherBaseConstructor_BorderParameters" executed="True" result="Success" success="True" time="0.024" asserts="0">
+                    <results>
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BorderParameters(&quot;Novi Sad&quot;,&quot;sunny&quot;,24,24,1012,3.4d)" executed="True" result="Success" success="True" time="0.002" asserts="6" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BorderParameters(&quot;Novi Sad&quot;,&quot;cloudy&quot;,8,-4,800,5.6d)" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BorderParameters(&quot;Novi Sad&quot;,&quot;foggy&quot;,12,0,1100,4.1d)" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BorderParameters(&quot;Novi Sad&quot;,&quot;foggy&quot;,12,0,1100,0)" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_BorderParameters(&quot;Novi Sad&quot;,&quot;foggy&quot;,12,0,1100,80)" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="WeatherBaseConstructor_GoodParameters" executed="True" result="Success" success="True" time="0.013" asserts="0">
+                    <results>
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_GoodParameters(&quot;Novi Sad&quot;,&quot;sunny&quot;,24,14,1012,3.4d)" executed="True" result="Success" success="True" time="0.001" asserts="6" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_GoodParameters(&quot;Novi Sad&quot;,&quot;cloudy&quot;,8,-4,989,5.6d)" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                      <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_GoodParameters(&quot;Novi Sad&quot;,&quot;foggy&quot;,12,0,1008,4.1d)" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                    </results>
+                  </test-suite>
+                  <test-case name="Tests.BaseTestClasses.WeatherBaseTest.WeatherBaseConstructor_GoodParameters" executed="True" result="Success" success="True" time="0.568" asserts="7" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="WindGeneratorBaseTest" executed="True" result="Success" success="True" time="0.502" asserts="0">
+                <results>
+                  <test-suite type="ParameterizedTest" name="CalculateSurfaceArea_BadTest1" executed="True" result="Success" success="True" time="0.051" asserts="0">
+                    <results>
+                      <test-case name="Tests.BaseTestClasses.WindGeneratorBaseTest.CalculateSurfaceArea_BadTest1(0)" executed="True" result="Success" success="True" time="0.043" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WindGeneratorBaseTest.CalculateSurfaceArea_BadTest1(-5)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="CalculateSurfaceArea_BadTest2" executed="True" result="Success" success="True" time="0.010" asserts="0">
+                    <results>
+                      <test-case name="Tests.BaseTestClasses.WindGeneratorBaseTest.CalculateSurfaceArea_BadTest2(10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WindGeneratorBaseTest.CalculateSurfaceArea_BadTest2(30)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="CalculateSurfaceArea_GoodTest" executed="True" result="Success" success="True" time="0.015" asserts="0">
+                    <results>
+                      <test-case name="Tests.BaseTestClasses.WindGeneratorBaseTest.CalculateSurfaceArea_GoodTest(10)" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="Tests.BaseTestClasses.WindGeneratorBaseTest.CalculateSurfaceArea_GoodTest(30)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tests.BaseTestClasses.WindGeneratorBaseTest.CalculateSurfaceArea_GoodTest(50)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="WindGeneratorBaseConstructor_BadParameters1" executed="True" result="Success" success="True" time="0.384" asserts="0">
+                    <results>
+                      <test-case name="Tests.BaseTestClasses.WindGeneratorBaseTest.WindGeneratorBaseConstructor_BadParameters1(null,&quot;1&quot;,10,&quot;1&quot;)" executed="True" result="Success" success="True" time="0.370" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WindGeneratorBaseTest.WindGeneratorBaseConstructor_BadParameters1(&quot;2&quot;,null,10,&quot;2&quot;)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WindGeneratorBaseTest.WindGeneratorBaseConstructor_BadParameters1(&quot;3&quot;,&quot;3&quot;,10,null)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="WindGeneratorBaseConstructor_BadParameters2" executed="True" result="Success" success="True" time="0.010" asserts="0">
+                    <results>
+                      <test-case name="Tests.BaseTestClasses.WindGeneratorBaseTest.WindGeneratorBaseConstructor_BadParameters2(&quot;1&quot;,&quot;1&quot;,0,&quot;1&quot;)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WindGeneratorBaseTest.WindGeneratorBaseConstructor_BadParameters2(&quot;1&quot;,&quot;1&quot;,-1,&quot;1&quot;)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="WindMillBaseTest" executed="True" result="Success" success="True" time="0.107" asserts="0">
+                <results>
+                  <test-suite type="ParameterizedTest" name="WindMillBaseConstructor_BadParameters" executed="True" result="Success" success="True" time="0.044" asserts="0">
+                    <results>
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_BadParameters(0.2d,1000,20,5,10)" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_BadParameters(0.3d,0,20,5,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_BadParameters(0.3d,1000,0,5,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_BadParameters(0.3d,1000,20,-0.1d,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_BadParameters(0.3d,1000,20,81,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_BadParameters(0.3d,1000,20,5,0)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="WindMillBaseConstructor_BorderParameters" executed="True" result="Success" success="True" time="0.023" asserts="0">
+                    <results>
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_BorderParameters(0.25d,0.1d,0.1d,0.1d,1)" executed="True" result="Success" success="True" time="0.005" asserts="5" />
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_BorderParameters(0.25d,0.1d,0.1d,80,1)" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_BorderParameters(0.45d,0.1d,0.1d,0.1d,1)" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_BorderParameters(0.45d,0.1d,0.1d,80,1)" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="WindMillBaseConstructor_GoodParameters" executed="True" result="Success" success="True" time="0.023" asserts="0">
+                    <results>
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_GoodParameters(0.3d,1000,20,5,10)" executed="True" result="Success" success="True" time="0.001" asserts="5" />
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_GoodParameters(0.35d,1500,30,5,10)" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_GoodParameters(0.35d,2000,35,8,10)" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_GoodParameters(0.35d,12000,40,10,10)" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+                      <test-case name="Tests.BaseTestClasses.WindMillBaseTest.WindMillBaseConstructor_GoodParameters(0.4d,20000,45,18,10)" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="Namespace" name="TestClasses" executed="True" result="Success" success="True" time="0.673" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="AggregateTest" executed="True" result="Success" success="True" time="0.049" asserts="0">
+                <results>
+                  <test-suite type="ParameterizedTest" name="AggregateConstructor_BadParameters" executed="True" result="Success" success="True" time="0.019" asserts="0">
+                    <results>
+                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_BadParameters(-1,10,500,True)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_BadParameters(0,0,500,True)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_BadParameters(0,10,0,True)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="AggregateConstructor_BorderParameters" executed="True" result="Success" success="True" time="0.004" asserts="0">
+                    <results>
+                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_BorderParameters(0,0.1d,0.1d,True)" executed="True" result="Success" success="True" time="0.002" asserts="4" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="AggregateConstructor_GoodParameters" executed="True" result="Success" success="True" time="0.013" asserts="0">
+                    <results>
+                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_GoodParameters(1,10,500,True)" executed="True" result="Success" success="True" time="0.001" asserts="4" />
+                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_GoodParameters(2,12,1000,True)" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+                      <test-case name="Tests.TestClasses.AggregateTest.AggregateConstructor_GoodParameters(3,15,1500,False)" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="WeatherTest" executed="True" result="Success" success="True" time="0.193" asserts="0">
+                <results>
+                  <test-suite type="ParameterizedTest" name="WeatherConstructor_BadParameters1" executed="True" result="Success" success="True" time="0.022" asserts="0">
+                    <results>
+                      <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters1(&quot;&quot;,&quot;sunny&quot;,24,24,1012,3.4d)" executed="True" result="Success" success="True" time="0.006" asserts="0" />
                       <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters1(&quot;Novi Sad&quot;,&quot;&quot;,8,-4,800,5.6d)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                       <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters1(&quot;Novi Sad&quot;,&quot;foggy&quot;,12,24,1100,4.1d)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="WeatherConstructor_BadParameters1" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                  <test-suite type="ParameterizedTest" name="WeatherConstructor_BadParameters1" executed="True" result="Success" success="True" time="0.004" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters1(null)" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                      <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters1(null)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                     </results>
                   </test-suite>
                   <test-suite type="ParameterizedTest" name="WeatherConstructor_BadParameters2" executed="True" result="Success" success="True" time="0.004" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters2(&quot;&quot;)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                      <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters2(&quot;&quot;)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="WeatherConstructor_BadParameters2" executed="True" result="Success" success="True" time="0.014" asserts="0">
+                  <test-suite type="ParameterizedTest" name="WeatherConstructor_BadParameters2" executed="True" result="Success" success="True" time="0.012" asserts="0">
                     <results>
                       <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters2(null,&quot;sunny&quot;,24,24,1012,3.4d)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                       <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters2(&quot;Novi Sad&quot;,null,8,-4,800,5.6d)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="WeatherConstructor_BadParameters3" executed="True" result="Success" success="True" time="0.061" asserts="0">
+                  <test-suite type="ParameterizedTest" name="WeatherConstructor_BadParameters3" executed="True" result="Success" success="True" time="0.057" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;sunny&quot;,70,24,1012,3.4d)" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                      <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;sunny&quot;,70,24,1012,3.4d)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                       <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;cloudy&quot;,8,70,800,5.6d)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                       <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;foggy&quot;,-95,24,1100,4.1d)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                       <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;foggy&quot;,30,-95,1100,4.1d)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
@@ -69,9 +210,9 @@
                       <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BadParameters3(&quot;Novi Sad&quot;,&quot;foggy&quot;,-95,24,1100,81)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="WeatherConstructor_BorderParameters" executed="True" result="Success" success="True" time="0.025" asserts="0">
+                  <test-suite type="ParameterizedTest" name="WeatherConstructor_BorderParameters" executed="True" result="Success" success="True" time="0.029" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BorderParameters(&quot;Novi Sad&quot;,&quot;sunny&quot;,24,24,1012,3.4d)" executed="True" result="Success" success="True" time="0.003" asserts="6" />
+                      <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BorderParameters(&quot;Novi Sad&quot;,&quot;sunny&quot;,24,24,1012,3.4d)" executed="True" result="Success" success="True" time="0.002" asserts="6" />
                       <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BorderParameters(&quot;Novi Sad&quot;,&quot;cloudy&quot;,8,-4,800,5.6d)" executed="True" result="Success" success="True" time="0.000" asserts="6" />
                       <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BorderParameters(&quot;Novi Sad&quot;,&quot;foggy&quot;,12,0,1100,4.1d)" executed="True" result="Success" success="True" time="0.000" asserts="6" />
                       <test-case name="Tests.TestClasses.WeatherTest.WeatherConstructor_BorderParameters(&quot;Novi Sad&quot;,&quot;foggy&quot;,12,0,1100,0)" executed="True" result="Success" success="True" time="0.000" asserts="6" />
@@ -92,73 +233,73 @@
                   </test-suite>
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="WindGeneratorTest" executed="True" result="Success" success="True" time="0.339" asserts="0">
+              <test-suite type="TestFixture" name="WindGeneratorTest" executed="True" result="Success" success="True" time="0.270" asserts="0">
                 <results>
-                  <test-suite type="ParameterizedTest" name="CalculatePower_BadTest1" executed="True" result="Success" success="True" time="0.189" asserts="0">
+                  <test-suite type="ParameterizedTest" name="CalculatePower_BadTest1" executed="True" result="Success" success="True" time="0.094" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest1(-1,18,10,10,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest1(-1,18,10,10,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.035" asserts="0" />
                       <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest1(5,-1,10,8,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                       <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest1(85,18,10,10,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                       <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest1(5,85,10,8,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest1(5,18,-1,10,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest1(5,18,-1,10,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                       <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest1(5,18,10,-1,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest1(5,18,10,-1,0.2d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest1(5,18,10,-1,0.2d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                       <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest1(5,18,10,-1,0.5d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="CalculatePower_BadTest2" executed="True" result="Success" success="True" time="0.019" asserts="0">
+                  <test-suite type="ParameterizedTest" name="CalculatePower_BadTest2" executed="True" result="Success" success="True" time="0.023" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest2(5,18,10,10,0.3d,1.5d,45,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest2(5,18,10,10,0.3d,1.29d,-5,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest2(5,18,10,10,0.3d,1.5d,45,10)" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest2(5,18,10,10,0.3d,1.29d,-5,10)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                       <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_BadTest2(5,18,10,10,0.3d,1.29d,-5,0)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="CalculatePower_GoodTest" executed="True" result="Success" success="True" time="0.015" asserts="0">
+                  <test-suite type="ParameterizedTest" name="CalculatePower_GoodTest" executed="True" result="Success" success="True" time="0.019" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_GoodTest(18,18,10,10,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_GoodTest(5,5,10,8,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_GoodTest(3.04276606358717d,18,10,5,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_GoodTest(18,18,10,10,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_GoodTest(5,5,10,8,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculatePower_GoodTest(3.04276606358717d,18,10,5,0.4d,1.29d,45,10)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="CalculateSurfaceArea_BadTest" executed="True" result="Success" success="True" time="0.011" asserts="0">
+                  <test-suite type="ParameterizedTest" name="CalculateSurfaceArea_BadTest" executed="True" result="Success" success="True" time="0.014" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculateSurfaceArea_BadTest(0)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculateSurfaceArea_BadTest(0)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                       <test-case name="Tests.TestClasses.WindGeneratorTest.CalculateSurfaceArea_BadTest(-5)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="CalculateSurfaceArea_GoodTest" executed="True" result="Success" success="True" time="0.013" asserts="0">
+                  <test-suite type="ParameterizedTest" name="CalculateSurfaceArea_GoodTest" executed="True" result="Success" success="True" time="0.017" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculateSurfaceArea_GoodTest(10)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculateSurfaceArea_GoodTest(30)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculateSurfaceArea_GoodTest(50)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculateSurfaceArea_GoodTest(10)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculateSurfaceArea_GoodTest(30)" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.CalculateSurfaceArea_GoodTest(50)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="WindGeneratorConstructor_BadParameters1" executed="True" result="Success" success="True" time="0.011" asserts="0">
+                  <test-suite type="ParameterizedTest" name="WindGeneratorConstructor_BadParameters1" executed="True" result="Success" success="True" time="0.026" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.WindGeneratorConstructor_BadParameters1(0,-1)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.WindGeneratorConstructor_BadParameters1(0,-1)" executed="True" result="Success" success="True" time="0.017" asserts="0" />
                       <test-case name="Tests.TestClasses.WindGeneratorTest.WindGeneratorConstructor_BadParameters1(-1,-5)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="WindGeneratorConstructor_BadParameters2" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                  <test-suite type="ParameterizedTest" name="WindGeneratorConstructor_BadParameters2" executed="True" result="Success" success="True" time="0.004" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.WindGeneratorConstructor_BadParameters2(null,null,10,null,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.WindGeneratorConstructor_BadParameters2(null,null,10,null,10)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="WindGeneratorConstructor_BorderParameters" executed="True" result="Success" success="True" time="0.009" asserts="0">
+                  <test-suite type="ParameterizedTest" name="WindGeneratorConstructor_BorderParameters" executed="True" result="Success" success="True" time="0.003" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.WindGeneratorConstructor_BorderParameters(1,0)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.WindGeneratorConstructor_BorderParameters(1,0)" executed="True" result="Success" success="True" time="0.002" asserts="1" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="WindGeneratorConstructor_GoodParameters" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                  <test-suite type="ParameterizedTest" name="WindGeneratorConstructor_GoodParameters" executed="True" result="Success" success="True" time="0.003" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WindGeneratorTest.WindGeneratorConstructor_GoodParameters(10,10)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tests.TestClasses.WindGeneratorTest.WindGeneratorConstructor_GoodParameters(10,10)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
                     </results>
                   </test-suite>
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="WindMillTest" executed="True" result="Success" success="True" time="0.119" asserts="0">
+              <test-suite type="TestFixture" name="WindMillTest" executed="True" result="Success" success="True" time="0.117" asserts="0">
                 <results>
-                  <test-suite type="ParameterizedTest" name="WindMillConstructor_BadParameters" executed="True" result="Success" success="True" time="0.043" asserts="0">
+                  <test-suite type="ParameterizedTest" name="WindMillConstructor_BadParameters" executed="True" result="Success" success="True" time="0.046" asserts="0">
                     <results>
                       <test-case name="Tests.TestClasses.WindMillTest.WindMillConstructor_BadParameters(0.2d,1000,20,5,10)" executed="True" result="Success" success="True" time="0.004" asserts="0" />
                       <test-case name="Tests.TestClasses.WindMillTest.WindMillConstructor_BadParameters(0.3d,0,20,5,10)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
@@ -170,13 +311,13 @@
                   </test-suite>
                   <test-suite type="ParameterizedTest" name="WindMillConstructor_BorderParameters" executed="True" result="Success" success="True" time="0.026" asserts="0">
                     <results>
-                      <test-case name="Tests.TestClasses.WindMillTest.WindMillConstructor_BorderParameters(0.25d,0.1d,0.1d,0.1d,1)" executed="True" result="Success" success="True" time="0.002" asserts="5" />
+                      <test-case name="Tests.TestClasses.WindMillTest.WindMillConstructor_BorderParameters(0.25d,0.1d,0.1d,0.1d,1)" executed="True" result="Success" success="True" time="0.004" asserts="5" />
                       <test-case name="Tests.TestClasses.WindMillTest.WindMillConstructor_BorderParameters(0.25d,0.1d,0.1d,80,1)" executed="True" result="Success" success="True" time="0.000" asserts="5" />
                       <test-case name="Tests.TestClasses.WindMillTest.WindMillConstructor_BorderParameters(0.45d,0.1d,0.1d,0.1d,1)" executed="True" result="Success" success="True" time="0.000" asserts="5" />
                       <test-case name="Tests.TestClasses.WindMillTest.WindMillConstructor_BorderParameters(0.45d,0.1d,0.1d,80,1)" executed="True" result="Success" success="True" time="0.000" asserts="5" />
                     </results>
                   </test-suite>
-                  <test-suite type="ParameterizedTest" name="WindMillConstructor_GoodParameters" executed="True" result="Success" success="True" time="0.035" asserts="0">
+                  <test-suite type="ParameterizedTest" name="WindMillConstructor_GoodParameters" executed="True" result="Success" success="True" time="0.027" asserts="0">
                     <results>
                       <test-case name="Tests.TestClasses.WindMillTest.WindMillConstructor_GoodParameters(0.3d,1000,20,5,10)" executed="True" result="Success" success="True" time="0.001" asserts="5" />
                       <test-case name="Tests.TestClasses.WindMillTest.WindMillConstructor_GoodParameters(0.35d,1500,30,5,10)" executed="True" result="Success" success="True" time="0.000" asserts="5" />

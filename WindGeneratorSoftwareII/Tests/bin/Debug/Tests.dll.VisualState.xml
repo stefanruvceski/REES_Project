@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1097]E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\Tests\bin\Debug\Tests.dll</TopNode>
-  <SelectedNode>[0-1097]E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\Tests\bin\Debug\Tests.dll</SelectedNode>
+  <TopNode>[0-1174]E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\Tests\bin\Debug\Tests.dll</TopNode>
+  <SelectedNode>[0-1175]Tests</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
+    <Node UniqueName="[0-1174]E:\Fakultet\GitHub\REES_Project\WindGeneratorSoftwareII\Tests\bin\Debug\Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1175]Tests" Expanded="true" />
+    <Node UniqueName="[0-1177]Tests.BaseTestClasses" Expanded="true" />
+    <Node UniqueName="[0-1108]Tests.BaseTestClasses.WeatherBaseTest" Expanded="true" />
+    <Node UniqueName="[0-1137]Tests.BaseTestClasses.WindGeneratorBaseTest" Expanded="true" />
+    <Node UniqueName="[0-1176]Tests.TestClasses" Expanded="true" />
+    <Node UniqueName="[0-1044]Tests.TestClasses.WindGeneratorTest" Expanded="true" />
     <Node UniqueName="[0-1061]Tests.TestClasses.WindGeneratorTest.CalculatePower_GoodTest" Expanded="true" />
   </Nodes>
 </VisualState>

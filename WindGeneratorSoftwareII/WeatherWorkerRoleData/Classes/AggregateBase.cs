@@ -26,6 +26,16 @@ namespace WeatherWorkerRoleData.Classes
 
         public AggregateBase(double costPerKw, double power, bool state)
         {
+            if (costPerKw <= 0)
+            {
+                throw new ArgumentException("Price for kW must be greater than 0.");
+            }
+
+            if (power <= 0)
+            {
+                throw new ArgumentException("Aggregate power must be greater than 0.");
+            }
+
             PartitionKey = "Aggregate";
             RowKey = (++id).ToString();
             id = int.Parse(RowKey);

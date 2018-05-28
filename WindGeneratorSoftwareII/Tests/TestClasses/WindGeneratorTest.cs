@@ -105,7 +105,7 @@ namespace Tests.TestClasses
         [Test]      
         [TestCase(18, 18, 10, 10, 0.40, 1.29, 45, 10, ExpectedResult = 0)]          // prvi if, pali se kocnica
         [TestCase(5, 5, 10, 8, 0.40, 1.29, 45, 10, ExpectedResult = 512914.088)]    // drugi if, brzina vetra je kriticna, ali vreme koje radi pod tom brzinom nije
-        [TestCase(3.04276606358717, 18, 10, 5, 0.40, 1.29, 45, 10, ExpectedResult = 115595.335)]        // else, brzina je manja od max
+        [TestCase(3.04276606358717, 18, 10, 5, 0.40, 1.29, 45, 10, ExpectedResult = 115621.999)]        // else, brzina je manja od max
         public double CalculatePower_GoodTest(double windSpeed, double maxSpeed, int maxSpeedTime, int workingTime, double coefficient, double airDensity, double turbineDiameter, int windMillCnt)
         {
             // setovanje odgovarajucih polja weatherMock-a
@@ -136,8 +136,8 @@ namespace Tests.TestClasses
         [TestCase(5, 85, 10, 8, 0.40, 1.29, 45, 10, ExpectedResult = 51291.4088)]
         [TestCase(5, 18, -1, 10, 0.40, 1.29, 45, 10, ExpectedResult = 0)]
         [TestCase(5, 18, 10, -1, 0.40, 1.29, 45, 10, ExpectedResult = 0)]
-        [TestCase(5, 18, 10, -1, 0.20, 1.29, 45, 10, ExpectedResult = 0)]
-        [TestCase(5, 18, 10, -1, 0.50, 1.29, 45, 10, ExpectedResult = 0)]
+        [TestCase(5, 18, 10, 8, 0.20, 1.29, 45, 10, ExpectedResult = 0)]
+        [TestCase(5, 18, 10, 8, 0.50, 1.29, 45, 10, ExpectedResult = 0)]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public double CalculatePower_BadTest1(double windSpeed, double maxSpeed, int maxSpeedTime, int workingTime, double coefficient, double airDensity, double turbineDiameter, int windMillCnt)
         {
