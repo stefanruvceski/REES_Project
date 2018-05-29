@@ -30,14 +30,14 @@ namespace WeatherWorkerRoleData.Classes
         {
             TableBatchOperation batchOperation = new TableBatchOperation();
 
-            WindMillBase w1 = new WindMillBase(0.30, 1000, 20, 4, 10);
-            WindMillBase w2 = new WindMillBase(0.35, 1500, 30, 5, 10);
-            WindMillBase w3 = new WindMillBase(0.35, 4000, 35, 8, 10);
-            WindMillBase w4 = new WindMillBase(0.35, 12000, 40, 10, 10);
-            WindMillBase w5 = new WindMillBase(0.40, 20000, 45, 18, 10);
-            WindMillBase w6 = new WindMillBase(0.35, 4000, 35, 8, 10);
-            WindMillBase w7 = new WindMillBase(0.35, 12000, 40, 10, 10);
-            WindMillBase w8 = new WindMillBase(0.40, 20000, 45, 18, 10);
+            WindMillBase w1 = new WindMillBase(0.30, 2000, 30, 5, 10);          // Model 1
+            WindMillBase w2 = new WindMillBase(0.40, 2600, 40, 5, 10);          // Model 2
+            WindMillBase w3 = new WindMillBase(0.30, 3700, 30, 8, 10);          // Model 3
+            WindMillBase w4 = new WindMillBase(0.40, 8800, 40, 8, 10);          // Model 4
+            WindMillBase w5 = new WindMillBase(0.30, 17000, 30, 10, 10);        // Model 5
+            WindMillBase w6 = new WindMillBase(0.40, 40000, 40, 10, 10);        // Model 6
+            WindMillBase w7 = new WindMillBase(0.30, 17000, 30, 18, 10);        // Model 7
+            WindMillBase w8 = new WindMillBase(0.40, 40000, 40, 10, 10);        // Model 8
 
             batchOperation.InsertOrReplace(w1);
             batchOperation.InsertOrReplace(w2);

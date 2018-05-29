@@ -10,12 +10,11 @@ namespace WeatherWorkerRoleData.Classes
     public class AggregateBase : TableEntity
     {
         private static int id = 0;
-        private double costPerKw;
+        private double costPerHour;
         private double power;
         private bool state;
 
-
-        public double CostPerKw { get => costPerKw; set => costPerKw = value; }
+        public double CostPerHour { get => costPerHour; set => costPerHour = value; }
         public double Power { get => power; set => power = value; }
         public bool State { get => state; set => state = value; }
 
@@ -24,9 +23,9 @@ namespace WeatherWorkerRoleData.Classes
 
         }
 
-        public AggregateBase(double costPerKw, double power, bool state)
+        public AggregateBase(double costPerHour, double power, bool state)
         {
-            if (costPerKw <= 0)
+            if (costPerHour <= 0)
             {
                 throw new ArgumentException("Price for kW must be greater than 0.");
             }
@@ -40,7 +39,7 @@ namespace WeatherWorkerRoleData.Classes
             RowKey = (++id).ToString();
             id = int.Parse(RowKey);
 
-            this.costPerKw = costPerKw;
+            this.costPerHour = costPerHour;
             this.power = power;
             this.state = state;
         }

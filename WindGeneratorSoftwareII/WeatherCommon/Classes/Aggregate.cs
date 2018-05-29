@@ -17,9 +17,8 @@ namespace WeatherCommon.Classes
 {
     public class Aggregate
     {
-
         private int id;
-        private double costPerKw;
+        private double costPerHour;
         private double power;
         private bool state;
 
@@ -28,14 +27,14 @@ namespace WeatherCommon.Classes
 
         }
 
-        public Aggregate(int id, double costPerKw, double power, bool state)
+        public Aggregate(int id, double costPerHour, double power, bool state)
         {
             if(id < 0)
             {
                 throw new ArgumentException("ID must be greater than 0.");
             }
 
-            if(costPerKw <= 0)
+            if(costPerHour <= 0)
             {
                 throw new ArgumentException("Price for kW must be greater than 0.");
             }
@@ -46,13 +45,13 @@ namespace WeatherCommon.Classes
             }
 
             this.Id = id;
-            this.CostPerKw = costPerKw;
+            this.CostPerHour = costPerHour;
             this.Power = power;
             this.State = state;
         }
 
         public int Id { get => id; set => id = value; }
-        public double CostPerKw { get => costPerKw; set => costPerKw = value; }
+        public double CostPerHour { get => costPerHour; set => costPerHour = value; }
         public double Power { get => power; set => power = value; }
         public bool State { get => state; set => state = value; }
 

@@ -26,6 +26,7 @@ namespace WeatherWorkerRoleData.Classes
         private double aggregatePower;
         private double power;
         private int aggregateONCnt;
+        private double totalAggregateCost;
 
         public WindGeneratorBase()
         {
@@ -54,8 +55,12 @@ namespace WeatherWorkerRoleData.Classes
             this.aggregate = aggregate;
             
             WindMillBase w = Repositories.windMillRepository.GetOneWindMill(windMill);
-            if(w.MinPower < 12000)
+
+            if(w.MinPower == 2000 || w.MinPower == 2600 || w.MinPower == 3700 || w.MinPower == 8800 || w.MinPower == 17000 || w.MinPower == 40000)
+            {
                 w.MinPower *= windMillCnt;
+            }                
+
             Repositories.windMillRepository.AddOrReplaceWindMill(w);
 
         }
@@ -67,6 +72,7 @@ namespace WeatherWorkerRoleData.Classes
         public double Power { get => power; set => power = value; }
         public double AggregatePower { get => aggregatePower; set => aggregatePower = value; }
         public int AggregateONCnt { get => aggregateONCnt; set => aggregateONCnt = value; }
+        public double TotalAggregateCost { get => totalAggregateCost; set => totalAggregateCost = value; }
 
         public double CalculatePower()
         {
@@ -117,6 +123,14 @@ namespace WeatherWorkerRoleData.Classes
 
             return Math.Pow((windMillBase.TurbineDiameter / 2), 2) * Math.PI;
         }
+
+        public double CalculateTotalAggregateCost(double dieselPrice)
+        {
+            AggregateBase aggregateBase = Repositories.aggregateRepository.GetOneAggregate(aggregate);
+
+            return aggregateBase.CostPerHour * AggregateONCnt * WindMillCnt;
+        }
+
     }//end Weather
 
 }//end namespace WeatherWorkerRoleData

@@ -20,11 +20,10 @@ namespace WeatherWorkerRoleData.Classes
             CloudTableClient tableClient = new CloudTableClient(new Uri(_storageAccount.TableEndpoint.AbsoluteUri),
                                                                 _storageAccount.Credentials);
             _table = tableClient.GetTableReference("AggregateTable");
+
             if (_table.CreateIfNotExists())
-            {
-            
-                InitAggregates();
-          
+            {       
+                InitAggregates();     
             }
         }
 
@@ -32,17 +31,19 @@ namespace WeatherWorkerRoleData.Classes
         {
             TableBatchOperation batchOperation = new TableBatchOperation();
 
-            AggregateBase a1 = new AggregateBase(500, 500, false);
-            AggregateBase a2 = new AggregateBase(750, 750, false);
-            AggregateBase a3 = new AggregateBase(1000, 1000, false);
-            AggregateBase a4 = new AggregateBase(6000, 6000, false);
-            AggregateBase a5 = new AggregateBase(10000, 10000, false);
+            AggregateBase a1 = new AggregateBase(90, 1000, false);
+            AggregateBase a2 = new AggregateBase(117, 1300, false);
+            AggregateBase a3 = new AggregateBase(166.5, 1850, false);
+            AggregateBase a4 = new AggregateBase(396, 4400, false);
+            AggregateBase a5 = new AggregateBase(765, 8500, false);
+            AggregateBase a6 = new AggregateBase(1800, 20000, false);
 
             batchOperation.InsertOrReplace(a1);
             batchOperation.InsertOrReplace(a2);
             batchOperation.InsertOrReplace(a3);
             batchOperation.InsertOrReplace(a4);
             batchOperation.InsertOrReplace(a5);
+            batchOperation.InsertOrReplace(a6);
 
             _table.ExecuteBatch(batchOperation);
         }

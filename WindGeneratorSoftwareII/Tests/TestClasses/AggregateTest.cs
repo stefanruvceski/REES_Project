@@ -20,7 +20,7 @@ namespace Tests.TestClasses
             Aggregate aggregate = new Aggregate(id, costPerKw, power, state);
 
             Assert.AreEqual(aggregate.Id, id);
-            Assert.AreEqual(aggregate.CostPerKw, costPerKw);
+            Assert.AreEqual(aggregate.CostPerHour, costPerKw);
             Assert.AreEqual(aggregate.Power, power);
             Assert.AreEqual(aggregate.State, state);
         }
@@ -32,7 +32,7 @@ namespace Tests.TestClasses
             Aggregate aggregate = new Aggregate(id, costPerKw, power, state);
 
             Assert.AreEqual(aggregate.Id, id);
-            Assert.AreEqual(aggregate.CostPerKw, costPerKw);
+            Assert.AreEqual(aggregate.CostPerHour, costPerKw);
             Assert.AreEqual(aggregate.Power, power);
             Assert.AreEqual(aggregate.State, state);
         }
@@ -47,7 +47,7 @@ namespace Tests.TestClasses
             Aggregate aggregate = new Aggregate(id, costPerKw, power, state);
 
             Assert.AreEqual(aggregate.Id, id);
-            Assert.AreEqual(aggregate.CostPerKw, costPerKw);
+            Assert.AreEqual(aggregate.CostPerHour, costPerKw);
             Assert.AreEqual(aggregate.Power, power);
             Assert.AreEqual(aggregate.State, state);
         }

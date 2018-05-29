@@ -20,20 +20,19 @@ namespace WeatherWorkerRoleData.Classes
 {
     public class WindGeneratorRepository
     {
-
         private CloudStorageAccount _storageAccount;
         private CloudTable _table;
 
         public WindGeneratorRepository()
         {
             _storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("WindGeneratorDataConnectionString"));
-            CloudTableClient tableClient = new CloudTableClient(new
-           Uri(_storageAccount.TableEndpoint.AbsoluteUri), _storageAccount.Credentials);
+            CloudTableClient tableClient = new CloudTableClient(new Uri(_storageAccount.TableEndpoint.AbsoluteUri),
+                                                                _storageAccount.Credentials);
             _table = tableClient.GetTableReference("WindGeneratorTable");
+
             if (_table.CreateIfNotExists())
             {
                 InitWindGenerators();
-
             }
         }
 
@@ -41,10 +40,10 @@ namespace WeatherWorkerRoleData.Classes
         {
             TableBatchOperation batchOperation = new TableBatchOperation();
 
-            WindGeneratorBase w1 = new WindGeneratorBase("Novi Sad", "5", 20, "5");
+            WindGeneratorBase w1 = new WindGeneratorBase("Novi Sad", "3", 20, "3");
             WindGeneratorBase w2 = new WindGeneratorBase("Subotica", "4", 17, "4");
             WindGeneratorBase w3 = new WindGeneratorBase("Sombor", "8", 15, "3");
-            WindGeneratorBase w4 = new WindGeneratorBase("Kikinda", "3", 14, "3");
+            WindGeneratorBase w4 = new WindGeneratorBase("Kikinda", "5", 14, "5");
             WindGeneratorBase w5 = new WindGeneratorBase("Zrenjanin", "2", 12, "2");
             WindGeneratorBase w6 = new WindGeneratorBase("Vrsac", "7", 20, "5");
             WindGeneratorBase w7 = new WindGeneratorBase("Sremska Mitrovica", "1", 8, "1");

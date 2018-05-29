@@ -18,7 +18,6 @@ namespace WeatherCommon.Classes
     [DataContract]
     public class WindGenerator
     {
-
         private Weather weather;
         private WindMill windMill;
         private int windMillCnt;
@@ -26,6 +25,7 @@ namespace WeatherCommon.Classes
         private double aggregatePower;
         private double power;
         private int aggregateONCnt = 0;
+        private double totalAggregateCost;
 
         [DataMember]
         public Weather Weather { get => weather; set => weather = value; }
@@ -41,13 +41,15 @@ namespace WeatherCommon.Classes
         public double AggregatePower { get => aggregatePower; set => aggregatePower = value; }
         [DataMember]
         public int AggregateONCnt { get => aggregateONCnt; set => aggregateONCnt = value; }
+        [DataMember]
+        public double TotalAggregateCost { get => totalAggregateCost; set => totalAggregateCost = value; }
 
         public WindGenerator()
         {
 
         }
 
-        public WindGenerator(Weather weather, WindMill windMill, int windMillCnt, Aggregate aggregate,int aggregateONCnt,double power)
+        public WindGenerator(Weather weather, WindMill windMill, int windMillCnt, Aggregate aggregate, int aggregateONCnt, double power)
         {
             if(weather == null || windMill == null || aggregate == null)
             {
@@ -66,6 +68,7 @@ namespace WeatherCommon.Classes
             this.aggregate = aggregate;
             this.power = power;
             this.aggregateONCnt = aggregateONCnt;
+            this.totalAggregateCost = CalculateTotalAggregateCost(120);
         }
 
         public double CalculatePower()
@@ -136,6 +139,11 @@ namespace WeatherCommon.Classes
             }
 
             return Math.Pow((WindMill.TurbineDiameter / 2), 2) * Math.PI;
+        }
+
+        public double CalculateTotalAggregateCost(double dieselPrice)
+        {
+            return Aggregate.CostPerHour * AggregateONCnt * dieselPrice;
         }
     }//end WindGenerator
 

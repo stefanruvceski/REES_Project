@@ -16,13 +16,12 @@ namespace WeatherCommon.Classes
         private int maxSpeedTime;
         private int workingTime = 0;
 
-
         public WindMill()
         {
 
         }
 
-        public WindMill(double coefficient, double minPower, double turbineDiameter, double maxSpeed, int maxSpeedTime,int workingTime)
+        public WindMill(double coefficient, double minPower, double turbineDiameter, double maxSpeed, int maxSpeedTime, int workingTime)
         {
             // validacija parametara konstruktora
             if(coefficient < 0.25 || coefficient > 0.45)

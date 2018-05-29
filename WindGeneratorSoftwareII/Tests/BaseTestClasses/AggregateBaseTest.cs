@@ -19,7 +19,7 @@ namespace Tests.BaseTestClasses
         {
             AggregateBase aggregate = new AggregateBase(costPerKw, power, state);
 
-            Assert.AreEqual(aggregate.CostPerKw, costPerKw);
+            Assert.AreEqual(aggregate.CostPerHour, costPerKw);
             Assert.AreEqual(aggregate.Power, power);
             Assert.AreEqual(aggregate.State, state);
         }
@@ -31,7 +31,7 @@ namespace Tests.BaseTestClasses
         {
             AggregateBase aggregate = new AggregateBase(costPerKw, power, state);
 
-            Assert.AreEqual(aggregate.CostPerKw, costPerKw);
+            Assert.AreEqual(aggregate.CostPerHour, costPerKw);
             Assert.AreEqual(aggregate.Power, power);
             Assert.AreEqual(aggregate.State, state);
         }
@@ -44,7 +44,7 @@ namespace Tests.BaseTestClasses
         {
             AggregateBase aggregate = new AggregateBase(costPerKw, power, state);
 
-            Assert.AreEqual(aggregate.CostPerKw, costPerKw);
+            Assert.AreEqual(aggregate.CostPerHour, costPerKw);
             Assert.AreEqual(aggregate.Power, power);
             Assert.AreEqual(aggregate.State, state);
         }

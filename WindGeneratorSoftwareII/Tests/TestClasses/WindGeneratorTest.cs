@@ -28,23 +28,23 @@ namespace Tests.TestClasses
 
         [Test]
         [TestCase(10, 10)]
-        public void WindGeneratorConstructor_GoodParameters(int windMillCnt, int aggregateONCnt)
+        public void WindGeneratorConstructor_GoodParameters(int windMillCnt, int aggregateONCnt, double power)
         {
             // setovanje vrednosti neophodnih polja, konstruktori ob=vih klasa su svakako vec testirani
             windMillMock.Object.Coefficient = 0.30;
             windMillMock.Object.TurbineDiameter = 30;
-            WindGenerator windGenerator = new WindGenerator(weatherMock.Object, windMillMock.Object, windMillCnt, aggregateMock.Object, aggregateONCnt);
+            WindGenerator windGenerator = new WindGenerator(weatherMock.Object, windMillMock.Object, windMillCnt, aggregateMock.Object, aggregateONCnt, power);
 
             Assert.AreEqual(windGenerator.WindMillCnt, windMillCnt);
         }
 
         [Test]
         [TestCase(1, 0)]
-        public void WindGeneratorConstructor_BorderParameters(int windMillCnt, int aggregateONCnt)
+        public void WindGeneratorConstructor_BorderParameters(int windMillCnt, int aggregateONCnt, double power)
         {
             windMillMock.Object.Coefficient = 0.30;
             windMillMock.Object.TurbineDiameter = 30;
-            WindGenerator windGenerator = new WindGenerator(weatherMock.Object, windMillMock.Object, windMillCnt, aggregateMock.Object, aggregateONCnt);
+            WindGenerator windGenerator = new WindGenerator(weatherMock.Object, windMillMock.Object, windMillCnt, aggregateMock.Object, aggregateONCnt, power);
 
             Assert.AreEqual(windGenerator.WindMillCnt, windMillCnt);
         }
@@ -53,11 +53,11 @@ namespace Tests.TestClasses
         [TestCase(0, -1)]
         [TestCase(-1, -5)]
         [ExpectedException(typeof(ArgumentException))]
-        public void WindGeneratorConstructor_BadParameters1(int windMillCnt, int aggregateONCnt)
+        public void WindGeneratorConstructor_BadParameters1(int windMillCnt, int aggregateONCnt, double power)
         {
             windMillMock.Object.Coefficient = 0.30;
             windMillMock.Object.TurbineDiameter = 30;
-            WindGenerator windGenerator = new WindGenerator(weatherMock.Object, windMillMock.Object, windMillCnt, aggregateMock.Object, aggregateONCnt);
+            WindGenerator windGenerator = new WindGenerator(weatherMock.Object, windMillMock.Object, windMillCnt, aggregateMock.Object, aggregateONCnt, power);
 
             Assert.AreEqual(windGenerator.WindMillCnt, windMillCnt);
         }
@@ -65,9 +65,9 @@ namespace Tests.TestClasses
         [Test]
         [TestCase(null, null, 10, null, 10)]
         [ExpectedException(typeof(ArgumentNullException))]
-        public void WindGeneratorConstructor_BadParameters2(Weather weather, WindMill windMill, int windMillCnt, Aggregate aggregate, int aggregateONCnt)
+        public void WindGeneratorConstructor_BadParameters2(Weather weather, WindMill windMill, int windMillCnt, Aggregate aggregate, int aggregateONCnt, double power)
         {
-            WindGenerator windGenerator = new WindGenerator(weather, windMill, windMillCnt, aggregate, aggregateONCnt);
+            WindGenerator windGenerator = new WindGenerator(weather, windMill, windMillCnt, aggregate, aggregateONCnt, power);
 
             Assert.AreEqual(windGenerator.Weather, weather);
             Assert.AreEqual(windGenerator.WindMill, windMill);

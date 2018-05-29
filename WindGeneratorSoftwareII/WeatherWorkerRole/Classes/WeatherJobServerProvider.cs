@@ -65,11 +65,14 @@ namespace WeatherWorkerRole.Classes
                 aggregateBase.State = false;
             }
 
+            // racunanje cene dosadasnjeg rada agregata
+            windGeneratorBase.TotalAggregateCost = windGeneratorBase.CalculateTotalAggregateCost(120);
+
             Repositories.windGeneratorRepository.AddOrReplaceWindGenerator(windGeneratorBase);
             Repositories.aggregateRepository.AddOrReplaceAggregate(aggregateBase);
 
 
-            Aggregate aggregate = new Aggregate(int.Parse(aggregateBase.RowKey), aggregateBase.CostPerKw, aggregateBase.Power, aggregateBase.State);
+            Aggregate aggregate = new Aggregate(int.Parse(aggregateBase.RowKey), aggregateBase.CostPerHour, aggregateBase.Power, aggregateBase.State);
             WindMill windMill = new WindMill(windMillBase.Coefficient, windMillBase.MinPower, windMillBase.TurbineDiameter, windMillBase.MaxSpeed, windMillBase.MaxSpeedTime,windMillBase.WorkingTime);
 
             if (weatherBase == null)

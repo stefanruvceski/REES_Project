@@ -25,8 +25,6 @@ namespace WeatherWebRole.Controllers
             return View(Update(city));
         }
 
-
-
         public WindGenerator Update(string city)
         {
             var binding = new NetTcpBinding();
