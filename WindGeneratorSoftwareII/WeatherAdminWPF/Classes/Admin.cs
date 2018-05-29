@@ -10,14 +10,13 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-
-
+using LiveCharts.Geared;
 
 namespace WeatherAdminWPF.Classes {
 	public class Admin {
-
-		public Admin(){
-
+        
+        public Admin(){
+            
 		}
 
 		~Admin(){

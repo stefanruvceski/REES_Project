@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LiveCharts.Geared;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -26,6 +27,7 @@ namespace WeatherAdminWPF
     public partial class MainWindow : Window
     {
         IWeather proxy;
+        Graphics g = new Graphics();
 
         public static BindingList<WindGenerator> windGenerators { get; set; }
 
@@ -36,8 +38,8 @@ namespace WeatherAdminWPF
             AddWeather();
             DataContext = this;
             InitializeComponent();
-
-
+            
+            g.Show();
         }
         public void AddWeather()
         {
@@ -47,31 +49,31 @@ namespace WeatherAdminWPF
                 while (true)
                 {
                     AddWeatherToList();
-                    Thread.Sleep(5000);
+                    Thread.Sleep(500);
                 }
-
             }).Start();
         }
 
-        List<string> cities = new List<string>()
+        public static List<string> cities = new List<string>()
         {
             "Novi Sad","Subotica","Sombor","Kikinda","Zrenjanin","Vrsac",
             "Sremska Mitrovica","Pancevo"
         };
-
+        static bool color = false;
         private void AddWeatherToList()
         {
             foreach (string city in cities)
             {
-
                 this.Dispatcher.Invoke((Action)(() =>
                 {
                     windGenerators.Add(proxy.GetWindGenerator(city));
-                    
+                    g.Powers[city].Add(windGenerators[windGenerators.Count - 1].Power);
+                  
                 }));
             }
-           
 
+            color = color ? false : true;
+            
         }
 
         private void CreateChannelFactory()
@@ -79,6 +81,16 @@ namespace WeatherAdminWPF
             ChannelFactory<IWeather> factory = new ChannelFactory<IWeather>(new NetTcpBinding(), new EndpointAddress("net.tcp://127.255.0.2:502/InputRequest")); // promeniti na svakom kompu
             //ChannelFactory<IWeather> factory = new ChannelFactory<IWeather>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:502/InputRequest"));
             proxy = factory.CreateChannel();
+        }
+
+        private void Color()
+        {
+            new Thread(() =>
+            {
+                Thread.CurrentThread.IsBackground = true;
+
+
+            }).Start();
         }
     }
 }

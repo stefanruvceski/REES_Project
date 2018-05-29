@@ -1,0 +1,100 @@
+﻿<Window x:Class="WeatherAdminWPF.Graphics"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Background="Black"
+        xmlns:local="clr-namespace:WeatherAdminWPF"
+        mc:Ignorable="d"
+        Title="Graphics" Height="1000" Width="1500
+"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:geared="clr-namespace:LiveCharts.Geared;assembly=LiveCharts.Geared" WindowStartupLocation="CenterScreen" WindowState="Maximized" ResizeMode="NoResize">
+
+    <Grid>
+        <TextBlock  HorizontalAlignment="Left" Margin="41,29,0,0" TextWrapping="Wrap" Text="Novi Sad" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="414,29,0,0" TextWrapping="Wrap" Text="Subotica" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1165,24,0,0" TextWrapping="Wrap" Text="Kikinda" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="57,445,0,0" TextWrapping="Wrap" Text="Zrenjanin" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="791,24,0,0" TextWrapping="Wrap" Text="Sombor" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="414,445,0,0" TextWrapping="Wrap" Text="Vrsac" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="791,445,0,0" TextWrapping="Wrap" Text="Sremska Mitrovica" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1166,445,0,0" TextWrapping="Wrap" Text="Pancevo" VerticalAlignment="Top" Foreground="White"/>
+
+
+        <Canvas Height="370" Width="350" Margin="10,40,1133.6,530.4">
+            <lvc:CartesianChart Height="360" Width="340" BorderBrush="White" BorderThickness="2" >
+                <lvc:CartesianChart.Series >
+                    <geared:GLineSeries Values="{Binding Powers[Novi Sad]}" />
+                </lvc:CartesianChart.Series>
+            </lvc:CartesianChart>
+        </Canvas>
+
+        <Canvas Height="370" Width="350" Margin="383,30,760.6,540.4" >
+            <lvc:CartesianChart Height="360" Canvas.Left="10" BorderBrush="White" BorderThickness="2" Canvas.Top="10" Width="340" >
+                <lvc:CartesianChart.Series >
+                    <geared:GLineSeries Values="{Binding Powers[Subotica]}" />
+                </lvc:CartesianChart.Series>
+            </lvc:CartesianChart>
+        </Canvas>
+
+        <Canvas Height="370" Width="350" Margin="760,30,383.6,540.4">
+            <lvc:CartesianChart Canvas.Left="10" Canvas.Top="10" Height="360" Width="340" BorderBrush="White" BorderThickness="2">
+                <lvc:CartesianChart.Series >
+                    <geared:GLineSeries Values="{Binding Powers[Sombor]}" />
+                </lvc:CartesianChart.Series>
+            </lvc:CartesianChart>
+        </Canvas>
+
+        <Canvas Height="370" Width="350" Margin="1134,30,9.6,540.4">
+            <lvc:CartesianChart Canvas.Left="10" Canvas.Top="10" Height="360" Width="340" BorderBrush="White" BorderThickness="2" >
+                <lvc:CartesianChart.Series >
+                    <geared:GLineSeries Values="{Binding Powers[Kikinda]}" />
+                </lvc:CartesianChart.Series>
+            </lvc:CartesianChart>
+        </Canvas>
+
+        <Canvas Height="370" Width="350" Margin="10,451,1133.6,119.4">
+            <lvc:CartesianChart Canvas.Left="10" Canvas.Top="10" Height="360" Width="340" BorderBrush="White" BorderThickness="2" >
+                <lvc:CartesianChart.Series >
+                    <geared:GLineSeries Values="{Binding Powers[Zrenjanin]}" />
+                </lvc:CartesianChart.Series>
+            </lvc:CartesianChart>
+        </Canvas>
+
+        <Canvas Height="370" Width="350" Margin="383,451,760.6,119.4">
+            <lvc:CartesianChart Height="360" Canvas.Left="10" Canvas.Top="10" Width="340" BorderBrush="White" BorderThickness="2">
+                <lvc:CartesianChart.Series >
+                    <geared:GLineSeries Values="{Binding Powers[Vrsac]}" />
+                </lvc:CartesianChart.Series>
+            </lvc:CartesianChart>
+        </Canvas>
+
+        <Canvas Height="370" Width="350" Margin="760,451,383.6,119.4">
+            <lvc:CartesianChart Height="360" Canvas.Left="10" Canvas.Top="10" Width="340" BorderBrush="White" BorderThickness="2">
+                <lvc:CartesianChart.Series >
+                    <geared:GLineSeries Values="{Binding Powers[Sremska Mitrovica]}" />
+                </lvc:CartesianChart.Series>
+            </lvc:CartesianChart>
+        </Canvas>
+
+        <Canvas Height="370" Width="350" Margin="1134,451,9.6,119.4">
+            <lvc:CartesianChart Height="360" Canvas.Left="10" Canvas.Top="10" Width="340" BorderBrush="White" BorderThickness="2">
+                <lvc:CartesianChart.Series >
+                    <geared:GLineSeries Values="{Binding Powers[Pancevo]}" />
+                </lvc:CartesianChart.Series>
+            </lvc:CartesianChart>
+        </Canvas>
+
+        <!--
+        
+       -->
+
+
+
+
+
+
+
+    </Grid>
+</Window>
