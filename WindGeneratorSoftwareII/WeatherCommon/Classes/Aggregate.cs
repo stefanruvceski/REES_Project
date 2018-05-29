@@ -12,7 +12,6 @@ using System.Text;
 using System.IO;
 
 
-
 namespace WeatherCommon.Classes
 {
     public class Aggregate
@@ -21,6 +20,7 @@ namespace WeatherCommon.Classes
         private double costPerHour;
         private double power;
         private bool state;
+        private string aggregateState;
 
         public Aggregate()
         {
@@ -48,13 +48,14 @@ namespace WeatherCommon.Classes
             this.CostPerHour = costPerHour;
             this.Power = power;
             this.State = state;
+            this.aggregateState = (state ? "ON" : "OFF");
         }
 
         public int Id { get => id; set => id = value; }
         public double CostPerHour { get => costPerHour; set => costPerHour = value; }
         public double Power { get => power; set => power = value; }
         public bool State { get => state; set => state = value; }
-
+        public string AggregateState { get => aggregateState; set => aggregateState = value; }
     }//end Aggregate
 
 }//end namespace WeatherCommon

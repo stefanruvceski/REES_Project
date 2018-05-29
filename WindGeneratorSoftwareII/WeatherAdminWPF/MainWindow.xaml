@@ -17,6 +17,7 @@
                   BorderBrush="LightBlue"
                   ItemsSource="{Binding windGenerators}" IsReadOnly="true" AutoGenerateColumns="False"
                   HorizontalAlignment="Stretch" VerticalAlignment="Top" VerticalScrollBarVisibility="Auto">
+
             <DataGrid.RowStyle>
                 <Style TargetType="DataGridRow">
                     <Setter Property="Background" Value="Black"/>
@@ -49,10 +50,12 @@
                 <DataGridTextColumn Header="Min power [W]" Binding="{Binding WindMill.MinPower}" Width="100"/>
                 <DataGridTextColumn Header="Turbine diameter [m]" Binding="{Binding WindMill.TurbineDiameter}" Width="130"/>
                 <DataGridTextColumn Header="Max speed [m/s]" Binding="{Binding WindMill.MaxSpeed}" Width="100"/>
-                <DataGridTextColumn Header="Max speed time [s]" Binding="{Binding WindMill.MaxSpeedTime}" Width="120"/>
+                <!--DataGridTextColumn Header="Max speed time [s]" Binding="{Binding WindMill.MaxSpeedTime}" Width="120"/-->
+                <DataGridTextColumn Header="Aggregate state" Binding="{Binding Aggregate.AggregateState}" Width="100"/>
                 <DataGridTextColumn Header="Aggregate working time [h]" Binding="{Binding AggregateONCnt}" Width="170"/>
+                <DataGridTextColumn Header="Aggregate work cost [RSD]" Binding="{Binding TotalAggregateCost}" Width="150"/>
                 <DataGridTextColumn Header="Wind speed [m/s]" Binding="{Binding Weather.WindSpeed}" Width="110"/>
-                <DataGridTextColumn Header="Pressure [mbar]" Binding="{Binding Weather.Pressure}" Width="110*"/>
+                <!--DataGridTextColumn Header="Pressure [mbar]" Binding="{Binding Weather.Pressure}" Width="110*"/-->
                 <DataGridTextColumn Header="Working time" Binding="{Binding WindMill.WorkingTime}" Width="110*"/>
 
             </DataGrid.Columns>

@@ -27,15 +27,16 @@ namespace WeatherAdminWPF
         {
             Powers = new Dictionary<string, GearedValues<double>>()
             {
-                { "Novi Sad" ,new GearedValues<double>()},
-                { "Subotica" ,new GearedValues<double>()},
-                { "Sombor" ,new GearedValues<double>()},
-                { "Kikinda" ,new GearedValues<double>()},
+                { "Novi Sad" ,new GearedValues<double>() },
+                { "Subotica" ,new GearedValues<double>() },
+                { "Sombor" ,new GearedValues<double>() },
+                { "Kikinda" ,new GearedValues<double>() },
                 { "Zrenjanin",new GearedValues<double>() },
-                {"Vrsac", new GearedValues<double>()},
-                { "Sremska Mitrovica" ,new GearedValues<double>()},
-                { "Pancevo" ,new GearedValues<double>()}
+                { "Vrsac", new GearedValues<double>() },
+                { "Sremska Mitrovica" ,new GearedValues<double>() },
+                { "Pancevo" ,new GearedValues<double>() }
             };
+
             DataContext = this;
             InitializeComponent();
         }
