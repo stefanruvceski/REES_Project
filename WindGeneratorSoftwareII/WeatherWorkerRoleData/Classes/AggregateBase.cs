@@ -21,6 +21,7 @@ namespace WeatherWorkerRoleData.Classes
         public double Power { get => power; set => power = value; }
         public bool State { get => state; set => state = value; }
         #endregion
+
         public AggregateBase()
         {
 

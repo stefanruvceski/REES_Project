@@ -56,12 +56,6 @@ namespace Tests.BaseTestClasses
         public void WindMillBaseConstructor_BadParameters(double coefficient, double minPower, double turbineDiameter, double maxSpeed, int maxSpeedTime)
         {
             WindMillBase windMill = new WindMillBase(coefficient, minPower, turbineDiameter, maxSpeed, maxSpeedTime);
-
-            Assert.AreEqual(windMill.Coefficient, coefficient);
-            Assert.AreEqual(windMill.MinPower, minPower);
-            Assert.AreEqual(windMill.TurbineDiameter, turbineDiameter);
-            Assert.AreEqual(windMill.MaxSpeed, maxSpeed);
-            Assert.AreEqual(windMill.MaxSpeedTime, maxSpeedTime);
         }
     }
 }

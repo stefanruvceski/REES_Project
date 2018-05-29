@@ -63,13 +63,6 @@ namespace Tests.BaseTestClasses
         public void WeatherBaseConstructor_BadParameters1(string city, string description, double maxTemp, double minTemp, double pressure, double windSpeed)
         {
             WeatherBase weather = new WeatherBase(city, description, maxTemp, minTemp, pressure, windSpeed);
-
-            Assert.AreEqual(weather.City, city);
-            Assert.AreEqual(weather.Description, description);
-            Assert.AreEqual(weather.MaxTemp, maxTemp);
-            Assert.AreEqual(weather.MinTemp, minTemp);
-            Assert.AreEqual(weather.Pressure, pressure);
-            Assert.AreEqual(weather.WindSpeed, windSpeed);
         }
 
         [Test]
@@ -79,13 +72,6 @@ namespace Tests.BaseTestClasses
         public void WeatherBaseConstructor_BadParameters2(string city, string description, double maxTemp, double minTemp, double pressure, double windSpeed)
         {
             WeatherBase weather = new WeatherBase(city, description, maxTemp, minTemp, pressure, windSpeed);
-
-            Assert.AreEqual(weather.City, city);
-            Assert.AreEqual(weather.Description, description);
-            Assert.AreEqual(weather.MaxTemp, maxTemp);
-            Assert.AreEqual(weather.MinTemp, minTemp);
-            Assert.AreEqual(weather.Pressure, pressure);
-            Assert.AreEqual(weather.WindSpeed, windSpeed);
         }
 
         [Test]
@@ -101,13 +87,6 @@ namespace Tests.BaseTestClasses
         public void WeatherBaseConstructor_BadParameters3(string city, string description, double maxTemp, double minTemp, double pressure, double windSpeed)
         {
             WeatherBase weather = new WeatherBase(city, description, maxTemp, minTemp, pressure, windSpeed);
-
-            Assert.AreEqual(weather.City, city);
-            Assert.AreEqual(weather.Description, description);
-            Assert.AreEqual(weather.MaxTemp, maxTemp);
-            Assert.AreEqual(weather.MinTemp, minTemp);
-            Assert.AreEqual(weather.Pressure, pressure);
-            Assert.AreEqual(weather.WindSpeed, windSpeed);
         }
 
         // Testovi za drugi konstruktor
@@ -130,14 +109,6 @@ namespace Tests.BaseTestClasses
         public void WeatherBaseConstructor_BadParameters()
         {
             WeatherBase weather = new WeatherBase(null);
-
-            Assert.AreEqual(weather.AirDensity, weatherMock.Object.AirDensity);
-            Assert.AreEqual(weather.City, weatherMock.Object.City);
-            Assert.AreEqual(weather.Description, weatherMock.Object.Description);
-            Assert.AreEqual(weather.MaxTemp, weatherMock.Object.MaxTemp);
-            Assert.AreEqual(weather.MinTemp, weatherMock.Object.MinTemp);
-            Assert.AreEqual(weather.Pressure, weatherMock.Object.Pressure);
-            Assert.AreEqual(weather.WindSpeed, weatherMock.Object.WindSpeed);
         }
     }
 }

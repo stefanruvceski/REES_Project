@@ -27,7 +27,9 @@ namespace Tests.TestClasses
         }
 
         [Test]
-        [TestCase(10, 10)]
+        [TestCase(10, 10, 100000)]
+        [TestCase(17, 7, 20000)]
+        [TestCase(24, 11, 300000)]
         public void WindGeneratorConstructor_GoodParameters(int windMillCnt, int aggregateONCnt, double power)
         {
             // setovanje vrednosti neophodnih polja, konstruktori ob=vih klasa su svakako vec testirani
@@ -36,10 +38,12 @@ namespace Tests.TestClasses
             WindGenerator windGenerator = new WindGenerator(weatherMock.Object, windMillMock.Object, windMillCnt, aggregateMock.Object, aggregateONCnt, power);
 
             Assert.AreEqual(windGenerator.WindMillCnt, windMillCnt);
+            Assert.AreEqual(windGenerator.AggregateONCnt, aggregateONCnt);
+            Assert.AreEqual(windGenerator.Power, power);
         }
 
         [Test]
-        [TestCase(1, 0)]
+        [TestCase(1, 0, 0)]
         public void WindGeneratorConstructor_BorderParameters(int windMillCnt, int aggregateONCnt, double power)
         {
             windMillMock.Object.Coefficient = 0.30;
@@ -47,11 +51,14 @@ namespace Tests.TestClasses
             WindGenerator windGenerator = new WindGenerator(weatherMock.Object, windMillMock.Object, windMillCnt, aggregateMock.Object, aggregateONCnt, power);
 
             Assert.AreEqual(windGenerator.WindMillCnt, windMillCnt);
+            Assert.AreEqual(windGenerator.AggregateONCnt, aggregateONCnt);
+            Assert.AreEqual(windGenerator.Power, power);
         }
 
         [Test]
-        [TestCase(0, -1)]
-        [TestCase(-1, -5)]
+        [TestCase(0, 10, 10000)]
+        [TestCase(10, -5, 10000)]
+        [TestCase(10, 10, -1)]
         [ExpectedException(typeof(ArgumentException))]
         public void WindGeneratorConstructor_BadParameters1(int windMillCnt, int aggregateONCnt, double power)
         {
@@ -63,16 +70,11 @@ namespace Tests.TestClasses
         }
 
         [Test]
-        [TestCase(null, null, 10, null, 10)]
+        [TestCase(null, null, 10, null, 10, 10000)]
         [ExpectedException(typeof(ArgumentNullException))]
         public void WindGeneratorConstructor_BadParameters2(Weather weather, WindMill windMill, int windMillCnt, Aggregate aggregate, int aggregateONCnt, double power)
         {
             WindGenerator windGenerator = new WindGenerator(weather, windMill, windMillCnt, aggregate, aggregateONCnt, power);
-
-            Assert.AreEqual(windGenerator.Weather, weather);
-            Assert.AreEqual(windGenerator.WindMill, windMill);
-            Assert.AreEqual(windGenerator.WindMillCnt, windMillCnt);
-            Assert.AreEqual(windGenerator.Aggregate, aggregate);
         }
 
         // treba pitati da li diameter treba da proveravam u ovoj metodi
@@ -104,6 +106,7 @@ namespace Tests.TestClasses
 
         [Test]      
         [TestCase(18, 18, 10, 10, 0.40, 1.29, 45, 10, ExpectedResult = 0)]          // prvi if, pali se kocnica
+        [TestCase(18, 18, 10, 15, 0.40, 1.29, 45, 10, ExpectedResult = 0)]          // prvi if, pali se kocnica
         [TestCase(5, 5, 10, 8, 0.40, 1.29, 45, 10, ExpectedResult = 512914.088)]    // drugi if, brzina vetra je kriticna, ali vreme koje radi pod tom brzinom nije
         [TestCase(3.04276606358717, 18, 10, 5, 0.40, 1.29, 45, 10, ExpectedResult = 115621.999)]        // else, brzina je manja od max
         public double CalculatePower_GoodTest(double windSpeed, double maxSpeed, int maxSpeedTime, int workingTime, double coefficient, double airDensity, double turbineDiameter, int windMillCnt)

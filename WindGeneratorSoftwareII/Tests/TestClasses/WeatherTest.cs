@@ -53,13 +53,6 @@ namespace Tests.TestClasses
         public void WeatherConstructor_BadParameters1(string city, string description, double maxTemp, double minTemp, double pressure, double windSpeed)
         {
             Weather weather = new Weather(city, description, maxTemp, minTemp, pressure, windSpeed);
-
-            Assert.AreEqual(weather.City, city);
-            Assert.AreEqual(weather.Description, description);
-            Assert.AreEqual(weather.MaxTemp, maxTemp);
-            Assert.AreEqual(weather.MinTemp, minTemp);
-            Assert.AreEqual(weather.Pressure, pressure);
-            Assert.AreEqual(weather.WindSpeed, windSpeed);
         }
 
         [Test]
@@ -69,13 +62,6 @@ namespace Tests.TestClasses
         public void WeatherConstructor_BadParameters2(string city, string description, double maxTemp, double minTemp, double pressure, double windSpeed)
         {
             Weather weather = new Weather(city, description, maxTemp, minTemp, pressure, windSpeed);
-
-            Assert.AreEqual(weather.City, city);
-            Assert.AreEqual(weather.Description, description);
-            Assert.AreEqual(weather.MaxTemp, maxTemp);
-            Assert.AreEqual(weather.MinTemp, minTemp);
-            Assert.AreEqual(weather.Pressure, pressure);
-            Assert.AreEqual(weather.WindSpeed, windSpeed);
         }
 
         [Test]
@@ -91,13 +77,6 @@ namespace Tests.TestClasses
         public void WeatherConstructor_BadParameters3(string city, string description, double maxTemp, double minTemp, double pressure, double windSpeed)
         {
             Weather weather = new Weather(city, description, maxTemp, minTemp, pressure, windSpeed);
-
-            Assert.AreEqual(weather.City, city);
-            Assert.AreEqual(weather.Description, description);
-            Assert.AreEqual(weather.MaxTemp, maxTemp);
-            Assert.AreEqual(weather.MinTemp, minTemp);
-            Assert.AreEqual(weather.Pressure, pressure);
-            Assert.AreEqual(weather.WindSpeed, windSpeed);
         }
 
         // Testovi za drugi konstruktor
@@ -117,8 +96,6 @@ namespace Tests.TestClasses
         public void WeatherConstructor_BadParameters1(string city)
         {
             Weather weather = new Weather(city);
-
-            Assert.AreEqual(weather.City, city);
         }
 
         [Test]
@@ -127,8 +104,6 @@ namespace Tests.TestClasses
         public void WeatherConstructor_BadParameters2(string city)
         {
             Weather weather = new Weather(city);
-
-            Assert.AreEqual(weather.City, city);
         }
     }
 }

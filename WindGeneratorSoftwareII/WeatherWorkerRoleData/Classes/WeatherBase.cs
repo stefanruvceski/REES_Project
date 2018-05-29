@@ -30,6 +30,7 @@ namespace WeatherWorkerRoleData.Classes
         public double Pressure { get => pressure; set => pressure = value; }
         public double WindSpeed { get => windSpeed; set => windSpeed = value; }
         #endregion
+
         public WeatherBase()
         {
 

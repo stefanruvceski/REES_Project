@@ -45,11 +45,6 @@ namespace Tests.BaseTestClasses
         public void WindGeneratorBaseConstructor_BadParameters1(string weather, string windMill, int windMillCnt, string aggregate)
         {
             WindGeneratorBase windGenerator = new WindGeneratorBase(weather, windMill, windMillCnt, aggregate);
-
-            Assert.AreEqual(windGenerator.Weather, weather);
-            Assert.AreEqual(windGenerator.WindMill, windMill);
-            Assert.AreEqual(windGenerator.WindMillCnt, windMillCnt);
-            Assert.AreEqual(windGenerator.Aggregate, aggregate);
         }
 
         [Test]
@@ -59,11 +54,6 @@ namespace Tests.BaseTestClasses
         public void WindGeneratorBaseConstructor_BadParameters2(string weather, string windMill, int windMillCnt, string aggregate)
         {
             WindGeneratorBase windGenerator = new WindGeneratorBase(weather, windMill, windMillCnt, aggregate);
-
-            Assert.AreEqual(windGenerator.Weather, weather);
-            Assert.AreEqual(windGenerator.WindMill, windMill);
-            Assert.AreEqual(windGenerator.WindMillCnt, windMillCnt);
-            Assert.AreEqual(windGenerator.Aggregate, aggregate);
         }
 
         [Test]

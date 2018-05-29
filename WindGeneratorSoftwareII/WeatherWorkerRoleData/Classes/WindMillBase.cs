@@ -18,6 +18,7 @@ namespace WeatherWorkerRoleData.Classes
         private int maxSpeedTime;
         private int workingTime = 0;
         #endregion
+
         public WindMillBase()
         {
 

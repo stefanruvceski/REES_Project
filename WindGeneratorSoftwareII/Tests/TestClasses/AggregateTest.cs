@@ -45,11 +45,6 @@ namespace Tests.TestClasses
         public void AggregateConstructor_BadParameters(int id, double costPerKw, double power, bool state)
         {
             Aggregate aggregate = new Aggregate(id, costPerKw, power, state);
-
-            Assert.AreEqual(aggregate.Id, id);
-            Assert.AreEqual(aggregate.CostPerHour, costPerKw);
-            Assert.AreEqual(aggregate.Power, power);
-            Assert.AreEqual(aggregate.State, state);
         }
     }
 }

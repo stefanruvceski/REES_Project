@@ -65,6 +65,16 @@ namespace WeatherCommon.Classes
                 throw new ArgumentException("Argument windMillCnt must be greater than 0.");
             }
 
+            if(aggregateONCnt < 0)
+            {
+                throw new ArgumentException("Argument aggregateOnCnt can't be negative number.");
+            }
+
+            if(power < 0)
+            {
+                throw new ArgumentException("Power can't be negative number.");
+            }
+
             this.weather = weather;
             this.aggregatePower = aggregate.Power * windMillCnt;
             this.windMill = windMill;

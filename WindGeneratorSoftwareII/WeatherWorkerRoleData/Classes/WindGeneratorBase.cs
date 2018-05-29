@@ -27,6 +27,7 @@ namespace WeatherWorkerRoleData.Classes
         private int aggregateONCnt;
         private double totalAggregateCost;
         #endregion
+
         #region property
         public string Weather { get => weather; set => weather = value; }
         public string WindMill { get => windMill; set => windMill = value; }
@@ -37,6 +38,7 @@ namespace WeatherWorkerRoleData.Classes
         public int AggregateONCnt { get => aggregateONCnt; set => aggregateONCnt = value; }
         public double TotalAggregateCost { get => totalAggregateCost; set => totalAggregateCost = value; }
         #endregion
+
         public WindGeneratorBase()
         {
 

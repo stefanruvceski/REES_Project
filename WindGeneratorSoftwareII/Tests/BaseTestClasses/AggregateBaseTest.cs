@@ -15,11 +15,11 @@ namespace Tests.BaseTestClasses
         [TestCase(10, 10000, true)]
         [TestCase(20, 20000, false)]
         [TestCase(30, 30000, true)]
-        public void AggregateBaseConstructor_GoodParameters(double costPerKw, double power, bool state)
+        public void AggregateBaseConstructor_GoodParameters(double costPerHour, double power, bool state)
         {
-            AggregateBase aggregate = new AggregateBase(costPerKw, power, state);
+            AggregateBase aggregate = new AggregateBase(costPerHour, power, state);
 
-            Assert.AreEqual(aggregate.CostPerHour, costPerKw);
+            Assert.AreEqual(aggregate.CostPerHour, costPerHour);
             Assert.AreEqual(aggregate.Power, power);
             Assert.AreEqual(aggregate.State, state);
         }
@@ -43,10 +43,6 @@ namespace Tests.BaseTestClasses
         public void AggregateBaseConstructor_BadParameters(double costPerKw, double power, bool state)
         {
             AggregateBase aggregate = new AggregateBase(costPerKw, power, state);
-
-            Assert.AreEqual(aggregate.CostPerHour, costPerKw);
-            Assert.AreEqual(aggregate.Power, power);
-            Assert.AreEqual(aggregate.State, state);
         }
     }
 }
