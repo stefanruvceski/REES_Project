@@ -189,5 +189,32 @@ namespace Tests.TestClasses
 
             return Math.Round(power, 4);
         }
+
+        [Test]
+        [TestCase(18, 18, 10, 10, 0.40, 1.29, 45, 10, ExpectedResult = 0)]
+        [ExpectedException(typeof(ArgumentException))]
+        public double CalculatePower_BadTest3(double windSpeed, double maxSpeed, int maxSpeedTime, int workingTime, double coefficient, double airDensity, double turbineDiameter, int windMillCnt)
+        {
+            // setovanje odgovarajucih polja weatherMock-a
+            weatherMock.Object.AirDensity = airDensity;
+            weatherMock.Object.WindSpeed = windSpeed;
+
+            // setovanje odgovarajucih polja windMillMock-a
+            windMillMock.Object.Coefficient = coefficient;
+            windMillMock.Object.MaxSpeed = maxSpeed;
+            windMillMock.Object.MaxSpeedTime = maxSpeedTime;
+            windMillMock.Object.WorkingTime = workingTime;
+            windMillMock.Object.TurbineDiameter = turbineDiameter;
+
+            // setovanje odgovarajucih polja windGeneratorMock-a
+            windGeneratorMock.Object.AggregateONCnt = -5;               // properti namerno setovan na nevalidnu vrednost
+            windGeneratorMock.Object.WindMillCnt = windMillCnt;
+            windGeneratorMock.Object.Weather = weatherMock.Object;
+            windGeneratorMock.Object.WindMill = windMillMock.Object;
+
+            double power = windGeneratorMock.Object.CalculatePower();
+
+            return Math.Round(power, 4);
+        }
     }
 }

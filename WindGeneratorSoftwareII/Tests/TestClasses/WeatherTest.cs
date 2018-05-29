@@ -83,10 +83,10 @@ namespace Tests.TestClasses
         [TestCase("Novi Sad", "cloudy", 8, 70, 800, 5.6)]
         [TestCase("Novi Sad", "foggy", -95, 24, 1100, 4.1)]
         [TestCase("Novi Sad", "foggy", 30, -95, 1100, 4.1)]
-        [TestCase("Novi Sad", "foggy", -95, 24, 799, 4.1)]
-        [TestCase("Novi Sad", "foggy", -95, 24, 1101, 4.1)]
-        [TestCase("Novi Sad", "foggy", -95, 24, 1100, -1)]
-        [TestCase("Novi Sad", "foggy", -95, 24, 1100, 81)]
+        [TestCase("Novi Sad", "foggy", 30, 24, 799, 4.1)]
+        [TestCase("Novi Sad", "foggy", 30, 24, 1101, 4.1)]
+        [TestCase("Novi Sad", "foggy", 30, 24, 1100, -1)]
+        [TestCase("Novi Sad", "foggy", 30, 24, 1100, 81)]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void WeatherConstructor_BadParameters3(string city, string description, double maxTemp, double minTemp, double pressure, double windSpeed)
         {
