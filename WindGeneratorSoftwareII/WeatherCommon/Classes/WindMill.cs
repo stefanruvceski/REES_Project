@@ -22,7 +22,7 @@ namespace WeatherCommon.Classes
 
         }
 
-        public WindMill(double coefficient, double minPower, double turbineDiameter, double maxSpeed, int maxSpeedTime)
+        public WindMill(double coefficient, double minPower, double turbineDiameter, double maxSpeed, int maxSpeedTime,int workingTime)
         {
             // validacija parametara konstruktora
             if(coefficient < 0.25 || coefficient > 0.45)
@@ -56,6 +56,7 @@ namespace WeatherCommon.Classes
             this.turbineDiameter = turbineDiameter;
             this.maxSpeed = maxSpeed;
             this.maxSpeedTime = maxSpeedTime;
+            this.workingTime = workingTime;
         }
 
         public double Coefficient { get => coefficient; set => coefficient = value; }

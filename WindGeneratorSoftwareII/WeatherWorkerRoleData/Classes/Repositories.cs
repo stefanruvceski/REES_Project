@@ -8,9 +8,9 @@ namespace WeatherWorkerRoleData.Classes
 {
     public class Repositories
     {
-        public static WindMillRepository windMillRepository = new WindMillRepository();
-        public static WindGeneratorRepository windGeneratorRepository = new WindGeneratorRepository();
         public static WeatherRepository weatherRepository = new WeatherRepository();
+        public static WindMillRepository windMillRepository = new WindMillRepository();
         public static AggregateRepository aggregateRepository = new AggregateRepository();
+        public static WindGeneratorRepository windGeneratorRepository = new WindGeneratorRepository();
     }
 }

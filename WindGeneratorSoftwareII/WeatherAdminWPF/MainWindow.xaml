@@ -25,6 +25,8 @@
                 <DataGridTextColumn Header="Aggregate working time [h]" Binding="{Binding AggregateONCnt}" Width="170"/>
                 <DataGridTextColumn Header="Wind speed [m/s]" Binding="{Binding Weather.WindSpeed}" Width="110"/>
                 <DataGridTextColumn Header="Pressure [mbar]" Binding="{Binding Weather.Pressure}" Width="110*"/>
+                <DataGridTextColumn Header="Working time" Binding="{Binding WindMill.WorkingTime}" Width="110*"/>
+
             </DataGrid.Columns>
         </DataGrid>
 

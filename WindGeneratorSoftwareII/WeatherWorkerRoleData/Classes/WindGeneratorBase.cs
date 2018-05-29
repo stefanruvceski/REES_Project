@@ -64,7 +64,7 @@ namespace WeatherWorkerRoleData.Classes
         public string WindMill { get => windMill; set => windMill = value; }
         public int WindMillCnt { get => windMillCnt; set => windMillCnt = value; }
         public string Aggregate { get => aggregate; set => aggregate = value; }
-        public double Power { get => CalculatePower(); set => power = value; }
+        public double Power { get => power; set => power = value; }
         public double AggregatePower { get => aggregatePower; set => aggregatePower = value; }
         public int AggregateONCnt { get => aggregateONCnt; set => aggregateONCnt = value; }
 
@@ -78,14 +78,14 @@ namespace WeatherWorkerRoleData.Classes
             
             double power = 0;
 
-            if (weatherBase.WindSpeed >= windMillBase.MaxSpeed && windMillBase.WorkingTime >= windMillBase.MaxSpeedTime)
-            {
-                power = 0;
-
-            }
-            else if (weatherBase.WindSpeed >= windMillBase.MaxSpeed && windMillBase.WorkingTime < windMillBase.MaxSpeedTime)
+            if (weatherBase.WindSpeed >= windMillBase.MaxSpeed && windMillBase.WorkingTime < windMillBase.MaxSpeedTime)
             {
                 power = 0.5 * windMillBase.Coefficient * weatherBase.AirDensity * CalculateSurfaceArea(windMillBase) * Math.Pow(weatherBase.WindSpeed, 3);
+                windMillBase.WorkingTime++;
+            }
+            else if ( windMillBase.WorkingTime >= windMillBase.MaxSpeedTime)
+            {
+                power = 0;
                 windMillBase.WorkingTime++;
             }
             else
@@ -94,11 +94,12 @@ namespace WeatherWorkerRoleData.Classes
                 windMillBase.WorkingTime = 0;
             }
 
-            if (windMillBase.WorkingTime == windMillBase.MaxSpeedTime + (windMillBase.MaxSpeedTime / 2)) // cooling period
+            if (windMillBase.WorkingTime == windMillBase.MaxSpeedTime+ (windMillBase.MaxSpeedTime / 2)) // cooling period
             {
                 windMillBase.WorkingTime = 0;
             }
-
+            Repositories.windMillRepository.AddOrReplaceWindMill(windMillBase);
+        
             return power * windMillCnt;
         }
 

@@ -13,7 +13,6 @@ namespace WeatherWorkerRoleData.Classes
     {
         private CloudStorageAccount _storageAccount;
         private CloudTable _table;
-        private static bool created = false;
 
         public WindMillRepository()
         {
@@ -24,7 +23,6 @@ namespace WeatherWorkerRoleData.Classes
 
             if (_table.CreateIfNotExists())
             {
-
                 InitWindMills();
             }
         }
@@ -37,12 +35,18 @@ namespace WeatherWorkerRoleData.Classes
             WindMillBase w3 = new WindMillBase(0.35, 4000, 35, 8, 10);
             WindMillBase w4 = new WindMillBase(0.35, 12000, 40, 10, 10);
             WindMillBase w5 = new WindMillBase(0.40, 20000, 45, 18, 10);
+            WindMillBase w6 = new WindMillBase(0.35, 4000, 35, 8, 10);
+            WindMillBase w7 = new WindMillBase(0.35, 12000, 40, 10, 10);
+            WindMillBase w8 = new WindMillBase(0.40, 20000, 45, 18, 10);
 
             batchOperation.InsertOrReplace(w1);
             batchOperation.InsertOrReplace(w2);
             batchOperation.InsertOrReplace(w3);
             batchOperation.InsertOrReplace(w4);
             batchOperation.InsertOrReplace(w5);
+            batchOperation.InsertOrReplace(w6);
+            batchOperation.InsertOrReplace(w7);
+            batchOperation.InsertOrReplace(w8);
 
             _table.ExecuteBatch(batchOperation);
         }
