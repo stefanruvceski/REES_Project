@@ -9,15 +9,18 @@ namespace WeatherWorkerRoleData.Classes
 {
     public class AggregateBase : TableEntity
     {
+        #region parameters
         private static int id = 0;
         private double costPerHour;
         private double power;
         private bool state;
+        #endregion
 
+        #region property
         public double CostPerHour { get => costPerHour; set => costPerHour = value; }
         public double Power { get => power; set => power = value; }
         public bool State { get => state; set => state = value; }
-
+        #endregion
         public AggregateBase()
         {
 

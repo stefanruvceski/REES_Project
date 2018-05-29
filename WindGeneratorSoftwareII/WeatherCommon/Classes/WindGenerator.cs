@@ -18,6 +18,7 @@ namespace WeatherCommon.Classes
     [DataContract]
     public class WindGenerator
     {
+        #region parameters
         private Weather weather;
         private WindMill windMill;
         private int windMillCnt;
@@ -26,7 +27,9 @@ namespace WeatherCommon.Classes
         private double power;
         private int aggregateONCnt = 0;
         private double totalAggregateCost;
+        #endregion
 
+        #region property
         [DataMember]
         public Weather Weather { get => weather; set => weather = value; }
         [DataMember]
@@ -43,6 +46,7 @@ namespace WeatherCommon.Classes
         public int AggregateONCnt { get => aggregateONCnt; set => aggregateONCnt = value; }
         [DataMember]
         public double TotalAggregateCost { get => totalAggregateCost; set => totalAggregateCost = value; }
+        #endregion
 
         public WindGenerator()
         {

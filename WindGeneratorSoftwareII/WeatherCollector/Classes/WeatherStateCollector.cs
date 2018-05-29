@@ -19,7 +19,7 @@ namespace WeatherCollector.Classes
 {
     public class WeatherStateCollector
     {
-
+        #region parameters
         private IWeather proxy;
         private Dictionary<string, Weather> weatherStates;
         private static List<string> URLs = new List<string>()
@@ -33,6 +33,7 @@ namespace WeatherCollector.Classes
             "http://api.openweathermap.org/data/2.5/weather?q=Sremska%20Mitrovica&appid=fdcdcf4845c441392a458b8dce7007c2", //Sremska Mitrovica
             "http://api.openweathermap.org/data/2.5/weather?q=Pancevo&appid=fdcdcf4845c441392a458b8dce7007c2", //Pancevo
         };
+        #endregion
 
         public WeatherStateCollector()
         {

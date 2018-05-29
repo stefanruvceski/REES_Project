@@ -20,8 +20,10 @@ namespace WeatherWorkerRoleData.Classes
 {
     public class WindGeneratorRepository
     {
+        #region parameters
         private CloudStorageAccount _storageAccount;
         private CloudTable _table;
+        #endregion
 
         public WindGeneratorRepository()
         {
@@ -60,7 +62,6 @@ namespace WeatherWorkerRoleData.Classes
 
             _table.ExecuteBatch(batchOperation);
         }
-
 
         public void AddOrReplaceWindGenerator(WindGeneratorBase windGenerator)
         {

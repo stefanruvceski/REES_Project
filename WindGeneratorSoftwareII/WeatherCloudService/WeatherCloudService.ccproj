@@ -38,13 +38,12 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WeatherReplicatorWorkerRole\WeatherReplicatorWorkerRole.csproj">
-      <Name>WeatherReplicatorWorkerRole</Name>
+    <ProjectReference Include="..\WeatherReplicatorWorkerRole\NotInUseRole.csproj">
+      <Name>NotInUseRole</Name>
       <Project>{a4ce2f6f-6fba-4391-8049-57829798587d}</Project>
       <Private>True</Private>
       <RoleType>Worker</RoleType>
-      <RoleName>WeatherReplicatorWorkerRole</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+      <RoleName>NotInUseRole</RoleName>
     </ProjectReference>
     <ProjectReference Include="..\WeatherWebRole\WeatherWebRole.csproj">
       <Name>WeatherWebRole</Name>
@@ -64,12 +63,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="WeatherReplicatorWorkerRoleContent\" />
+    <Folder Include="NotInUseRoleContent" />
     <Folder Include="WeatherWebRoleContent\" />
     <Folder Include="WeatherWorkerRoleContent\" />
   </ItemGroup>
   <ItemGroup>
-    <DiagnosticsConfiguration Include="WeatherReplicatorWorkerRoleContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="NotInUseRoleContent\diagnostics.wadcfgx" />
     <DiagnosticsConfiguration Include="WeatherWebRoleContent\diagnostics.wadcfgx" />
     <DiagnosticsConfiguration Include="WeatherWorkerRoleContent\diagnostics.wadcfgx" />
   </ItemGroup>

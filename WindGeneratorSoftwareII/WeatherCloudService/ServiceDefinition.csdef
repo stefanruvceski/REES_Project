@@ -13,7 +13,7 @@
       <InternalEndpoint name="InternalRequest" protocol="tcp" />
     </Endpoints>
   </WorkerRole>
-  <WorkerRole name="WeatherReplicatorWorkerRole" vmsize="Small">
+  <WorkerRole name="NotInUseRole" vmsize="Small">
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
     </ConfigurationSettings>

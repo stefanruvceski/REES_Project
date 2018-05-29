@@ -11,9 +11,10 @@ namespace WeatherWorkerRoleData.Classes
 {
     public class WindMillRepository
     {
+        #region parameters
         private CloudStorageAccount _storageAccount;
         private CloudTable _table;
-
+        #endregion
         public WindMillRepository()
         {
             _storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("WindMillDataConnectionString"));

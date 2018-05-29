@@ -15,10 +15,9 @@ using Microsoft.WindowsAzure.Storage.Table;
 
 namespace WeatherWorkerRoleData.Classes
 {
-
-
     public class WindGeneratorBase : TableEntity
     {
+        #region parameters
         private string weather;
         private string windMill;
         private int windMillCnt;
@@ -27,12 +26,21 @@ namespace WeatherWorkerRoleData.Classes
         private double power;
         private int aggregateONCnt;
         private double totalAggregateCost;
-
+        #endregion
+        #region property
+        public string Weather { get => weather; set => weather = value; }
+        public string WindMill { get => windMill; set => windMill = value; }
+        public int WindMillCnt { get => windMillCnt; set => windMillCnt = value; }
+        public string Aggregate { get => aggregate; set => aggregate = value; }
+        public double Power { get => power; set => power = value; }
+        public double AggregatePower { get => aggregatePower; set => aggregatePower = value; }
+        public int AggregateONCnt { get => aggregateONCnt; set => aggregateONCnt = value; }
+        public double TotalAggregateCost { get => totalAggregateCost; set => totalAggregateCost = value; }
+        #endregion
         public WindGeneratorBase()
         {
 
         }
-
         public WindGeneratorBase(string weather, string windMill, int windMillCnt, string aggregate)
         {
             if(weather == null || windMill == null || aggregate == null)
@@ -64,16 +72,6 @@ namespace WeatherWorkerRoleData.Classes
             Repositories.windMillRepository.AddOrReplaceWindMill(w);
 
         }
-
-        public string Weather { get => weather; set => weather = value; }
-        public string WindMill { get => windMill; set => windMill = value; }
-        public int WindMillCnt { get => windMillCnt; set => windMillCnt = value; }
-        public string Aggregate { get => aggregate; set => aggregate = value; }
-        public double Power { get => power; set => power = value; }
-        public double AggregatePower { get => aggregatePower; set => aggregatePower = value; }
-        public int AggregateONCnt { get => aggregateONCnt; set => aggregateONCnt = value; }
-        public double TotalAggregateCost { get => totalAggregateCost; set => totalAggregateCost = value; }
-
         public double CalculatePower()
         {
             WeatherBase weatherBase = Repositories.weatherRepository.GetLastWeather(Weather);
@@ -108,7 +106,6 @@ namespace WeatherWorkerRoleData.Classes
         
             return power * windMillCnt;
         }
-
         public double CalculateSurfaceArea(WindMillBase windMillBase)
         {
             if(windMillBase == null)
@@ -123,7 +120,6 @@ namespace WeatherWorkerRoleData.Classes
 
             return Math.Pow((windMillBase.TurbineDiameter / 2), 2) * Math.PI;
         }
-
         public double CalculateTotalAggregateCost(double dieselPrice)
         {
             AggregateBase aggregateBase = Repositories.aggregateRepository.GetOneAggregate(aggregate);

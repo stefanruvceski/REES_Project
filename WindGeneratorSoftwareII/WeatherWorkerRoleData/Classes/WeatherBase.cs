@@ -10,6 +10,7 @@ namespace WeatherWorkerRoleData.Classes
 {
     public class WeatherBase : TableEntity
     {
+        #region parameters
         static int id = 0;
         private double airDensity = 1.29;
         private string city;
@@ -18,7 +19,9 @@ namespace WeatherWorkerRoleData.Classes
         private double minTemp;
         private double pressure;
         private double windSpeed;
+        #endregion
 
+        #region property
         public double AirDensity { get => airDensity; set => airDensity = value; }
         public string City { get => city; set => city = value; }
         public string Description { get => description; set => description = value; }
@@ -26,7 +29,7 @@ namespace WeatherWorkerRoleData.Classes
         public double MinTemp { get => minTemp; set => minTemp = value; }
         public double Pressure { get => pressure; set => pressure = value; }
         public double WindSpeed { get => windSpeed; set => windSpeed = value; }
-
+        #endregion
         public WeatherBase()
         {
 

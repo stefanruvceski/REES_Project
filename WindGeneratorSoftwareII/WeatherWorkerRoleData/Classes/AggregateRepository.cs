@@ -11,9 +11,10 @@ namespace WeatherWorkerRoleData.Classes
 {
     public class AggregateRepository
     {
+        #region parameters
         private CloudStorageAccount _storageAccount;
         private CloudTable _table;
-
+        #endregion
         public AggregateRepository()
         {
             _storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("AggregateDataConnectionString"));

@@ -9,6 +9,7 @@ namespace WeatherWorkerRoleData.Classes
 {
     public class WindMillBase : TableEntity
     {
+        #region parameters
         private static int id = 0;
         private double coefficient;
         private double minPower;
@@ -16,7 +17,7 @@ namespace WeatherWorkerRoleData.Classes
         private double maxSpeed;
         private int maxSpeedTime;
         private int workingTime = 0;
-
+        #endregion
         public WindMillBase()
         {
 
@@ -59,6 +60,7 @@ namespace WeatherWorkerRoleData.Classes
             this.maxSpeedTime = maxSpeedTime;
         }
 
+        #region property
         public double Coefficient { get => coefficient; set => coefficient = value; }
         public double MinPower { get => minPower; set => minPower = value; }
         public double TurbineDiameter { get => turbineDiameter; set => turbineDiameter = value; }
@@ -66,6 +68,7 @@ namespace WeatherWorkerRoleData.Classes
         public int MaxSpeedTime { get => maxSpeedTime; set => maxSpeedTime = value; }
         public int WorkingTime { get => workingTime; set => workingTime = value; }
         public static int Id { get => id; set => id = value; }
+        #endregion
     }
 }
 

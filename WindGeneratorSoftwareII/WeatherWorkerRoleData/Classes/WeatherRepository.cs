@@ -12,9 +12,10 @@ namespace WeatherWorkerRoleData.Classes
 {
     public class WeatherRepository
     {
+        #region parameters
         private CloudStorageAccount _storageAccount;
         private CloudTable _table;
-
+        #endregion
         public WeatherRepository()
         {
             _storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("WeatherDataConnectionString"));
@@ -36,7 +37,6 @@ namespace WeatherWorkerRoleData.Classes
             _table.Execute(add);
 
         }
-
         public List<WeatherBase> GetAllWeathers()
         {
             IQueryable<WeatherBase> requests = from g in _table.CreateQuery<WeatherBase>()
@@ -44,7 +44,6 @@ namespace WeatherWorkerRoleData.Classes
                                                select g;
             return requests.ToList();
         }
-
         public WeatherBase GetOneWeather(string city)
         {
             IQueryable<WeatherBase> requests = from g in _table.CreateQuery<WeatherBase>()
@@ -53,7 +52,6 @@ namespace WeatherWorkerRoleData.Classes
 
             return requests.ToList()[0];
         }
-
         public WeatherBase GetLastWeather(string city)
         {
             IQueryable<WeatherBase> requests = from g in _table.CreateQuery<WeatherBase>()
@@ -63,7 +61,6 @@ namespace WeatherWorkerRoleData.Classes
             return requests.ToList().Find(x => x.Timestamp == requests.ToList().Max(y => y.Timestamp));
 
         }
-
         public List<WeatherBase> GetAllWeathersByCity(string city)
         {
             IQueryable<WeatherBase> requests = from g in _table.CreateQuery<WeatherBase>()

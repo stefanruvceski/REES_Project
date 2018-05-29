@@ -22,7 +22,8 @@ namespace WeatherAdminWPF
    
     public partial class Graphics : Window
     {
-        public  Dictionary<string, GearedValues<double>> Powers { get; set; }
+        #region parameters
+        public Dictionary<string, GearedValues<double>> Powers { get; set; }
         public Graphics()
         {
             Powers = new Dictionary<string, GearedValues<double>>()
@@ -40,5 +41,6 @@ namespace WeatherAdminWPF
             DataContext = this;
             InitializeComponent();
         }
+        #endregion
     }
 }

@@ -10,6 +10,7 @@ namespace WeatherCommon.Classes
     [DataContract]
     public class Weather
     {
+        #region parameters
         private double airDensity = 1.29;
         private string city;
         private string description;
@@ -17,7 +18,7 @@ namespace WeatherCommon.Classes
         private double minTemp;
         private double pressure;
         private double windSpeed;
-
+        #endregion
         public Weather()
         {
 
@@ -83,7 +84,7 @@ namespace WeatherCommon.Classes
             this.WindSpeed = windSpeed;
             this.AirDensity = 1.29;
         }
-
+        #region property
         [DataMember]
         public double AirDensity { get => airDensity; set => airDensity = value; }
         [DataMember]
@@ -98,6 +99,7 @@ namespace WeatherCommon.Classes
         public double Pressure { get => pressure; set => pressure = value; }
         [DataMember]
         public double WindSpeed { get => Math.Round(windSpeed, 3); set => windSpeed = value; }
+        #endregion
 
         public override string ToString()
         {

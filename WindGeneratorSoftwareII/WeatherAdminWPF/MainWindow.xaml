@@ -14,16 +14,23 @@
                   Width="1320"
                   Background="Black"
                   Foreground="White"
-                  BorderBrush="LightBlue"
                   ItemsSource="{Binding windGenerators}" IsReadOnly="true" AutoGenerateColumns="False"
                   HorizontalAlignment="Stretch" VerticalAlignment="Top" VerticalScrollBarVisibility="Auto">
 
             <DataGrid.RowStyle>
                 <Style TargetType="DataGridRow">
-                    <Setter Property="Background" Value="Black"/>
-                    <Setter Property="BorderBrush" Value="LightBlue"/>
-                    <Setter Property="Foreground" Value="White"/>
-                    <Setter Property="BorderThickness" Value="1"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Aggregate.AggregateState}" Value="ON">
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="Background" Value="LightBlue"/>
+                            <Setter Property="BorderBrush" Value="LightBlue"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Aggregate.AggregateState}" Value="OFF">
+                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                        </DataTrigger>
+                    </Style.Triggers>
                 </Style>
             </DataGrid.RowStyle>
 
@@ -31,15 +38,13 @@
                 <Style TargetType="DataGridColumnHeader">
                     <Setter Property="Background" Value="Black"/>
                     <Setter Property="Foreground" Value="White"/>
-                    <Setter Property="HorizontalAlignment"  Value="Center"/>
+                    <Setter Property="BorderBrush" Value="DarkGray"/>
                 </Style>
             </DataGrid.ColumnHeaderStyle>
 
             <DataGrid.CellStyle>
                 <Style TargetType="DataGridCell">
-                    <Setter Property="Background" Value="Black"/>
-                    <Setter Property="Foreground" Value="White"/>
-                    <Setter Property="HorizontalAlignment"  Value="Center"/>
+                    <Setter Property="BorderBrush" Value="DarkGray"/>
                 </Style>
             </DataGrid.CellStyle>
 
@@ -57,11 +62,7 @@
                 <DataGridTextColumn Header="Wind speed [m/s]" Binding="{Binding Weather.WindSpeed}" Width="110"/>
                 <!--DataGridTextColumn Header="Pressure [mbar]" Binding="{Binding Weather.Pressure}" Width="110*"/-->
                 <DataGridTextColumn Header="Working time" Binding="{Binding WindMill.WorkingTime}" Width="110*"/>
-
             </DataGrid.Columns>
-          
         </DataGrid>
-        
-
     </Grid>
 </Window>

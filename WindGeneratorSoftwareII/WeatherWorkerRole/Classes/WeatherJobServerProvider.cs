@@ -19,8 +19,6 @@ namespace WeatherWorkerRole.Classes
 {
     public class WeatherJobServerProvider : IWeather
     {
-      
-
         public WeatherJobServerProvider()
         {
 

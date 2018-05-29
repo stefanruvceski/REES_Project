@@ -16,11 +16,13 @@ namespace WeatherCommon.Classes
 {
     public class Aggregate
     {
+        #region parameters
         private int id;
         private double costPerHour;
         private double power;
         private bool state;
         private string aggregateState;
+        #endregion
 
         public Aggregate()
         {
@@ -51,11 +53,13 @@ namespace WeatherCommon.Classes
             this.aggregateState = (state ? "ON" : "OFF");
         }
 
+        #region property
         public int Id { get => id; set => id = value; }
         public double CostPerHour { get => costPerHour; set => costPerHour = value; }
         public double Power { get => power; set => power = value; }
         public bool State { get => state; set => state = value; }
         public string AggregateState { get => aggregateState; set => aggregateState = value; }
+        #endregion
     }//end Aggregate
 
 }//end namespace WeatherCommon

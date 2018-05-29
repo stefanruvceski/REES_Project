@@ -8,6 +8,7 @@ namespace WeatherCommon.Classes
 {
     public class WindMill
     {
+        #region parameters
         private static int id = 0;
         private double coefficient;
         private double minPower;
@@ -15,6 +16,7 @@ namespace WeatherCommon.Classes
         private double maxSpeed;
         private int maxSpeedTime;
         private int workingTime = 0;
+        #endregion
 
         public WindMill()
         {
@@ -58,6 +60,7 @@ namespace WeatherCommon.Classes
             this.workingTime = workingTime;
         }
 
+        #region property
         public double Coefficient { get => coefficient; set => coefficient = value; }
         public double MinPower { get => minPower; set => minPower = value; }
         public double TurbineDiameter { get => turbineDiameter; set => turbineDiameter = value; }
@@ -65,5 +68,6 @@ namespace WeatherCommon.Classes
         public int MaxSpeedTime { get => maxSpeedTime; set => maxSpeedTime = value; }
         public int WorkingTime { get => workingTime; set => workingTime = value; }
         public static int Id { get => id; set => id = value; }
+        #endregion
     }
 }

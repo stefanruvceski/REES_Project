@@ -15,6 +15,7 @@ namespace WeatherWorkerRole
 {
     public class WorkerRole : RoleEntryPoint
     {
+        #region parameters
         private readonly CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
         private readonly ManualResetEvent runCompleteEvent = new ManualResetEvent(false);
 
@@ -22,7 +23,7 @@ namespace WeatherWorkerRole
         private InternalWeatherJobServer internalWeatherServer = new InternalWeatherJobServer();
 
         Repositories repositories = new Repositories();
-
+        #endregion
         public override void Run()
         {
             Trace.TraceInformation("WeatherWorkerRole is running");

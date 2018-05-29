@@ -26,11 +26,21 @@ namespace WeatherAdminWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region parameters
+        public static List<string> cities = new List<string>()
+        {
+            "Novi Sad","Subotica","Sombor","Kikinda","Zrenjanin","Vrsac",
+            "Sremska Mitrovica","Pancevo"
+        };
+
         IWeather proxy;
         Graphics g = new Graphics();
+        
 
         public static BindingList<WindGenerator> windGenerators { get; set; }
+        #endregion
 
+        #region Main
         public MainWindow()
         {
             windGenerators = new BindingList<WindGenerator>();
@@ -41,6 +51,9 @@ namespace WeatherAdminWPF
             
             g.Show();
         }
+        #endregion
+
+        #region Weather
         public void AddWeather()
         {
             new Thread(() =>
@@ -49,17 +62,12 @@ namespace WeatherAdminWPF
                 while (true)
                 {
                     AddWeatherToList();
-                    Thread.Sleep(500);
+                    Thread.Sleep(1000);
                 }
             }).Start();
         }
 
-        public static List<string> cities = new List<string>()
-        {
-            "Novi Sad","Subotica","Sombor","Kikinda","Zrenjanin","Vrsac",
-            "Sremska Mitrovica","Pancevo"
-        };
-        static bool color = false;
+     
         private void AddWeatherToList()
         {
             foreach (string city in cities)
@@ -68,29 +76,18 @@ namespace WeatherAdminWPF
                 {
                     windGenerators.Add(proxy.GetWindGenerator(city));
                     g.Powers[city].Add(windGenerators[windGenerators.Count - 1].Power);
-                  
                 }));
             }
-
-            color = color ? false : true;
-            
         }
+        #endregion
 
+        #region ChannelFactory
         private void CreateChannelFactory()
         {
             ChannelFactory<IWeather> factory = new ChannelFactory<IWeather>(new NetTcpBinding(), new EndpointAddress("net.tcp://127.255.0.2:502/InputRequest")); // promeniti na svakom kompu
             //ChannelFactory<IWeather> factory = new ChannelFactory<IWeather>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:502/InputRequest"));
             proxy = factory.CreateChannel();
         }
-
-        private void Color()
-        {
-            new Thread(() =>
-            {
-                Thread.CurrentThread.IsBackground = true;
-
-
-            }).Start();
-        }
+        #endregion
     }
 }

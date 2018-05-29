@@ -20,9 +20,11 @@ namespace WeatherWorkerRole.Classes
 {
     public class WeatherJobServer
     {
+        #region parameters
         private ServiceHost serviceHost;
         private string externalEndpointName = "InputRequest";
         RoleInstanceEndpoint instanceEndpoint;
+        #endregion
 
         public WeatherJobServer()
         {
