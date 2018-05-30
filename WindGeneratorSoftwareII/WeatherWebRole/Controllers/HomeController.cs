@@ -12,11 +12,12 @@ namespace WeatherWebRole.Controllers
 {
     public class HomeController : Controller
     {
+        #region Fields
         IWeather proxy;
+        #endregion
+
         public ActionResult Index()
         {
-
-
             return View();
         }
 

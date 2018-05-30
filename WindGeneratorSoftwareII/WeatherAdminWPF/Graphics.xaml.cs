@@ -22,20 +22,20 @@ namespace WeatherAdminWPF
    
     public partial class Graphics : Window
     {
-        #region parameters
+        #region Fields
         public Dictionary<string, GearedValues<double>> Powers { get; set; }
         public Graphics()
         {
             Powers = new Dictionary<string, GearedValues<double>>()
             {
-                { "Novi Sad" ,new GearedValues<double>() },
-                { "Subotica" ,new GearedValues<double>() },
-                { "Sombor" ,new GearedValues<double>() },
-                { "Kikinda" ,new GearedValues<double>() },
-                { "Zrenjanin",new GearedValues<double>() },
+                { "Novi Sad", new GearedValues<double>() },
+                { "Subotica", new GearedValues<double>() },
+                { "Sombor", new GearedValues<double>() },
+                { "Kikinda", new GearedValues<double>() },
+                { "Zrenjanin", new GearedValues<double>() },
                 { "Vrsac", new GearedValues<double>() },
-                { "Sremska Mitrovica" ,new GearedValues<double>() },
-                { "Pancevo" ,new GearedValues<double>() }
+                { "Sremska Mitrovica", new GearedValues<double>() },
+                { "Pancevo" , new GearedValues<double>() }
             };
 
             DataContext = this;

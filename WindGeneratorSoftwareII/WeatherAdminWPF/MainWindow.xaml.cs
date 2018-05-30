@@ -26,17 +26,15 @@ namespace WeatherAdminWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        #region parameters
+        #region Fields
         public static List<string> cities = new List<string>()
         {
-            "Novi Sad","Subotica","Sombor","Kikinda","Zrenjanin","Vrsac",
-            "Sremska Mitrovica","Pancevo"
+            "Novi Sad", "Subotica", "Sombor", "Kikinda", "Zrenjanin", "Vrsac", "Sremska Mitrovica", "Pancevo"
         };
 
         IWeather proxy;
         Graphics g = new Graphics();
         
-
         public static BindingList<WindGenerator> windGenerators { get; set; }
         #endregion
 
@@ -66,8 +64,7 @@ namespace WeatherAdminWPF
                 }
             }).Start();
         }
-
-     
+  
         private void AddWeatherToList()
         {
             foreach (string city in cities)

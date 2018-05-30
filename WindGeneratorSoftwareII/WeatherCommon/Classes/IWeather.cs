@@ -18,12 +18,17 @@ namespace WeatherCommon.Classes
     public interface IWeather
     {
         /// <summary>
-        /// parametar mozda da bude cela lista
+        /// Metodu zove Collector da bi poslao podatke o vremenu WorkerRole procesu
         /// </summary>
         /// <param name="weather"></param>
         [OperationContract]
         void SendWeatherState(Weather weather);
 
+        /// <summary>
+        /// Metodu zovu WPF i Web projekti da bi primili podatke o vetrogeneratoru za zeljeni grad
+        /// </summary>
+        /// <param name="city"></param>
+        /// <returns></returns>
         [OperationContract]
         WindGenerator GetWindGenerator(string city);
     }//end IWeather

@@ -12,10 +12,11 @@ namespace WeatherWorkerRole.Classes
 {
     class InternalWeatherJobServer
     {
-        #region parameters
+        #region Fields
         private ServiceHost serviceHost;
         private string internalEndpointName = "InternalRequest";
         #endregion
+
         public InternalWeatherJobServer()
         {
             NetTcpBinding binding = new NetTcpBinding();

@@ -23,6 +23,7 @@ namespace WeatherWorkerRole.Classes
         {
 
         }
+
         public void SendWeatherState(Weather weather)
         {
             if (Repositories.weatherRepository.GetAllWeathersByCity(weather.City).Count != 0)
@@ -37,39 +38,41 @@ namespace WeatherWorkerRole.Classes
         }
 
         public WindGenerator GetWindGenerator(string city)
-        {
-           
+        {           
             return GetWindGeneratorFromDataBase(city);
         }
 
         private WindGenerator GetWindGeneratorFromDataBase(string city)
         {
+            #region Generate base objects
             WeatherBase weatherBase = null;
             WindGeneratorBase windGeneratorBase = Task<WindGeneratorBase>.Factory.StartNew(()=>  Repositories.windGeneratorRepository.GetOneWindGenerator(city)).Result;
 
             WindMillBase windMillBase = Task<WindMillBase>.Factory.StartNew(() => Repositories.windMillRepository.GetOneWindMill(windGeneratorBase.WindMill)).Result;
             AggregateBase aggregateBase = Task<AggregateBase>.Factory.StartNew(() => Repositories.aggregateRepository.GetOneAggregate(windGeneratorBase.Aggregate)).Result;
             weatherBase = Task<WeatherBase>.Factory.StartNew(() => Repositories.weatherRepository.GetLastWeather(windGeneratorBase.Weather)).Result;
+            #endregion
 
-
+            #region Logics for aggregate state and cost
             if ((windGeneratorBase.Power = windGeneratorBase.CalculatePower()) < windMillBase.MinPower)
             {
                 windGeneratorBase.AggregateONCnt++;
-                aggregateBase.State = true;
-               
+                aggregateBase.State = true;           
             }
             else
             {
                 aggregateBase.State = false;
             }
 
-            // racunanje cene dosadasnjeg rada agregata
             windGeneratorBase.TotalAggregateCost = windGeneratorBase.CalculateTotalAggregateCost(120);
+            #endregion
 
+            #region Write in database
             Repositories.windGeneratorRepository.AddOrReplaceWindGenerator(windGeneratorBase);
             Repositories.aggregateRepository.AddOrReplaceAggregate(aggregateBase);
+            #endregion
 
-
+            #region Generate wcf objects
             Aggregate aggregate = new Aggregate(int.Parse(aggregateBase.RowKey), aggregateBase.CostPerHour, aggregateBase.Power, aggregateBase.State);
             WindMill windMill = new WindMill(windMillBase.Coefficient, windMillBase.MinPower, windMillBase.TurbineDiameter, windMillBase.MaxSpeed, windMillBase.MaxSpeedTime,windMillBase.WorkingTime);
 
@@ -77,8 +80,9 @@ namespace WeatherWorkerRole.Classes
                 weatherBase = Task<WeatherBase>.Factory.StartNew(() => Repositories.weatherRepository.GetOneWeather(windGeneratorBase.Weather)).Result;
 
             Weather weather = new Weather(weatherBase.City, weatherBase.Description, weatherBase.MaxTemp, weatherBase.MinTemp, weatherBase.Pressure, weatherBase.WindSpeed);
-            
+
             return new WindGenerator(weather, windMill, windGeneratorBase.WindMillCnt, aggregate,windGeneratorBase.AggregateONCnt,windGeneratorBase.Power);
+            #endregion
         }
 
     }//end WeatherJobServerProvider
