@@ -157,6 +157,21 @@ namespace WeatherCommon.Classes
 
         public double CalculateTotalAggregateCost(double dieselPrice)
         {
+            if(dieselPrice <= 0)
+            {
+                throw new ArgumentException("Diesel price must be greater than 0.");
+            }
+
+            if(Aggregate.CostPerHour < 0)
+            {
+                throw new ArgumentException("Aggregate cost per hour must be greater than 0.");
+            }
+
+            if(AggregateONCnt < 0)
+            {
+                throw new ArgumentException("Aggregate working time can't be negative number.");
+            }
+
             return Aggregate.CostPerHour * AggregateONCnt * dieselPrice;
         }
     }//end WindGenerator

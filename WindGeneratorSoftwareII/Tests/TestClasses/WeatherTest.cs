@@ -61,7 +61,7 @@ namespace Tests.TestClasses
         [ExpectedException(typeof(ArgumentNullException))]
         public void WeatherConstructor_BadParameters2(string city, string description, double maxTemp, double minTemp, double pressure, double windSpeed)
         {
-            Weather weather = new Weather(city, description, maxTemp, minTemp, pressure, windSpeed);
+            Weather weather = new Weather(city, description, maxTemp, minTemp, pressure, windSpeed);   
         }
 
         [Test]

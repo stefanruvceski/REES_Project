@@ -32,7 +32,7 @@ namespace Tests.TestClasses
         [TestCase(24, 11, 300000)]
         public void WindGeneratorConstructor_GoodParameters(int windMillCnt, int aggregateONCnt, double power)
         {
-            // setovanje vrednosti neophodnih polja, konstruktori ob=vih klasa su svakako vec testirani
+            // setovanje vrednosti neophodnih polja, konstruktori ovih klasa su svakako vec testirani
             windMillMock.Object.Coefficient = 0.30;
             windMillMock.Object.TurbineDiameter = 30;
             WindGenerator windGenerator = new WindGenerator(weatherMock.Object, windMillMock.Object, windMillCnt, aggregateMock.Object, aggregateONCnt, power);
@@ -218,6 +218,49 @@ namespace Tests.TestClasses
             double power = windGeneratorMock.Object.CalculatePower();
 
             return Math.Round(power, 4);
+        }
+
+        [Test]
+        [TestCase(90, 3, 120, ExpectedResult = 32400)]
+        [TestCase(100, 2, 120, ExpectedResult = 24000)]
+        [TestCase(110, 1, 120, ExpectedResult = 13200)]
+        public double CalculateTotalAggregateCost_GoodParameters(double costPerHour, int aggregateOnCnt, double dieselPrice)
+        {
+            windGeneratorMock.Object.Aggregate = aggregateMock.Object;
+            windGeneratorMock.Object.Aggregate.CostPerHour = costPerHour;
+            windGeneratorMock.Object.AggregateONCnt = aggregateOnCnt;
+            double totalCost = windGeneratorMock.Object.CalculateTotalAggregateCost(dieselPrice);
+
+            return totalCost;
+        }
+
+        [Test]
+        [TestCase(0, 8, 120, ExpectedResult = 0)]
+        [TestCase(90, 0, 120, ExpectedResult = 0)]
+        public double CalculateTotalAggregateCost_BorderParameters(double costPerHour, int aggregateOnCnt, double dieselPrice)
+        {
+            windGeneratorMock.Object.Aggregate = aggregateMock.Object;
+            windGeneratorMock.Object.Aggregate.CostPerHour = costPerHour;
+            windGeneratorMock.Object.AggregateONCnt = aggregateOnCnt;
+            double totalCost = windGeneratorMock.Object.CalculateTotalAggregateCost(dieselPrice);
+
+            return totalCost;
+        }
+
+        [Test]
+        [TestCase(-1, 0, 120, ExpectedResult = 0)]
+        [TestCase(90, -1, 120, ExpectedResult = 0)]
+        [TestCase(90, 8, 0, ExpectedResult = 0)]
+        [TestCase(90, 8, -1, ExpectedResult = 0)]
+        [ExpectedException(typeof(ArgumentException))]
+        public double CalculateTotalAggregateCost_BadParameters(double costPerHour, int aggregateOnCnt, double dieselPrice)
+        {
+            windGeneratorMock.Object.Aggregate = aggregateMock.Object;
+            windGeneratorMock.Object.Aggregate.CostPerHour = costPerHour;
+            windGeneratorMock.Object.AggregateONCnt = aggregateOnCnt;
+            double totalCost = windGeneratorMock.Object.CalculateTotalAggregateCost(dieselPrice);
+
+            return totalCost;
         }
     }
 }
