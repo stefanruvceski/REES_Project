@@ -12,8 +12,8 @@
         xmlns:geared="clr-namespace:LiveCharts.Geared;assembly=LiveCharts.Geared" WindowStartupLocation="CenterScreen" WindowState="Maximized" ResizeMode="NoResize">
 
     <Grid>
-        <TextBlock  HorizontalAlignment="Left" Margin="41,29,0,0" TextWrapping="Wrap" Text="Novi Sad" VerticalAlignment="Top" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="414,29,0,0" TextWrapping="Wrap" Text="Subotica" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="41,27,0,0" TextWrapping="Wrap" Text="Novi Sad" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="414,27,0,0" TextWrapping="Wrap" Text="Subotica" VerticalAlignment="Top" Foreground="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="1165,24,0,0" TextWrapping="Wrap" Text="Kikinda" VerticalAlignment="Top" Foreground="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="57,445,0,0" TextWrapping="Wrap" Text="Zrenjanin" VerticalAlignment="Top" Foreground="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="791,24,0,0" TextWrapping="Wrap" Text="Sombor" VerticalAlignment="Top" Foreground="White"/>
